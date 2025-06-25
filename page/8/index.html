@@ -1,30 +1,206 @@
-<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#​​分享两篇经典表书《出师表》​​、​《陈情表》">​​分享两篇经典表书《出师表》​​、​《陈情表》</a></li><li><a href="#转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;">转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;</a></li><li><a href="#坚持">坚持</a></li><li><a href="#4个常见的在线Ping测试工具，检测不同节点网络的延迟速度">4个常见的在线Ping测试工具，检测不同节点网络的延迟速度</a></li><li><a href="#推荐几个非常好的网站">推荐几个非常好的网站</a></li><li><a href="#老哥两">老哥两</a></li><li><a href="#170+ Docker 容器应用汇总">170+ Docker 容器应用汇总</a></li><li><a href="#关于语言的思考">关于语言的思考</a></li><li><a href="#对朋友圈的一些想法。">对朋友圈的一些想法。</a></li><li><a href="#Custom Styles">Custom Styles</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
-//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
-window.onload = function() {
-	if (window.matchMedia("(max-width: 960px)").matches) {
-		var sidebar = document.querySelector('.sidebar');
-		var sidebarHeight = sidebar.offsetHeight;
-		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
-	}
-	//- 页面加载完成后，显示content
-	//- Display content after page loading is complete
-	document.querySelector(`.content`).style.display = "block";
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
-	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
-	window.addEventListener('resize', function() {
-		if (window.matchMedia("(max-width: 960px)").matches) {
-			var sidebar = document.querySelector('.sidebar');
-			var sidebarHeight = sidebar.offsetHeight;
-			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
-		} else {
-			//- 如果是桌面端，则设置content的margin-top为60px
-			//- If it is a desktop terminal, set the margin-top of content to 60px
-			document.querySelector('.content').style.marginTop = "60px";
-		}
-	});
-}
-</script><div class="post animated fadeInDown" id="​​分享两篇经典表书《出师表》​​、​《陈情表》"><div class="post-title"><h1><a>​​分享两篇经典表书《出师表》​​、​《陈情表》</a></h1></div><div class="post-content"><h5 id="中国经典表书"><a href="#中国经典表书" class="headerlink" title="中国经典表书"></a><strong>中国经典表书</strong></h5><ol>
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/25/%E5%88%86%E4%BA%AB%E4%B8%A4%E7%AF%87%E7%BB%8F%E5%85%B8%E8%A1%A8%E4%B9%A6%E3%80%8A%E5%87%BA%E5%B8%88%E8%A1%A8%E3%80%8B%E3%80%81%E3%80%8A%E9%99%88%E6%83%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/25/%E5%88%86%E4%BA%AB%E4%B8%A4%E7%AF%87%E7%BB%8F%E5%85%B8%E8%A1%A8%E4%B9%A6%E3%80%8A%E5%87%BA%E5%B8%88%E8%A1%A8%E3%80%8B%E3%80%81%E3%80%8A%E9%99%88%E6%83%85/" class="post-title-link" itemprop="url">​​分享两篇经典表书《出师表》​​、​《陈情表》</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-25 12:11:00" itemprop="dateCreated datePublished" datetime="2025-03-25T12:11:00+08:00">2025-03-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">笔记本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="中国经典表书"><a href="#中国经典表书" class="headerlink" title="中国经典表书"></a><strong>中国经典表书</strong></h5><ol>
 <li>​<strong>​《出师表》​</strong><ul>
 <li>​<strong>作者</strong>：诸葛亮（三国时期）</li>
 <li>​<strong>背景</strong>：诸葛亮北伐前写给蜀汉后主刘禅的奏表，表达对国家的忠诚和治国建议。</li>
@@ -64,7 +240,80 @@ window.onload = function() {
 <p>逮奉圣朝，沐浴清化。前太守臣逵察臣孝廉；后刺史臣荣举臣秀才。臣以供养无主，辞不赴命。诏书特下，拜臣郎中，寻蒙国恩，除臣洗马。猥以微贱，当侍东宫，非臣陨首所能上报。臣具以表闻，辞不就职。诏书切峻，责臣逋慢；郡县逼迫，催臣上道；州司临门，急于星火。臣欲奉诏奔驰，则刘病日笃，欲苟顺私情，则告诉不许：臣之进退，实为狼狈。</p>
 <p>伏惟圣朝以孝治天下，凡在故老，犹蒙矜育，况臣孤苦，特为尤甚。且臣少仕伪朝，历职郎署，本图宦达，不矜名节。今臣亡国贱俘，至微至陋，过蒙拔擢，宠命优渥，岂敢盘桓，有所希冀。但以刘日薄西山，气息奄奄，人命危浅，朝不虑夕。臣无祖母，无以至今日，祖母无臣，无以终余年。母、孙二人，更相为命，是以区区不能废远。</p>
 <p>臣密今年四十有四，祖母今年九十有六，是臣尽节于陛下之日长，报养刘之日短也。乌鸟私情，愿乞终养。臣之辛苦，非独蜀之人士及二州牧伯所见明知，皇天后土实所共鉴。愿陛下矜愍愚诚，听臣微志，庶刘侥幸，保卒余年。臣生当陨首，死当结草。臣不胜犬马怖惧之情，谨拜表以闻。(矜愍 一作：矜悯)</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;"><div class="post-title"><h1><a>转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;</a></h1></div><div class="post-content"><p>今天是世界睡眠日。睡眠是人的基本生理功能。睡眠可消除疲劳、恢复精力，良好的睡眠对于维持生理功能、促进生长发育、提高认知和记忆力有重要作用。 近日，全国爱卫办发布《睡眠健康核心信息及释义》。什么样的睡眠才是好睡眠？怎样才能拥有高质量睡眠？这些关于睡眠的要点，一起来了解，****不同年龄有“最佳睡眠时长”****<strong><strong>你每天需要睡多久？</strong></strong> 《睡眠健康核心信息及释义》提出，不同年龄段人群所需睡眠时长不同，且因人而异。一般来说：</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/21/%E8%BD%AC%E4%B8%80%E7%AF%87%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E6%96%87%E7%AB%A0%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89%EF%BC%9F%E8%B6%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/21/%E8%BD%AC%E4%B8%80%E7%AF%87%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E6%96%87%E7%AB%A0%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89%EF%BC%9F%E8%B6%85/" class="post-title-link" itemprop="url">转一篇人民日报文章：怎样才能&ldquo;睡个好觉&rdquo;？超详细睡眠健康指南来了&rarr;</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-21 10:04:31" itemprop="dateCreated datePublished" datetime="2025-03-21T10:04:31+08:00">2025-03-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">笔记本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>今天是世界睡眠日。睡眠是人的基本生理功能。睡眠可消除疲劳、恢复精力，良好的睡眠对于维持生理功能、促进生长发育、提高认知和记忆力有重要作用。 近日，全国爱卫办发布《睡眠健康核心信息及释义》。什么样的睡眠才是好睡眠？怎样才能拥有高质量睡眠？这些关于睡眠的要点，一起来了解，****不同年龄有“最佳睡眠时长”****<strong><strong>你每天需要睡多久？</strong></strong> 《睡眠健康核心信息及释义》提出，不同年龄段人群所需睡眠时长不同，且因人而异。一般来说：</p>
 <ul>
 <li><strong>0-3月龄婴儿每天需要13-18小时；</strong></li>
 <li><strong>4-11月龄婴儿12-16小时；</strong></li>
@@ -101,14 +350,160 @@ window.onload = function() {
 </ul>
 <hr>
 <p>来源：人民日报微信，综合全国爱卫办《睡眠健康核心信息及释义》</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="坚持"><div class="post-title"><h1><a>坚持</a></h1></div><div class="post-content"><p>今天跟一个教书法的老师在线上聊了会天，让我感触很深，老师说的最多的一个词就是坚持，坚持看帖，坚持临帖，这是学好书法的路，没有捷径可走。是啊，想做好一件事，哪里会有捷径呢。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/20/%E5%9D%9A%E6%8C%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/20/%E5%9D%9A%E6%8C%81/" class="post-title-link" itemprop="url">坚持</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-20 23:26:31" itemprop="dateCreated datePublished" datetime="2025-03-20T23:26:31+08:00">2025-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">记事本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>今天跟一个教书法的老师在线上聊了会天，让我感触很深，老师说的最多的一个词就是坚持，坚持看帖，坚持临帖，这是学好书法的路，没有捷径可走。是啊，想做好一件事，哪里会有捷径呢。</p>
 <p>坚持是通往成功的必经之路，不仅在书法上，在生活的方方面面也是如此。回想自己曾经半途而废的那些爱好和目标，往往都是因为缺乏持之以恒的毅力。锻炼、学习、阅读……这些都需要日复一日的积累和付出。对于普通人来说，“坚持”这件事总是比想象中还要困难。它意味着，你需要投入大量时间和心力，去面对一个可能永远没有收益或者“性价比极低”的结果，面对无数“值得吗”的拷问。这是条难走的窄路。选择这条路的人，常常被认为“没那么聪明”。这让我想起一部纪录片，《一百年很长吗》，讲述了很多你我一般的普通人的故事。我印象最深的是一个叫“黄忠坚”的人。他 16 岁来佛山打工，当包工头，每天奔忙在工地。他喜欢舞狮和练拳，业余时间全部拿来练习。他只有周末才有空骑车去武馆训练，练了很久还是比别人慢半拍。他就一直加练，每次都练到最后一个走。他在十几平米的出租屋里拿着脸盆练习，模拟舞狮的动作。就这样坚持了好多年。黄忠坚说，“功夫没有绝招，一个招式练一万遍就是绝招。”弹幕和评论区一直有人说他应该更务实一点，“去学能安身立命的本事”。但纪录片中有一句话特别打动我：“人投入感情的东西，是没有办法去计算性价比的。”这是一种带着“拙诚”的生活态度：一头扎进自己热爱的事情里，不必计算性价比，不必反复询问值得与否。</p>
 <p>但我们仍然忍不住抱有好奇：没有“性价比”的事，如何坚持下来？是什么动力支撑着他们，坚定自己所选择的路？直到我看到《圆桌派》里，一段对于“匠人精神”的重新定义：“他们在做一件事的时候不是只想要「做到最好」，他是很专注在这一刹那。”“我一做我就进去了，这是解脱。”对于投入自己的热爱认真做事的人来说，“坚持”的过程并不难熬，反而是专注和乐在其中的。这种专注和乐在其中的状态，正是坚持的真正意义所在。它不是一种痛苦的忍耐，而是一种享受过程、沉浸其中的生活方式。就像书法老师所说的，每天坚持看帖、临帖，看似枯燥，但当你真正热爱它时，这个过程就变成了与古人对话、与自我对话的契机。</p>
 <p>坚持的意义不仅在于最终的结果，更在于这个过程中我们如何与自己相处，如何在日复一日的重复中找到新的意义和乐趣。正如黄忠坚在舞狮和练拳中找到的快乐，他不是在追求一个明确的结果，而是在享受这个过程本身。</p>
 <p>在现代社会，我们常常被各种”成功学”和”效率至上”的思想所裹挟，忘记了生活的本质在于体验和感受。坚持的意义，或许就在于它让我们重新审视自己的内心，找到真正热爱的事物，并为之付出时间和精力。</p>
 <p>这种生活方式也让我们更加从容面对生活中的各种挑战和变化。当我们习惯了在平凡的日子里坚持做一件事时，我们也就具备了应对生活中各种不确定性的能力。因为我们知道，只要坚持下去，总会看到改变和进步。</p>
 <p>所以，当我们坚持做着那些看似没有”性价比”的事情时，不妨换个角度思考：这件事是否能让我感到快乐和满足？是否能让我在过程中获得成长和进步？如果答案是肯定的，那么坚持就有了意义。正如苏轼所言：”古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。”坚持从不是通往成功的工具，其本身就是对生命深度的勘探。那些在重复中照见的晨昏、在专注里触摸到的永恒，早已胜过所有世俗意义上的成败标尺。</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="4个常见的在线Ping测试工具，检测不同节点网络的延迟速度"><div class="post-title"><h1><a>4个常见的在线Ping测试工具，检测不同节点网络的延迟速度</a></h1></div><div class="post-content"><h1 id="4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度"><a href="#4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度" class="headerlink" title="4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度"></a>4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度</h1><p>当我们拿到一台服务器和主机后呀，首要之事可不是急着去配置网站或者安装软件呢，而是应当检测一下所购买的主机，看看它的速度与稳定性是否真如商家宣称的那般高效，又或者像一些主机评测网站所描述的那样可靠。而在检测的过程中，我们常用的得力工具就是Ping测试工具啦。借助在线Ping测试工具，我们能够对服务器的各个节点速度进行检测哦。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/20/4%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9C%A8%E7%BA%BFping%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%90%8C%E8%8A%82%E7%82%B9%E7%BD%91%E7%BB%9C%E7%9A%84%E5%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/20/4%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9C%A8%E7%BA%BFping%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%90%8C%E8%8A%82%E7%82%B9%E7%BD%91%E7%BB%9C%E7%9A%84%E5%BB%B6/" class="post-title-link" itemprop="url">4个常见的在线Ping测试工具，检测不同节点网络的延迟速度</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-20 22:57:45" itemprop="dateCreated datePublished" datetime="2025-03-20T22:57:45+08:00">2025-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">笔记本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度"><a href="#4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度" class="headerlink" title="4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度"></a>4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度</h1><p>当我们拿到一台服务器和主机后呀，首要之事可不是急着去配置网站或者安装软件呢，而是应当检测一下所购买的主机，看看它的速度与稳定性是否真如商家宣称的那般高效，又或者像一些主机评测网站所描述的那样可靠。而在检测的过程中，我们常用的得力工具就是Ping测试工具啦。借助在线Ping测试工具，我们能够对服务器的各个节点速度进行检测哦。</p>
 <p>不过呢，在使用<a target="_blank" rel="noopener" href="https://www.tcptest.cn/">在线Ping</a>测试工具的时候呀，大家可得注意啦，不同的服务器网络以及与之对应的各个节点，其速度可是存在差异的哟。就好比咱们国内的服务器吧，在国内使用时速度往往很不错，可要是连接国外的节点呀，那速度可就不尽人意了，延迟也会比较高呢。同样的道理呀，要是选择欧美服务器，其海外节点的速度虽然挺快，但在咱们国内使用时，延迟就会偏高啦。所以说呀，Ping速度延迟的测试结果仅仅只能作为一种参考哦，毕竟这还需要综合考量不同的服务商情况、带宽网络条件，以及实际使用过程中的用户体验呢。</p>
 <p>在这篇文章里呀，咱们今天就特意为大家整理了几个常用的在线Ping测试工具呢，希望能够帮助网友们在对服务器进行评测的时候，更好地体验主机的速度哦。</p>
 <p><strong>## 1、</strong><a target="_blank" rel="noopener" href="https://www.tcptest.cn/">https://www.tcptest.cn</a></p>
@@ -126,7 +521,80 @@ window.onload = function() {
 <p>boce.com提供数十款站长常用的检测工具，如网站测速、ping 检测、域名污染检测、域名被墙检测、dns 查询、ipv6 网站测试、路由跟踪查询、劫持检测等，帮助站长全面了解网站的运行状况和潜在问题。</p>
 <p><img src="https://www.huanote.com/wp-content/uploads/2025/03/67dc2ce9352e4.jpg"></p>
 <p>文章来源网络</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="推荐几个非常好的网站"><div class="post-title"><h1><a>推荐几个非常好的网站</a></h1></div><div class="post-content"><h2 id="IFIXIT"><a href="#IFIXIT" class="headerlink" title="IFIXIT"></a>IFIXIT</h2><p>这绝对是男人最爱的网站之一</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/20/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%9A%84%E7%BD%91%E7%AB%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/20/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%9A%84%E7%BD%91%E7%AB%99/" class="post-title-link" itemprop="url">推荐几个非常好的网站</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-20 20:16:31" itemprop="dateCreated datePublished" datetime="2025-03-20T20:16:31+08:00">2025-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">笔记本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="IFIXIT"><a href="#IFIXIT" class="headerlink" title="IFIXIT"></a>IFIXIT</h2><p>这绝对是男人最爱的网站之一</p>
 <p>IFIXIT，<strong>号称世界上最大的维修社区，在这里面万物皆可修</strong>。</p>
 <p>在这里面你可以看见大量的维基式在线维修指南。<strong>小到消费电子设备和各种小工具、服装，大到汽车卡车都有详细的维修教程</strong>。</p>
 <p>里面的每一个大类中又按照品牌分为了不同小分类，里面的图文说明看的我都感觉自己能iPhone X爆改16 PRO MAX了</p>
@@ -240,9 +708,155 @@ window.onload = function() {
 <p>可以说是孩子学化学的必备小网站了</p>
 <p><strong>网站地址：</strong></p>
 <p><a target="_blank" rel="noopener" href="https://pt.ziziyi.com/">https://pt.ziziyi.com</a></p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="老哥两"><div class="post-title"><h1><a>老哥两</a></h1></div><div class="post-content"><p>我们总在寻找诗与远方，却常忽略脚下这片托举着人间烟火的土地。当阳光斜斜地穿过廊架，在石板路上写下光的韵脚，突然懂得：真正的安宁，不过是允许时光以最本真的模样流淌。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/18/%E8%80%81%E5%93%A5%E4%B8%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/18/%E8%80%81%E5%93%A5%E4%B8%A4/" class="post-title-link" itemprop="url">老哥两</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-18 22:35:00" itemprop="dateCreated datePublished" datetime="2025-03-18T22:35:00+08:00">2025-03-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/" itemprop="url" rel="index"><span itemprop="name">小相册</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我们总在寻找诗与远方，却常忽略脚下这片托举着人间烟火的土地。当阳光斜斜地穿过廊架，在石板路上写下光的韵脚，突然懂得：真正的安宁，不过是允许时光以最本真的模样流淌。</p>
 <p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d985daf022f.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d985daf022f.jpg" title="P8490058"></a></p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="170+ Docker 容器应用汇总"><div class="post-title"><h1><a>170+ Docker 容器应用汇总</a></h1></div><div class="post-content"><h2 id="一、娱乐与媒体类（16项）"><a href="#一、娱乐与媒体类（16项）" class="headerlink" title="一、娱乐与媒体类（16项）"></a>一、娱乐与媒体类（16项）</h2><h3 id="漫画小说工具"><a href="#漫画小说工具" class="headerlink" title="漫画小说工具"></a>漫画小说工具</h3><ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/17/170-docker-%E5%AE%B9%E5%99%A8%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/17/170-docker-%E5%AE%B9%E5%99%A8%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">170+ Docker 容器应用汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-17 22:38:02" itemprop="dateCreated datePublished" datetime="2025-03-17T22:38:02+08:00">2025-03-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">笔记本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="一、娱乐与媒体类（16项）"><a href="#一、娱乐与媒体类（16项）" class="headerlink" title="一、娱乐与媒体类（16项）"></a>一、娱乐与媒体类（16项）</h2><h3 id="漫画小说工具"><a href="#漫画小说工具" class="headerlink" title="漫画小说工具"></a>漫画小说工具</h3><ul>
 <li>Reading：免费小说阅读app，支持多种源与TTS</li>
 <li>Teemiii：在线漫画下载与管理工具</li>
 </ul>
@@ -454,8 +1068,154 @@ window.onload = function() {
 <li>Photopea：在线PS工具</li>
 <li>Yft-Design：海报设计工具</li>
 </ul>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="关于语言的思考"><div class="post-title"><h1><a>关于语言的思考</a></h1></div><div class="post-content"><p>昨天，朋友告知我曾经随口说的一句话，竟严重地得罪了另一位朋友，这让我陷入了沉思。 回想起来，确实在与人交流时有些事情是需要格外注意的。就像我们哪怕与朋友关系再好，也尽量少谈论这四件事。 夫妻之间的问题，那是只属于两个人的独特领域，外人很难真正理解其中的微妙与复杂。在与朋友聊天时谈论这些，不仅可能无法获得有效的建议，还可能引发不必要的误解或让朋友感到尴尬。 自己的金钱问题也不宜多谈。毕竟每个人的经济状况和观念都不同，过多地涉及金钱，容易产生攀比、嫉妒或让人觉得你在炫耀或哭穷，这都会给彼此的关系蒙上一层阴影。 工作中的问题同样如此。每个人的工作环境和经历都大相径庭，我们的抱怨或困扰在他人眼中或许只是无足轻重的小事，甚至可能让朋友觉得厌烦。 而自己做过对不起他人的事情，更是要谨慎提及。这不仅会勾起自己内心的愧疚，也可能给朋友带来心理负担，毕竟谁也不想总是面对他人的负面过往。 经历了这次的事情，我深刻地意识到，言语真的有着巨大的力量，不经意间就可能伤害到他人。以后在与人相处中，我会更加谨慎地选择话题，珍惜每一段友谊，避免因为言语的不慎而造成无法挽回的后果。让我们都能在交流中多一份理解与尊重，少一些无心之失。</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="对朋友圈的一些想法。"><div class="post-title"><h1><a>对朋友圈的一些想法。</a></h1></div><div class="post-content"><p>不知道大家是不是也有这样的感受：随着年纪的增长，越来越不喜欢发朋友圈了，朋友圈，这个曾经风靡一时的社交平台，曾经是我们分享生活点滴、表达情感的重要窗口。还记得刚开通朋友圈的时候，我们总是迫不及待地想要记录下每一个特别的瞬间，无论是旅行中的美景、美食，还是生活中的小确幸，都会第一时间分享到朋友圈，期待着朋友们的点赞和评论。然而，随着时间的推移，渐渐发现，自己发朋友圈的频率越来越低，甚至有时候一连几个月都不发一条动态。这种变化，或许不仅仅是个人的习惯转变，更反映了我们内心深处对社交方式的一种重新审视。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/17/%E5%85%B3%E4%BA%8E%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%9D%E8%80%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/17/%E5%85%B3%E4%BA%8E%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%9D%E8%80%83/" class="post-title-link" itemprop="url">关于语言的思考</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-17 21:18:00" itemprop="dateCreated datePublished" datetime="2025-03-17T21:18:00+08:00">2025-03-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/uncategorized/" itemprop="url" rel="index"><span itemprop="name">uncategorized</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>昨天，朋友告知我曾经随口说的一句话，竟严重地得罪了另一位朋友，这让我陷入了沉思。 回想起来，确实在与人交流时有些事情是需要格外注意的。就像我们哪怕与朋友关系再好，也尽量少谈论这四件事。 夫妻之间的问题，那是只属于两个人的独特领域，外人很难真正理解其中的微妙与复杂。在与朋友聊天时谈论这些，不仅可能无法获得有效的建议，还可能引发不必要的误解或让朋友感到尴尬。 自己的金钱问题也不宜多谈。毕竟每个人的经济状况和观念都不同，过多地涉及金钱，容易产生攀比、嫉妒或让人觉得你在炫耀或哭穷，这都会给彼此的关系蒙上一层阴影。 工作中的问题同样如此。每个人的工作环境和经历都大相径庭，我们的抱怨或困扰在他人眼中或许只是无足轻重的小事，甚至可能让朋友觉得厌烦。 而自己做过对不起他人的事情，更是要谨慎提及。这不仅会勾起自己内心的愧疚，也可能给朋友带来心理负担，毕竟谁也不想总是面对他人的负面过往。 经历了这次的事情，我深刻地意识到，言语真的有着巨大的力量，不经意间就可能伤害到他人。以后在与人相处中，我会更加谨慎地选择话题，珍惜每一段友谊，避免因为言语的不慎而造成无法挽回的后果。让我们都能在交流中多一份理解与尊重，少一些无心之失。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/13/%E5%AF%B9%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E3%80%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/13/%E5%AF%B9%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E3%80%82/" class="post-title-link" itemprop="url">对朋友圈的一些想法。</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-13 12:04:40" itemprop="dateCreated datePublished" datetime="2025-03-13T12:04:40+08:00">2025-03-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/" itemprop="url" rel="index"><span itemprop="name">记事本</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>不知道大家是不是也有这样的感受：随着年纪的增长，越来越不喜欢发朋友圈了，朋友圈，这个曾经风靡一时的社交平台，曾经是我们分享生活点滴、表达情感的重要窗口。还记得刚开通朋友圈的时候，我们总是迫不及待地想要记录下每一个特别的瞬间，无论是旅行中的美景、美食，还是生活中的小确幸，都会第一时间分享到朋友圈，期待着朋友们的点赞和评论。然而，随着时间的推移，渐渐发现，自己发朋友圈的频率越来越低，甚至有时候一连几个月都不发一条动态。这种变化，或许不仅仅是个人的习惯转变，更反映了我们内心深处对社交方式的一种重新审视。</p>
 <p>年龄增长带来的心态变化，随着年龄的增长，我们的心态和生活方式都在悄然发生变化。年轻时，我们渴望被关注、被认可，朋友圈成为了我们展示自我、寻求认同的重要平台。我们乐于分享自己的喜怒哀乐，希望通过朋友圈与朋友们保持联系，分享彼此的生活。然而，随着年龄的增长，我们逐渐变得更加成熟和内敛，开始更加注重内心的平静和生活的本质。</p>
 <p>随着年龄的增长，我们对个人隐私的重视程度也在增加。朋友圈虽然是一个相对私密的社交平台，但毕竟是一个公开的场合，分享的内容可能会被不熟悉的人看到。因此，我们开始更加谨慎地选择要分享的内容，甚至有时候会担心过度分享会给自己带来不必要的麻烦。</p>
 <p>年轻时，我们通过他人的认可来确认自己的价值，而随着年龄的增长，我们逐渐学会了自我认同，不再那么依赖外界的评价。我们开始明白，生活是自己的，不需要通过朋友圈来证明自己的价值。</p>
@@ -466,5 +1226,259 @@ window.onload = function() {
 <p>总的来说，随着年龄的增长，我们逐渐失去了对朋友圈的兴趣，这并不是因为我们不再需要社交，而是因为我们开始更加注重生活的本质。我们不再那么在意他人的评价，也不再那么渴望通过朋友圈来证明自己的价值。我们开始明白，生活是自己的，不需要通过他人的认可来确认自己的价值。</p>
 <p>而我，更倾向于独立博客，纯粹的个人世界，不需要别人的认同，不需要区分熟悉与陌生，把自己隐藏在幕后，向世界展现自己，可以直面内心，无所畏惧。</p>
 <p>这也是我建立这个博客的原因之一吧。</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Custom Styles"><div class="post-title"><h1><a>Custom Styles</a></h1></div><div class="post-content"><p>{“version”: 3, “isGlobalStylesUserThemeJSON”: true }</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/page/7/">Previous</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/page/9/">Next</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/12/wp-global-styles-twentytwentythree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/12/wp-global-styles-twentytwentythree/" class="post-title-link" itemprop="url">Custom Styles</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-12 17:19:01" itemprop="dateCreated datePublished" datetime="2025-03-12T17:19:01+08:00">2025-03-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-06-25 10:28:44" itemprop="dateModified" datetime="2025-06-25T10:28:44+08:00">2025-06-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/uncategorized/" itemprop="url" rel="index"><span itemprop="name">uncategorized</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>{“version”: 3, “isGlobalStylesUserThemeJSON”: true }</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">108</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

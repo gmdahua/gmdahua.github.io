@@ -1,72 +1,370 @@
-<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#说说">说说</a></li><li><a href="#电子书下载网站集">电子书下载网站集</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
-//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
-window.onload = function() {
-	if (window.matchMedia("(max-width: 960px)").matches) {
-		var sidebar = document.querySelector('.sidebar');
-		var sidebarHeight = sidebar.offsetHeight;
-		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
-	}
-	//- 页面加载完成后，显示content
-	//- Display content after page loading is complete
-	document.querySelector(`.content`).style.display = "block";
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
-	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
-	window.addEventListener('resize', function() {
-		if (window.matchMedia("(max-width: 960px)").matches) {
-			var sidebar = document.querySelector('.sidebar');
-			var sidebarHeight = sidebar.offsetHeight;
-			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
-		} else {
-			//- 如果是桌面端，则设置content的margin-top为60px
-			//- If it is a desktop terminal, set the margin-top of content to 60px
-			document.querySelector('.content').style.marginTop = "60px";
-		}
-	});
-}
-</script><div class="post animated fadeInDown" id="说说"><div class="post-title"><h1><a>说说</a></h1></div><div class="post-content"><p>测试一下</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="电子书下载网站集"><div class="post-title"><h1><a>电子书下载网站集</a></h1></div><div class="post-content"><p>转自 红头发蓝胖纸 </p>
-<p>今天，给大家分享8个免费电子书下载的网站。</p>
-<p><strong># 1，知搜</strong></p>
-<p><a target="_blank" rel="noopener" href="https://zhiso.cc/">https://zhiso.cc/</a></p>
-<p>知搜是一个专注于电子书知识搜索的引擎，收录了书籍、杂志、文献、学术等知识文化领域的内容。它聚合了10几个搜书引擎和158007个书籍页面，专注于提供有效的书籍、学术和文献资源，并且完全免费。如果你需要查找电子书或其他知识资源，知搜是一个不错的选择。</p>
-<p>网站提供强大的搜索功能，用户可以根据书名、作者、关键词等快速找到所需的电子书。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/024cadbf-8cb5-43e9-93f7-fa80419801c2.png"></p>
-<p><strong># 2，鸠摩搜书</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.jiumodiary.com/">https://www.jiumodiary.com/</a></p>
-<p>鸠摩搜索聚合了多个电子书资源网站的内容，提供了海量的电子书资源，无论你喜欢小说、非小说类书籍、学术著作还是科幻小说，都能在这里找到。</p>
-<p><strong>免费获取：</strong> 鸠摩搜索为用户提供了大量免费的电子书下载链接，让你无需付费就能获得自己想要的书籍。</p>
-<p><strong>多格式支持：</strong> 支持多种电子书格式的搜索和下载，如 PDF、EPUB、MOBI 等，适配不同的阅读器和设备，满足你的阅读需求。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/167a619e-17be-4afe-8553-d50b2398c901.png"></p>
-<p><strong># 3，小力盘</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.xiaolipan.com/">https://www.xiaolipan.com/</a></p>
-<p>小力盘是一个在线免费的电子书搜索和下载网站，专注于提供各个领域的电子书资源。你可以在小力盘上找到最新的azw3、PDF、txt、mobi、epub等多种格式的电子书。无论你对小说、传记、心理学、历史、科技等哪个领域感兴趣，小力盘都能帮助你快速找到合适的电子书。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/9626b7ce-6882-4d56-9d66-4df8bba3559d.png"></p>
-<p><strong>多种分类：</strong> 小力盘将资源按类别进行详细分类，用户可以轻松浏览并找到自己需要的资源，极大地提升了查找效率。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/3f989bfa-8a4a-4684-ae33-47831faa914f.png"></p>
-<p><strong># 4，期刊杂志</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.fx361.com/">https://www.fx361.com/</a></p>
-<p>中文杂志在线阅读网站，收录3000余种刊物，过期杂志阅读首选平台。喜欢杂志的可以来这个网站上下载，可以全部免费看，而且会实时更新。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/38b9710c-5f10-4f3a-868b-9c5f58c80223.png"></p>
-<p><strong># 5，古藤堡计划</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.gutenberg.org/">https://www.gutenberg.org/</a></p>
-<p>古腾堡计划**（Project Gutenberg）是一个提供免费电子书的网站，成立于1971年，由迈克尔·哈特创立。其主要目的是将经典文学作品和公众版权书籍数字化并免费提供给公众使用。古腾堡计划是世界上最早的数字图书馆之一，旨在推动电子书的发展和阅读习惯的普及。**</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/a644dc23-156b-471b-be56-515f8ec2caeb.png"></p>
-<p>（英文网站，可以用浏览器自带的翻译功能，将它翻译成中文）</p>
-<p>古腾堡计划提供了超过70,000本免费电子书，涵盖了文学、历史、科学、哲学等多个领域。</p>
-<p><strong>多种格式</strong>：网站上的电子书可以下载多种格式，包括ePub、Kindle、HTML、纯文本等，以满足不同阅读设备和阅读软件的需求。</p>
-<p><strong># 6，PDF Drive</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.pdfdrive.com/">https://www.pdfdrive.com/</a></p>
-<p>PDF Drive 是一个提供免费 PDF 电子书下载和在线阅读的网站。它拥有一个庞大的数据库，包含了数百万本 PDF 格式的电子书，涵盖了各种主题和类别，包括文学、科学、技术、历史、教育、医学等。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/d32cb573-9267-465e-954f-1adef7640f39.png"></p>
-<p><strong># 7，偶书</strong></p>
-<p><a target="_blank" rel="noopener" href="https://obook.cc/">https://obook.cc/</a></p>
-<p>oBook<strong>是一个提供免费电子书下载和在线阅读的网站。该网站主要提供中文电子书资源，涵盖了广泛的书籍类别，包括小说、文学、历史、经济、技术、教育等。为读者提供一个方便、免费的平台，以便他们可以轻松获取各种电子书资源。</strong></p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/c2bf6115-8d35-41c3-8012-be1241dc9515.png"></p>
-<p><strong># 8，中华古籍资源库</strong></p>
-<p><a target="_blank" rel="noopener" href="https://www.nlc.cn/pcab/zy/zhgj_zyk/">https://www.nlc.cn/pcab/zy/zhgj_zyk&#x2F;</a></p>
-<p>“中华古籍资源库”是“中华古籍保护计划”的重要成果。2016年9月28日，“中华古籍资源库”正式开通运行，陆续发布国家图书馆藏善本和普通古籍、法国国家图书馆藏敦煌遗书、天津图书馆藏普通古籍、日本永青文库捐赠汉籍、云南省图书馆善本古籍、芷兰斋藏稿抄校本等古籍影像资源，总量超过3.3万部。</p>
-<p>　　2020年4月，随着国家图书馆新版“读者门户”正式上线，国家图书馆（国家古籍保护中心）将自建、征集的古籍资源统一整合在“中华古籍资源库”下，按照资源类别细化分类，实现了单库检索和多库检索，基本检索和高级检索，支持模糊检索，检索和浏览方式全面升级。</p>
-<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/5d153b8b-c791-4943-8418-2b89e044f6bf.png"></p>
-<p><strong>👍</strong></p>
-</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/archives/2025/01/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/archives/2025/01/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>归档 | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content archive">
+            
+
+  
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        
+        <span class="collection-header">很好! 目前共计 108 篇日志。 继续努力。</span>
+      </div>
+
+      
+    <div class="collection-year">
+      <span class="collection-header">2025</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2025-01-09T23:16:25+08:00"
+              content="2025-01-09">
+          01-09
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2025/01/09/%E8%AF%B4%E8%AF%B4/" itemprop="url">
+            <span itemprop="name">说说</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2025-01-08T08:56:00+08:00"
+              content="2025-01-08">
+          01-08
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2025/01/08/%E7%94%B5%E5%AD%90%E4%B9%A6%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99%E9%9B%86/" itemprop="url">
+            <span itemprop="name">电子书下载网站集</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">108</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
