@@ -131,5 +131,5 @@ http://example.com/tags/%E9%BB%91%E7%99%BD/
 http://example.com/tags/%E8%B6%A3%E5%91%B3/
 http://example.com/categories/uncategorized/
 http://example.com/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/
-http://example.com/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/
 http://example.com/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/
+http://example.com/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/

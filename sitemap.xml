@@ -1191,14 +1191,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/</loc>
+    <loc>http://example.com/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/</loc>
+    <loc>http://example.com/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
