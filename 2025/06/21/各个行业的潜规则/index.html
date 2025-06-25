@@ -1,286 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>各个行业的潜规则 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="各行各业的潜规则1：去医院别去地下室2：洗浴中心3楼，不上去3：小区保安给包烟，有事全给办4：买海鲜不用黑色的塑料袋上称5：买黄金只认纯度，不认品牌6：婚庆：定制对半砍，套餐三折砍7：药品价格差别特别大，选便宜的，其实成分和效果一样8：导游带你去的店，基本都买不到当地的特产，基本都是55分的9：穷游，尤其是独自出行的女生，切勿前往偏僻之地10：电影院：不要问我能不能一张票蹿厅看两场电影，你看了我也">
-<meta property="og:type" content="article">
-<meta property="og:title" content="各个行业的潜规则">
-<meta property="og:url" content="http://example.com/2025/06/21/%E5%90%84%E4%B8%AA%E8%A1%8C%E4%B8%9A%E7%9A%84%E6%BD%9C%E8%A7%84%E5%88%99/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="各行各业的潜规则1：去医院别去地下室2：洗浴中心3楼，不上去3：小区保安给包烟，有事全给办4：买海鲜不用黑色的塑料袋上称5：买黄金只认纯度，不认品牌6：婚庆：定制对半砍，套餐三折砍7：药品价格差别特别大，选便宜的，其实成分和效果一样8：导游带你去的店，基本都买不到当地的特产，基本都是55分的9：穷游，尤其是独自出行的女生，切勿前往偏僻之地10：电影院：不要问我能不能一张票蹿厅看两场电影，你看了我也">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-06-21T12:03:03.000Z">
-<meta property="article:modified_time" content="2025-06-25T02:28:44.886Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+extends partial/layout
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+include mixins
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+block site_title
+    != page.title + " · " + config.title
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+block description
+    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
+    meta(name="description", content=desc)
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-各个行业的潜规则" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/21/%E5%90%84%E4%B8%AA%E8%A1%8C%E4%B8%9A%E7%9A%84%E6%BD%9C%E8%A7%84%E5%88%99/" class="article-date">
-  <time class="dt-published" datetime="2025-06-21T12:03:03.000Z" itemprop="datePublished">2025-06-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      各个行业的潜规则
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>各行各业的潜规则<br>1：去医院别去地下室<br>2：洗浴中心3楼，不上去<br>3：小区保安给包烟，有事全给办<br>4：买海鲜不用黑色的塑料袋上称<br>5：买黄金只认纯度，不认品牌<br>6：婚庆：定制对半砍，套餐三折砍<br>7：药品价格差别特别大，选便宜的，其实成分和效果一样<br>8：导游带你去的店，基本都买不到当地的特产，基本都是55分的<br>9：穷游，尤其是独自出行的女生，切勿前往偏僻之地<br>10：电影院：不要问我能不能一张票蹿厅看两场电影，你看了我也不知道</p>
-<p>各行各业的套路</p>
-<p>1．小吃店，老板娘越年轻越漂亮，生意越好。</p>
-<p>2．实体经济大多受到电商的影响较大，但药店依然坚挺。因为任何家庭不能提前买太多的药，也不能生病了，再到网上买药。</p>
-<p>3.”清仓大甩卖”、”打折销售””房租到期”..…，者 都是商家的促销手段，每隔一段时间就会换种促销方式，千万别信以为真。</p>
-<p>4．赚男人保健的钱，女人爱美的钱，老人养命的钱，孩子教育的钱，还有想赚钱的人的钱，最容易。</p>
-<p>5．家电上门维修，不是什么大问题，有时候为了赚钱，就说这里坏了，那里坏了，你完全听信他了，你就上当了。</p>
-<p>6．普通下水等看似很脏的工作，你若不懂，他就会漫天要价，因为知道你怕脏，有时候也就作罢，宁可多花钱了。</p>
-<p>7．汽车钥匙的电池自己可以在网上买在网上看视频自己就可以换。到配钥匙的地方换个电池，就得30到50元。就是抓住了你怕麻烦的心理。</p>
-<p>8．现在的医生比较好当，去医院看病，上来简单说下情况，就会给你开一大丢检查的单子，排着长队做检查，之后等到检查结果都出来，再找大夫，大夫三言两语就会把你打发走。</p>
-<p>9．现在的老师都不敢公开补课了，但是偷着补课价格比以前更高了。而且有些老师开始偷着网上补课，而且一天换一个密码。</p>
-<p>10．疫情过后房价下跌，大部分人的资产缩水，只要是”刚需”，就不要管它。因为你不能把房子卖掉去租房子住。苦的是有几套房产的家庭。</p>
-<p>11.”金牌月嫂”有的可能只是为了让你相信，她的业务有多好，有多高，实际上有些人可能经验不多，甚至是能力与宣传的相差很大。</p>
-<p>12．小区没有停车位，每天给保安一瓶水或者一包烟，以后你回小区车位就不用愁了。</p>
-<p>13．上门收废品的价格和到附近废品回收站去卖废品价格要相差20％以上。</p>
-<p>14．小学、初中门口的文具店大多数都有一些玩具、小食品同时售卖，而且也有陆续关门的店了。因为现在好多人都在网上买文具了，这样的店生存的不容易，有很多已经不赚钱了。</p>
-<p>15．服装店的生意越来越难做了，好多人在网上买衣服已经成了习惯。还有很多人到一些品牌店看或者试穿，之后记住编号，再在网上买。同样的一件衣服可能会节省30到50%。</p>
-<p>16．新买的手机一定要贴”防爆膜”或者买一个起保护作用的壳，手机摔后，换手机的屏幕真的很贵。</p>
-<p>17．现在一台好的手机比一台笔记本还要贵。而且手机用几年后就越来越卡，不换手机就越来越不好用。</p>
-<p>18．手机维修店和从事这一行的人越来越多，修个手机动不动就会花好几百。</p>
-<p>19．股票市场”八赔，一平，一赚”，实际上可能比这个还惨，绝大多数的散户都是”韭菜”，而且一茬接着一茬。总认为自己厉害，觉得看了几本书或者听几节课就行了，之后就是血淋淋的教训。</p>
-<p>20．烧烤店的烧烤鲜香味美，烧烤料里会放入大量的味精和鸡精，还有其它一些添加剂，尽量少在外边吃烧烤，最好自己做。</p>
-<p>21．水果店的利润很高，现在一般都在加微信，入群，在群里发信息，团购等线上、线下相结合销售模式。</p>
-<p>22．越来越多的人投入到直播、带货的行业，带货的佣金特别的高，有的大主播一场直播下来就能赚几十万、几百万的。</p>
-<p>23．快递行业竞争越来越强，快递小哥也越来越多，快递已不如以前赚钱。快递小哥有好多开始送外卖了。</p>
-<p>24．外卖的价格越来越贵了，不但商家，还有外卖的平台，还有送外卖的小哥都要赚钱，这些无疑都得消费者买单。</p>
-<p>25．新能源汽车越来越普及，油车的价格被打了下来。新能源汽车的生产厂家越来越多了，一些生产手机的企业都开始生产汽车了。二手车行业越来越不好做了，因为新车的价格都越来越便宜了。</p>
-<p>26．超市中你最方便拿到的物品的日期一般都不怎么好，而那些你拿着费点劲的物品的日期都会非常好。</p>
-<p>27．奶茶店在城市中越来越多，实际上好多产品就是糖浆，添加剂还有水的混合物，动不动就会卖到十多元，甚至几十元。</p>
-<p>28．现在超市卖的啤酒大部分都是工业啤酒，那些好一点儿的精酿啤酒都要贵很多。啤酒喝不好，也会很伤身的。</p>
-<p>29．带着孩子去大城市旅游，一定要提前做好攻略，有好多博物馆、大学都需要提前很多天预约，不然去了后就去不了想去的地方，白白浪费宝贵的时间。</p>
-<p>30．国有大银行的利率越来越低了，有钱可以存到地方银行。地方银行和几大国有银行一样有保证，而且也有存款保险。超过20万就存大额存单，几年下来利息会差很多。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/21/%E5%90%84%E4%B8%AA%E8%A1%8C%E4%B8%9A%E7%9A%84%E6%BD%9C%E8%A7%84%E5%88%99/" data-id="cmcbc5hyr004hakuyfye9gvsb" data-title="各个行业的潜规则" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2025/06/22/%E4%B8%80%E8%BA%BA%E5%88%B0%E5%BA%8A%E4%B8%8A%E5%B0%B1%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F3%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C%E8%84%91%E5%AD%90%E4%B8%80%E4%B8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          一躺到床上就胡思乱想睡不着？3个方法，脑子一下就&amp;ldquo;空&amp;rdquo;了！（转自人民日报）
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2025/06/17/%E4%B8%80%E4%BA%9B%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">一些特殊符号</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">uncategorized</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/">小相册</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/">记事本</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%91/" rel="tag">树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%A3%E5%91%B3/" rel="tag">趣味</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%91%E7%99%BD/" rel="tag">黑白</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E6%A0%91/" style="font-size: 10px;">树</a> <a href="/tags/%E8%B6%A3%E5%91%B3/" style="font-size: 10px;">趣味</a> <a href="/tags/%E9%BB%91%E7%99%BD/" style="font-size: 20px;">黑白</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/02/">February 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/06/24/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/24/%E5%9C%A8%E5%8D%95%E4%BD%8D%EF%BC%8C%E6%83%B3%E8%A6%81%E8%BF%87%E5%BE%97%E8%88%92%E5%9D%A6%EF%BC%8C%E4%B8%80%E5%AE%9A%E8%A6%81%E8%AE%B0%E4%BD%8F%E8%BF%994%E4%BB%B6%E4%BA%8B/">在单位，想要过得舒坦，一定要记住这4件事</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/24/%E4%B8%8D%E8%A6%81%E8%AF%B7%E4%B8%80%E5%A4%A7%E7%BE%A4%E4%BA%BA%E5%90%83%E9%A5%AD/">不要请一大群人吃饭</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/22/%E4%B8%80%E8%BA%BA%E5%88%B0%E5%BA%8A%E4%B8%8A%E5%B0%B1%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F3%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C%E8%84%91%E5%AD%90%E4%B8%80%E4%B8%8B/">一躺到床上就胡思乱想睡不着？3个方法，脑子一下就&amp;ldquo;空&amp;rdquo;了！（转自人民日报）</a>
-          </li>
-        
-          <li>
-            <a href="/2025/06/21/%E5%90%84%E4%B8%AA%E8%A1%8C%E4%B8%9A%E7%9A%84%E6%BD%9C%E8%A7%84%E5%88%99/">各个行业的潜规则</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+block content
+  .autopagerize_page_element: .content: .post-page
+    include mixins
+    +make_post(page, true)
+    .share
+      .evernote
+        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
+      .weibo
+        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
+      .twitter
+        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
+    - var prev = page.prev ? page.prev.path : false;
+    - var next = page.next ? page.next.path : false;
+    if prev || next
+      .pagination
+        ul.clearfix
+          if prev
+            li.pre.pagbuttons
+              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
+          if next
+            li.next.pagbuttons
+              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
+    if page.comments
+        include partial/comments
