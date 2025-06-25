@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>兰空图床LskyV2通过API获取Token的方法 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="兰空图床(Lsky Pro)新版本V2图床带来了很多特性，速度也得到明显提升，而且自带API接口，对接博客等网站方便了很多， 那既然要使用api接口就要先学会用，)V2版本接口采用 「HTTP 基本验证」的方式验证授权，获取到 token 后，通过设置请求 header 标头来验证请求，所以token的获取就稍微要麻烦一点。 接下来就结合我搭建的图床，配合Postman在线工具，来具体演示下如何获">
+<meta property="og:type" content="article">
+<meta property="og:title" content="兰空图床LskyV2通过API获取Token的方法">
+<meta property="og:url" content="http://example.com/2025/03/08/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8Alskyv2%E9%80%9A%E8%BF%87api%E8%8E%B7%E5%8F%96token%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="兰空图床(Lsky Pro)新版本V2图床带来了很多特性，速度也得到明显提升，而且自带API接口，对接博客等网站方便了很多， 那既然要使用api接口就要先学会用，)V2版本接口采用 「HTTP 基本验证」的方式验证授权，获取到 token 后，通过设置请求 header 标头来验证请求，所以token的获取就稍微要麻烦一点。 接下来就结合我搭建的图床，配合Postman在线工具，来具体演示下如何获">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img.huanote.com/uploads/2025/03/08/67cc375b248cd.png">
+<meta property="og:image" content="https://img.huanote.com/uploads/2025/03/08/67cc37817242c.png">
+<meta property="og:image" content="https://img.huanote.com/uploads/2025/03/08/67cc37840ba8e.png">
+<meta property="og:image" content="https://img.huanote.com/uploads/2025/03/08/67cc3786a2225.png">
+<meta property="og:image" content="https://img.huanote.com/uploads/2025/03/08/67cc378b56683.png">
+<meta property="og:image" content="https://img.huanote.com/uploads/2025/03/08/67cc378df3407.png">
+<meta property="article:published_time" content="2025-03-08T12:26:58.000Z">
+<meta property="article:modified_time" content="2025-06-25T02:28:44.840Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.huanote.com/uploads/2025/03/08/67cc375b248cd.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-兰空图床lskyv2通过api获取token的方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/03/08/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8Alskyv2%E9%80%9A%E8%BF%87api%E8%8E%B7%E5%8F%96token%E7%9A%84%E6%96%B9%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2025-03-08T12:26:58.000Z" itemprop="datePublished">2025-03-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      兰空图床LskyV2通过API获取Token的方法
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>兰空图床(Lsky Pro)新版本V2图床带来了很多特性，速度也得到明显提升，而且自带API接口，对接博客等网站方便了很多，</p>
+<p>那既然要使用api接口就要先学会用，)V2版本接口采用 「HTTP 基本验证」的方式验证授权，获取到 token 后，通过设置请求 header 标头来验证请求，所以token的获取就稍微要麻烦一点。</p>
+<p>接下来就结合我搭建的图床，配合Postman在线工具，来具体演示下如何获取Token</p>
+<p><strong>1.首先我们打开图床的接口页面:</strong></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc375b248cd.png"></p>
+<p>这里有接口说明，可以大概看一下具体的获取方法。</p>
+<p><strong>2、发起请求，生成token</strong></p>
+<p>根据接口说明，可以看到我们需要通过api 调试工具发起一个 http post 请求来生成一个 token。</p>
+<p>这里我们使用postman调试工具，个人使用基本上是免费的。</p>
+<p><strong>postman官网</strong> ：<a target="_blank" rel="noopener" href="https://www.postman.com/">https://www.postman.com/</a></p>
+<p>打开后，可以填入邮箱，然后再按照要求填入账号密码即可完成注册：</p>
+<p>登陆后我们来到个人工作台，在左边我们可以新建一个项目：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc37817242c.png"></p>
+<p>修改请求类型为： <code>POST</code> ，并填入我们的请求 url：  <a target="_blank" rel="noopener" href="https://img.huanote.com/api/v1/tokens%60">https://img.huanote.com/api/v1/tokens`</a></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc37840ba8e.png"></p>
+<p>然后我们在头（ <code>Headers</code> ）里面，设置请求头KEY为 <code>Accept</code> ，值为 <code>application/json</code> ，如下图：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc3786a2225.png"></p>
+<p>在请求体（Body）中，我们分别填入邮箱和密码的KEY和对应的值。</p>
+<p>KEY按照我们示例的填写，分别为： <code>email</code> 和 <code>password</code></p>
+<p>值VALUE为您的注册邮箱和您的登录密码，如下图：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc378b56683.png"></p>
+<p>填好之后，就可以点击右边的 <code>Send</code> 按钮，发起请求：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc378df3407.png"></p>
+<p>稍微等待一会，在下方就可以看到返回的结果， <code>token</code> 的值就是我们需要的内容了。</p>
+<p>其他的操作就看接口文档就行了。</p>
+<p><em>本文转自网络</em>,如涉及原作者权益,请联系站长删除</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/03/08/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8Alskyv2%E9%80%9A%E8%BF%87api%E8%8E%B7%E5%8F%96token%E7%9A%84%E6%96%B9%E6%B3%95/" data-id="cmcbc5hym003vakuy88ia76wu" data-title="兰空图床LskyV2通过API获取Token的方法" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/03/08/%E6%98%A5%E6%97%A5%E7%9A%84%E9%82%80%E7%BA%A6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          春日的邀约
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/03/07/navigation-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">导航栏</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">uncategorized</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/">小相册</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/">记事本</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%91/" rel="tag">树</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%A3%E5%91%B3/" rel="tag">趣味</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BB%91%E7%99%BD/" rel="tag">黑白</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E6%A0%91/" style="font-size: 10px;">树</a> <a href="/tags/%E8%B6%A3%E5%91%B3/" style="font-size: 10px;">趣味</a> <a href="/tags/%E9%BB%91%E7%99%BD/" style="font-size: 20px;">黑白</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/06/">June 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">April 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/02/">February 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/10/">October 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/06/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/06/24/%E5%9C%A8%E5%8D%95%E4%BD%8D%EF%BC%8C%E6%83%B3%E8%A6%81%E8%BF%87%E5%BE%97%E8%88%92%E5%9D%A6%EF%BC%8C%E4%B8%80%E5%AE%9A%E8%A6%81%E8%AE%B0%E4%BD%8F%E8%BF%994%E4%BB%B6%E4%BA%8B/">在单位，想要过得舒坦，一定要记住这4件事</a>
+          </li>
+        
+          <li>
+            <a href="/2025/06/24/%E4%B8%8D%E8%A6%81%E8%AF%B7%E4%B8%80%E5%A4%A7%E7%BE%A4%E4%BA%BA%E5%90%83%E9%A5%AD/">不要请一大群人吃饭</a>
+          </li>
+        
+          <li>
+            <a href="/2025/06/22/%E4%B8%80%E8%BA%BA%E5%88%B0%E5%BA%8A%E4%B8%8A%E5%B0%B1%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3%E7%9D%A1%E4%B8%8D%E7%9D%80%EF%BC%9F3%E4%B8%AA%E6%96%B9%E6%B3%95%EF%BC%8C%E8%84%91%E5%AD%90%E4%B8%80%E4%B8%8B/">一躺到床上就胡思乱想睡不着？3个方法，脑子一下就&amp;ldquo;空&amp;rdquo;了！（转自人民日报）</a>
+          </li>
+        
+          <li>
+            <a href="/2025/06/21/%E5%90%84%E4%B8%AA%E8%A1%8C%E4%B8%9A%E7%9A%84%E6%BD%9C%E8%A7%84%E5%88%99/">各个行业的潜规则</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
