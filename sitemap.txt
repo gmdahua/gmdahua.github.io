@@ -125,7 +125,6 @@ http://example.com/2025/03/30/%E5%85%B3%E4%BA%8E-3/
 http://example.com/2025/03/28/848/
 http://example.com/2025/03/28/847/
 http://example.com/2025/03/12/autumn-pro/
-http://example.com/2025/06/24/hello-world/
 http://example.com/
 http://example.com/tags/%E6%A0%91/
 http://example.com/tags/%E9%BB%91%E7%99%BD/
