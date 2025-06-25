@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="/js/ink.js" defer></script>
+    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
+    <title>
+        
+            新服务器部署了科学上网，记录一下|Hexo
+    </title>
+    
+<link rel="stylesheet" href="/css/style.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+    <body>
+        
+            <header>
+    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
+        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
+        Hexo&nbsp;|&nbsp;新服务器部署了科学上网，记录一下
+    </a>
+    <p class="subtitle"></p>
+
+</header>
+
+        
+        <main>
+    <article>
+        <p><strong>1. 安装v2ray</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 下载安装脚本并执行wget https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.shbash install-release.sh</span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 配置v2ray</strong></p>
+<p>编辑配置文件 <code>/usr/local/etc/v2ray/config.json</code>，以下为WebSocket + TLS的推荐配置（需配合Nginx反向代理）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;inbounds&quot;: [&#123;</span><br><span class="line">    &quot;port&quot;: 10086,</span><br><span class="line">    &quot;protocol&quot;: &quot;vmess&quot;,</span><br><span class="line">    &quot;settings&quot;: &#123;</span><br><span class="line">      &quot;clients&quot;: [&#123;</span><br><span class="line">        &quot;id&quot;: &quot;自行生成的UUID&quot;,  // 使用`uuidgen`生成</span><br><span class="line">        &quot;alterId&quot;: 0</span><br><span class="line">      &#125;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;streamSettings&quot;: &#123;</span><br><span class="line">      &quot;network&quot;: &quot;ws&quot;,</span><br><span class="line">      &quot;wsSettings&quot;: &#123;</span><br><span class="line">        &quot;path&quot;: &quot;/ray&quot;  // 自定义路径，需与Nginx配置一致</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;],</span><br><span class="line">  &quot;outbounds&quot;: [&#123;</span><br><span class="line">    &quot;protocol&quot;: &quot;freedom&quot;</span><br><span class="line">  &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3. 启动v2ray服务</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable v2raysystemctl start v2ray</span><br></pre></td></tr></table></figure>
+
+<p><strong>4. 配置Nginx反向代理（通过宝塔面板）</strong></p>
+<p>在宝塔面板中打开网站对应的Nginx配置，添加以下反向代理规则：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">location /ray &#123;  # 路径与v2ray配置中的`path`一致</span><br><span class="line">  proxy_pass http://127.0.0.1:10086;  # 端口与v2ray配置一致</span><br><span class="line">  proxy_http_version 1.1;</span><br><span class="line">  proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">  proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">  proxy_set_header Host $host;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>重启Nginx服务。</p>
+<p>**5.**<strong>检查服务状态</strong></p>
+<ul>
+<li>直接部署：<code>systemctl status v2ray</code></li>
+<li>Docker部署：<code>docker ps grep v2ray</code></li>
+</ul>
+<p>**6.**<strong>客户端配置</strong><br>使用v2ray客户端（如V2RayN、Qv2ray），填入服务器IP&#x2F;域名、端口、UUID及路径（WebSocket需填写<code>path</code>）。</p>
+<p>**7.**<strong>测试连通性</strong><br>通过在线工具（如<code>https://www.itdog.cn/tcping/</code>）验证端口是否开放，或使用客户端连接测试。</p>
+
+    </article>
+</main>
+        
+            <footer style="padding:0 0;" >
+    <div id="footer-nav">
+        <p style="font-size:0.7em;margin: 0px;">
+            
+              <a class="footer-nav-link" href="/">文章</a>
+            
+              <a class="footer-nav-link" href="/gallery">相册</a>
+            
+        </p>
+    </div>
+</footer>
+        
+    </body>
+</html>
