@@ -1,35 +1,12 @@
-extends partial/layout
-
-include mixins
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    if prev || next
-      .pagination
-        ul.clearfix
-          if prev
-            li.pre.pagbuttons
-              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-          if next
-            li.next.pagbuttons
-              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>对朋友圈的一些想法。 · Hexo</title><meta name="description" content="不知道大家是不是也有这样的感受：随着年纪的增长，越来越不喜欢发朋友圈了，朋友圈，这个曾经风靡一时的社交平台，曾经是我们分享生活点滴、表达情感的重要窗口。还记得刚开通朋友圈的时候，我们总是迫不及待地想要记录下每一个特别的瞬间，无论是旅行中的美景、美食，还是生活中的小确幸，都会第一时间分享到朋友圈，期待"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首頁</a></li><li><a href="/about">關於</a></li><li><a href="/archives">歸檔</a></li><li><a href="/links">連結</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>对朋友圈的一些想法。</a></h3></div><div class="post-content"><p>不知道大家是不是也有这样的感受：随着年纪的增长，越来越不喜欢发朋友圈了，朋友圈，这个曾经风靡一时的社交平台，曾经是我们分享生活点滴、表达情感的重要窗口。还记得刚开通朋友圈的时候，我们总是迫不及待地想要记录下每一个特别的瞬间，无论是旅行中的美景、美食，还是生活中的小确幸，都会第一时间分享到朋友圈，期待着朋友们的点赞和评论。然而，随着时间的推移，渐渐发现，自己发朋友圈的频率越来越低，甚至有时候一连几个月都不发一条动态。这种变化，或许不仅仅是个人的习惯转变，更反映了我们内心深处对社交方式的一种重新审视。</p>
+<p>年龄增长带来的心态变化，随着年龄的增长，我们的心态和生活方式都在悄然发生变化。年轻时，我们渴望被关注、被认可，朋友圈成为了我们展示自我、寻求认同的重要平台。我们乐于分享自己的喜怒哀乐，希望通过朋友圈与朋友们保持联系，分享彼此的生活。然而，随着年龄的增长，我们逐渐变得更加成熟和内敛，开始更加注重内心的平静和生活的本质。</p>
+<p>随着年龄的增长，我们对个人隐私的重视程度也在增加。朋友圈虽然是一个相对私密的社交平台，但毕竟是一个公开的场合，分享的内容可能会被不熟悉的人看到。因此，我们开始更加谨慎地选择要分享的内容，甚至有时候会担心过度分享会给自己带来不必要的麻烦。</p>
+<p>年轻时，我们通过他人的认可来确认自己的价值，而随着年龄的增长，我们逐渐学会了自我认同，不再那么依赖外界的评价。我们开始明白，生活是自己的，不需要通过朋友圈来证明自己的价值。</p>
+<p>随着时间的推移，我们的社交圈也在不断变化。年轻时，我们的社交圈相对简单，朋友圈里的朋友大多是同龄人，大家有着相似的兴趣和生活经历，分享的内容也更容易引起共鸣。然而，随着年龄的增长，我们的社交圈逐渐扩大，朋友圈里的朋友也变得更加多元化。朋友圈里的朋友不再仅仅是同龄人，还包括同事、合作伙伴、甚至是一些不太熟悉的人。这种多样性使得我们在分享内容时需要更加谨慎，以免引起不必要的误解或尴尬。随着社交圈的变化，我们面临的社交压力也在增加。朋友圈里的动态不再仅仅是个人生活的记录，还可能影响到我们在他人眼中的形象。因此，我们开始更加注重自己在朋友圈里的表现。</p>
+<p>另一个让我们逐渐失去对朋友圈兴趣的原因是，朋友圈内容的同质化越来越严重。随着时间的推移，我们发现朋友圈里的内容变得越来越相似，大家分享的似乎都是一些经过精心修饰的生活片段，真实的生活反而被隐藏了起来。朋友圈里的照片和文字往往经过精心的修饰和挑选，呈现出的都是生活中最美好的一面。这种过度修饰的生活让我们感到距离感，甚至有时候会让我们产生一种错觉，认为别人的生活总是那么完美，而自己的生活却充满了琐碎和烦恼。朋友圈里的内容往往缺乏真实感，我们看到的只是他人生活的一个侧面，而不是全部。这种片面的信息让我们感到不真实，甚至有时候会让我们对自身的生活产生怀疑。</p>
+<p>随着科技的发展，新的社交平台和工具不断涌现，提供了更多样化的社交方式。例如，短视频平台、即时通讯工具等，都为我们提供了新的表达和交流方式。这些新的平台和工具，往往比朋友圈更加灵活和自由，能够更好地满足我们多样化的需求。</p>
+<p>短视频平台如抖音、快手等，提供了更加直观和生动的表达方式。我们可以通过短视频分享自己的生活点滴，而不需要经过复杂的文字编辑和修饰。这种方式更加真实和自然，也更容易引起他人的共鸣。</p>
+<p>总的来说，随着年龄的增长，我们逐渐失去了对朋友圈的兴趣，这并不是因为我们不再需要社交，而是因为我们开始更加注重生活的本质。我们不再那么在意他人的评价，也不再那么渴望通过朋友圈来证明自己的价值。我们开始明白，生活是自己的，不需要通过他人的认可来确认自己的价值。</p>
+<p>而我，更倾向于独立博客，纯粹的个人世界，不需要别人的认同，不需要区分熟悉与陌生，把自己隐藏在幕后，向世界展现自己，可以直面内心，无所畏惧。</p>
+<p>这也是我建立这个博客的原因之一吧。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2025-03-13</span><i class="fa fa-tag"></i><a class="tag" href="/categories/记事本/" title="记事本">记事本 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2025/03/13/对朋友圈的一些想法。/,Hexo,对朋友圈的一些想法。,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2025/03/17/%E5%85%B3%E4%BA%8E%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%9D%E8%80%83/" title="关于语言的思考">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2025/03/12/wp-global-styles-twentytwentythree/" title="Custom Styles">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

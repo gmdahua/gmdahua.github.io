@@ -1,35 +1,38 @@
-extends partial/layout
-
-include mixins
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    if prev || next
-      .pagination
-        ul.clearfix
-          if prev
-            li.pre.pagbuttons
-              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-          if next
-            li.next.pagbuttons
-              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>转一篇人民日报文章：怎样才能&ldquo;睡个好觉&rdquo;？超详细睡眠健康指南来了&rarr; · Hexo</title><meta name="description" content="今天是世界睡眠日。睡眠是人的基本生理功能。睡眠可消除疲劳、恢复精力，良好的睡眠对于维持生理功能、促进生长发育、提高认知和记忆力有重要作用。 近日，全国爱卫办发布《睡眠健康核心信息及释义》。什么样的睡眠才是好睡眠？怎样才能拥有高质量睡眠？这些关于睡眠的要点，一起来了解，****不同年龄有“最佳睡眠时长"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首頁</a></li><li><a href="/about">關於</a></li><li><a href="/archives">歸檔</a></li><li><a href="/links">連結</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;</a></h3></div><div class="post-content"><p>今天是世界睡眠日。睡眠是人的基本生理功能。睡眠可消除疲劳、恢复精力，良好的睡眠对于维持生理功能、促进生长发育、提高认知和记忆力有重要作用。 近日，全国爱卫办发布《睡眠健康核心信息及释义》。什么样的睡眠才是好睡眠？怎样才能拥有高质量睡眠？这些关于睡眠的要点，一起来了解，****不同年龄有“最佳睡眠时长”****<strong><strong>你每天需要睡多久？</strong></strong> 《睡眠健康核心信息及释义》提出，不同年龄段人群所需睡眠时长不同，且因人而异。一般来说：</p>
+<ul>
+<li><strong>0-3月龄婴儿每天需要13-18小时；</strong></li>
+<li><strong>4-11月龄婴儿12-16小时；</strong></li>
+<li><strong>1-2岁幼儿11-14小时；</strong></li>
+<li><strong>学龄前儿童10-13小时；</strong></li>
+<li><strong>中小学生8-10小时；</strong></li>
+<li><strong>成年人7-8小时；</strong></li>
+<li><strong>老年人6-7小时。</strong></li>
+</ul>
+<p>规律的睡眠时间是健康睡眠的保障。提倡顺应四时，起居有常。保持规律的入睡和起床时间，维持稳定的生物节律。</p>
+<ul>
+<li>成年人推荐<strong>晚上10-11点入睡，早晨6-7点起床；</strong></li>
+<li>老年人推荐<strong>晚上10-11点入睡，早晨5-6点起床。</strong></li>
+</ul>
+<p><img src="https://img.huanote.com/uploads/2025/03/21/67dcca21d3035.jpeg"> <strong>02</strong><strong><strong><strong>什么样的睡眠才是好睡眠？</strong></strong></strong> 良好的睡眠质量是健康睡眠的关键。良好睡眠质量通常表现为：</p>
+<ul>
+<li><strong>入睡时****间在30分钟以内</strong>（6岁以下儿童在20分钟以内）；</li>
+<li><strong>夜间醒来的次数不超过3次</strong>，且醒来后能在20分钟内再次入睡；</li>
+<li>醒来后感到精神饱满、心情愉悦、精力充沛、注意力集中。</li>
+</ul>
+<p><img src="https://img.huanote.com/uploads/2025/03/21/67dcca2089be7.jpeg"> 如经常出现入睡困难（入睡时间超过30分钟，6岁以下超过20分钟）、睡眠中觉醒且醒后无法再次入睡、白天频繁打瞌睡犯困、夜间鼾声响亮伴有呼吸间歇、睡眠不规律、睡眠过程中出现梦游、遗尿等异常动作时，<strong>提示可能患有睡眠障碍，应及时到医疗机构寻求专业帮助。<strong><strong>03</strong></strong>长期睡眠不良有哪些危害？** 睡眠不良是指睡眠时长不足或过长、睡眠质量下降或睡眠规律紊乱。 常见表现有**睡眠时间减少或延长、不能按时入睡、入睡困难、早醒、夜间频繁醒来、眠浅梦多、白天嗜睡等。</strong></p>
+<ul>
+<li>长期睡眠不良会导致**反应迟钝，注意力、记忆力等认知功能下降，**学习工作效率降低，甚至增加交通和生产安全风险；</li>
+<li>会导致情绪不稳，烦躁不安，<strong>严重者会诱发焦虑、抑郁等；</strong></li>
+<li>**会降低机体免疫力，**增加感染性疾病、心脑血管疾病、代谢性疾病和癌症等患病风险。</li>
+</ul>
+<p><img src="https://img.huanote.com/uploads/2025/03/21/67dcca212abc1.jpeg"> <strong>04****怎样才能拥有高质量睡眠？</strong> 睡眠是一个复杂的生理过程，需要良好的生活习惯和适宜的睡眠环境来支持。</p>
+<ul>
+<li>养成规律的睡眠时间，**保持适度的体育锻炼，**避免久坐，适度晒太阳。</li>
+<li>卧室环境应安静舒适，根据个人的习惯保持适宜的光线强度，**室内温度在20℃-24℃、空气湿度在40%-60%为宜，**经常开窗通风。</li>
+<li>**床垫宜相对坚实，**不要过度松软塌陷，<strong>枕头高矮适中，被褥清洁干燥。</strong></li>
+<li>运用正念、放松训练、认知调整等心理疏导技巧，睡前洗澡泡脚等，都有助于睡眠。</li>
+<li>避免熬夜、睡前饮酒喝茶，晚餐不宜过饱过晚，<strong>睡前尽量不要刷手机。</strong></li>
+</ul>
+<hr>
+<p>来源：人民日报微信，综合全国爱卫办《睡眠健康核心信息及释义》</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2025-03-21</span><i class="fa fa-tag"></i><a class="tag" href="/categories/笔记本/" title="笔记本">笔记本 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2025/03/21/转一篇人民日报文章：怎样才能睡个好觉？超/,Hexo,转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2025/03/25/%E5%88%86%E4%BA%AB%E4%B8%A4%E7%AF%87%E7%BB%8F%E5%85%B8%E8%A1%A8%E4%B9%A6%E3%80%8A%E5%87%BA%E5%B8%88%E8%A1%A8%E3%80%8B%E3%80%81%E3%80%8A%E9%99%88%E6%83%85/" title="​​分享两篇经典表书《出师表》​​、​《陈情表》">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2025/03/20/%E5%9D%9A%E6%8C%81/" title="坚持">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

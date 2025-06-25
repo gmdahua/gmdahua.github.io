@@ -1,35 +1,52 @@
-extends partial/layout
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>​​分享两篇经典表书《出师表》​​、​《陈情表》 · Hexo</title><meta name="description" content="中国经典表书
+​​《出师表》​
+​作者：诸葛亮（三国时期）
+​背景：诸葛亮北伐前写给蜀汉后主刘禅的奏表，表达对国家的忠诚和治国建议。
+​名句：“鞠躬尽瘁，死而后已。”
+​地位：被誉为“千古第一忠臣表”，文辞恳切，感人至深。
 
-include mixins
 
-block site_title
-    != page.title + " · " + config.title
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    if prev || next
-      .pagination
-        ul.clearfix
-          if prev
-            li.pre.pagbuttons
-              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-          if next
-            li.next.pagbuttons
-              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+出师表
+作者：诸葛亮
+先帝创业未半而中道崩殂，今天下三分，益州疲弊，此"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首頁</a></li><li><a href="/about">關於</a></li><li><a href="/archives">歸檔</a></li><li><a href="/links">連結</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>​​分享两篇经典表书《出师表》​​、​《陈情表》</a></h3></div><div class="post-content"><h5 id="中国经典表书"><a href="#中国经典表书" class="headerlink" title="中国经典表书"></a><strong>中国经典表书</strong></h5><ol>
+<li>​<strong>​《出师表》​</strong><ul>
+<li>​<strong>作者</strong>：诸葛亮（三国时期）</li>
+<li>​<strong>背景</strong>：诸葛亮北伐前写给蜀汉后主刘禅的奏表，表达对国家的忠诚和治国建议。</li>
+<li>​<strong>名句</strong>：“鞠躬尽瘁，死而后已。”</li>
+<li>​<strong>地位</strong>：被誉为“千古第一忠臣表”，文辞恳切，感人至深。</li>
+</ul>
+</li>
+</ol>
+<p>出师表</p>
+<p>作者：诸葛亮</p>
+<p>先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。</p>
+<p>宫中府中，俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之理；不宜偏私，使内外异法也。</p>
+<p>侍中、侍郎郭攸之、费祎、董允等，此皆良实，志虑忠纯，是以先帝简拔以遗陛下。愚以为宫中之事，事无大小，悉以咨之，然后施行，必能裨补阙漏，有所广益。</p>
+<p>将军向宠，性行淑均，晓畅军事，试用于昔日，先帝称之曰能，是以众议举宠为督。愚以为营中之事，悉以咨之，必能使行阵和睦，优劣得所。</p>
+<p>亲贤臣，远小人，此先汉所以兴隆也；亲小人，远贤臣，此后汉所以倾颓也。先帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也。侍中、尚书、长史、参军，此悉贞亮死节之臣，愿陛下亲之信之，则汉室之隆，可计日而待也。</p>
+<p>臣本布衣，躬耕于南阳，苟全性命于乱世，不求闻达于诸侯。先帝不以臣卑鄙，猥自枉屈，三顾臣于草庐之中，咨臣以当世之事。由是感激，遂许先帝以驱驰。后值倾覆，受任于败军之际，奉命于危难之间，尔来二十有一年矣！</p>
+<p>先帝知臣谨慎，故临崩寄臣以大事也。受命以来，夙夜忧叹，恐托付不效，以伤先帝之明；故五月渡泸，深入不毛。今南方已定，兵甲已足，当奖率三军，北定中原；庶竭驽钝，攘除奸凶，兴复汉室，还于旧都。此臣所以报先帝而忠陛下之职分也。至于斟酌损益，进尽忠言，则攸之、祎、允之任也。</p>
+<p>愿陛下托臣以讨贼兴复之效，不效，则治臣之罪，以告先帝之灵。若无兴德之言，则责攸之、祎、允等之慢，以彰其咎。陛下亦宜自谋，以咨诹善道，察纳雅言，深追先帝遗诏，臣不胜受恩感激。</p>
+<p>今当远离，临表涕零，不知所言。</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67e22d3c0b45f.webp"></p>
+<ol>
+<li><ol start="2">
+<li>​<strong>​《陈情表》​</strong><ul>
+<li>​<strong>作者</strong>：李密（西晋）</li>
+<li>​<strong>背景</strong>：李密为辞官奉养祖母，向晋武帝上表陈情，以孝心打动君主。</li>
+<li>​<strong>名句</strong>：“臣无祖母，无以至今日；祖母无臣，无以终余年。”</li>
+<li>​<strong>地位</strong>：与《出师表》并称“忠孝双璧”，情感真挚，逻辑严密。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.gushiwen.cn/shiwenv_f84986dafb2d.aspx"><strong>陈情表</strong></a></p>
+<p>作者：<a target="_blank" rel="noopener" href="https://www.gushiwen.cn/authorv.aspx?name=%E8%A5%BF%E6%99%8B%C2%B7%E6%9D%8E%E5%AF%86">西晋·李密</a><a target="_blank" rel="noopener" href="https://www.gushiwen.cn/shiwens/default.aspx?cstr=%E9%AD%8F%E6%99%8B">〔魏晋〕</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.gushiwen.cn/authorv.aspx?name=%E8%A5%BF%E6%99%8B%C2%B7%E6%9D%8E%E5%AF%86"><img src="https://ziyuan.guwendao.net/authorImg300/xijinlimi.jpg" alt="西晋·李密"></a></p>
+<p>臣密言：臣以险衅，夙遭闵凶。生孩六月，慈父见背；行年四岁，舅夺母志。祖母刘愍臣孤弱，躬亲抚养。臣少多疾病，九岁不行，零丁孤苦，至于成立。既无伯叔，终鲜兄弟，门衰祚薄，晚有儿息。外无期功强近之亲，内无应门五尺之僮，茕茕孑立，形影相吊。而刘夙婴疾病，常在床蓐，臣侍汤药，未曾废离。(愍 一作：悯；孑立 一作：独立)</p>
+<p>逮奉圣朝，沐浴清化。前太守臣逵察臣孝廉；后刺史臣荣举臣秀才。臣以供养无主，辞不赴命。诏书特下，拜臣郎中，寻蒙国恩，除臣洗马。猥以微贱，当侍东宫，非臣陨首所能上报。臣具以表闻，辞不就职。诏书切峻，责臣逋慢；郡县逼迫，催臣上道；州司临门，急于星火。臣欲奉诏奔驰，则刘病日笃，欲苟顺私情，则告诉不许：臣之进退，实为狼狈。</p>
+<p>伏惟圣朝以孝治天下，凡在故老，犹蒙矜育，况臣孤苦，特为尤甚。且臣少仕伪朝，历职郎署，本图宦达，不矜名节。今臣亡国贱俘，至微至陋，过蒙拔擢，宠命优渥，岂敢盘桓，有所希冀。但以刘日薄西山，气息奄奄，人命危浅，朝不虑夕。臣无祖母，无以至今日，祖母无臣，无以终余年。母、孙二人，更相为命，是以区区不能废远。</p>
+<p>臣密今年四十有四，祖母今年九十有六，是臣尽节于陛下之日长，报养刘之日短也。乌鸟私情，愿乞终养。臣之辛苦，非独蜀之人士及二州牧伯所见明知，皇天后土实所共鉴。愿陛下矜愍愚诚，听臣微志，庶刘侥幸，保卒余年。臣生当陨首，死当结草。臣不胜犬马怖惧之情，谨拜表以闻。(矜愍 一作：矜悯)</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2025-03-25</span><i class="fa fa-tag"></i><a class="tag" href="/categories/笔记本/" title="笔记本">笔记本 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2025/03/25/分享两篇经典表书《出师表》、《陈情/,Hexo,​​分享两篇经典表书《出师表》​​、​《陈情表》,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2025/03/28/navigation/" title="导航栏">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2025/03/21/%E8%BD%AC%E4%B8%80%E7%AF%87%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E6%96%87%E7%AB%A0%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89%EF%BC%9F%E8%B6%85/" title="转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

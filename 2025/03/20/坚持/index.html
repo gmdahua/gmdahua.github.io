@@ -1,35 +1,9 @@
-extends partial/layout
-
-include mixins
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    if prev || next
-      .pagination
-        ul.clearfix
-          if prev
-            li.pre.pagbuttons
-              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-          if next
-            li.next.pagbuttons
-              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>坚持 · Hexo</title><meta name="description" content="今天跟一个教书法的老师在线上聊了会天，让我感触很深，老师说的最多的一个词就是坚持，坚持看帖，坚持临帖，这是学好书法的路，没有捷径可走。是啊，想做好一件事，哪里会有捷径呢。
+坚持是通往成功的必经之路，不仅在书法上，在生活的方方面面也是如此。回想自己曾经半途而废的那些爱好和目标，往往都是因为缺乏持之以恒"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首頁</a></li><li><a href="/about">關於</a></li><li><a href="/archives">歸檔</a></li><li><a href="/links">連結</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>坚持</a></h3></div><div class="post-content"><p>今天跟一个教书法的老师在线上聊了会天，让我感触很深，老师说的最多的一个词就是坚持，坚持看帖，坚持临帖，这是学好书法的路，没有捷径可走。是啊，想做好一件事，哪里会有捷径呢。</p>
+<p>坚持是通往成功的必经之路，不仅在书法上，在生活的方方面面也是如此。回想自己曾经半途而废的那些爱好和目标，往往都是因为缺乏持之以恒的毅力。锻炼、学习、阅读……这些都需要日复一日的积累和付出。对于普通人来说，“坚持”这件事总是比想象中还要困难。它意味着，你需要投入大量时间和心力，去面对一个可能永远没有收益或者“性价比极低”的结果，面对无数“值得吗”的拷问。这是条难走的窄路。选择这条路的人，常常被认为“没那么聪明”。这让我想起一部纪录片，《一百年很长吗》，讲述了很多你我一般的普通人的故事。我印象最深的是一个叫“黄忠坚”的人。他 16 岁来佛山打工，当包工头，每天奔忙在工地。他喜欢舞狮和练拳，业余时间全部拿来练习。他只有周末才有空骑车去武馆训练，练了很久还是比别人慢半拍。他就一直加练，每次都练到最后一个走。他在十几平米的出租屋里拿着脸盆练习，模拟舞狮的动作。就这样坚持了好多年。黄忠坚说，“功夫没有绝招，一个招式练一万遍就是绝招。”弹幕和评论区一直有人说他应该更务实一点，“去学能安身立命的本事”。但纪录片中有一句话特别打动我：“人投入感情的东西，是没有办法去计算性价比的。”这是一种带着“拙诚”的生活态度：一头扎进自己热爱的事情里，不必计算性价比，不必反复询问值得与否。</p>
+<p>但我们仍然忍不住抱有好奇：没有“性价比”的事，如何坚持下来？是什么动力支撑着他们，坚定自己所选择的路？直到我看到《圆桌派》里，一段对于“匠人精神”的重新定义：“他们在做一件事的时候不是只想要「做到最好」，他是很专注在这一刹那。”“我一做我就进去了，这是解脱。”对于投入自己的热爱认真做事的人来说，“坚持”的过程并不难熬，反而是专注和乐在其中的。这种专注和乐在其中的状态，正是坚持的真正意义所在。它不是一种痛苦的忍耐，而是一种享受过程、沉浸其中的生活方式。就像书法老师所说的，每天坚持看帖、临帖，看似枯燥，但当你真正热爱它时，这个过程就变成了与古人对话、与自我对话的契机。</p>
+<p>坚持的意义不仅在于最终的结果，更在于这个过程中我们如何与自己相处，如何在日复一日的重复中找到新的意义和乐趣。正如黄忠坚在舞狮和练拳中找到的快乐，他不是在追求一个明确的结果，而是在享受这个过程本身。</p>
+<p>在现代社会，我们常常被各种”成功学”和”效率至上”的思想所裹挟，忘记了生活的本质在于体验和感受。坚持的意义，或许就在于它让我们重新审视自己的内心，找到真正热爱的事物，并为之付出时间和精力。</p>
+<p>这种生活方式也让我们更加从容面对生活中的各种挑战和变化。当我们习惯了在平凡的日子里坚持做一件事时，我们也就具备了应对生活中各种不确定性的能力。因为我们知道，只要坚持下去，总会看到改变和进步。</p>
+<p>所以，当我们坚持做着那些看似没有”性价比”的事情时，不妨换个角度思考：这件事是否能让我感到快乐和满足？是否能让我在过程中获得成长和进步？如果答案是肯定的，那么坚持就有了意义。正如苏轼所言：”古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。”坚持从不是通往成功的工具，其本身就是对生命深度的勘探。那些在重复中照见的晨昏、在专注里触摸到的永恒，早已胜过所有世俗意义上的成败标尺。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2025-03-20</span><i class="fa fa-tag"></i><a class="tag" href="/categories/记事本/" title="记事本">记事本 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2025/03/20/坚持/,Hexo,坚持,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2025/03/21/%E8%BD%AC%E4%B8%80%E7%AF%87%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E6%96%87%E7%AB%A0%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89%EF%BC%9F%E8%B6%85/" title="转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2025/03/20/4%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9C%A8%E7%BA%BFping%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%90%8C%E8%8A%82%E7%82%B9%E7%BD%91%E7%BB%9C%E7%9A%84%E5%BB%B6/" title="4个常见的在线Ping测试工具，检测不同节点网络的延迟速度">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

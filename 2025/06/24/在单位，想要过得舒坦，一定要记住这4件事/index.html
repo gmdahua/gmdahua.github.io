@@ -1,35 +1,14 @@
-extends partial/layout
-
-include mixins
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    if prev || next
-      .pagination
-        ul.clearfix
-          if prev
-            li.pre.pagbuttons
-              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-          if next
-            li.next.pagbuttons
-              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>在单位，想要过得舒坦，一定要记住这4件事 · Hexo</title><meta name="description" content="（转自 清醒李姑娘） 01
+职场上，很多人，过得很憋屈。明明生病或家里有事，不敢请假； 工作成果被截胡，不敢澄清； 任务安排不合理，不敢提出； 他们总认为吃亏是福，忍忍就好了，结果身心俱疲，日子一团糟。 在单位，要想过得舒坦，请牢记以下4件事：
+ 02
+一、别怕请假，该休就休你是不是有这样的想法： "><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首頁</a></li><li><a href="/about">關於</a></li><li><a href="/archives">歸檔</a></li><li><a href="/links">連結</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>在单位，想要过得舒坦，一定要记住这4件事</a></h3></div><div class="post-content"><h5 id="（转自-清醒李姑娘）"><a href="#（转自-清醒李姑娘）" class="headerlink" title="（转自 清醒李姑娘）"></a>（转自 清醒李姑娘）</h5><p> <strong>01</strong></p>
+<p>职场上，很多人，过得很憋屈。明明生病或家里有事，不敢请假； 工作成果被截胡，不敢澄清； 任务安排不合理，不敢提出； 他们总认为吃亏是福，忍忍就好了，结果身心俱疲，日子一团糟。 在单位，要想过得舒坦，请牢记以下4件事：</p>
+<p> <strong>02</strong></p>
+<p>一、别怕请假，该休就休你是不是有这样的想法： ⚠️ 如果请假，领导会认为我不敬业，就不给我升职加薪，同事也会背后吐槽你偷懒； 别傻了，一旦身体垮了，受罪的是你，买单的是你，对领导，对同事却无关紧要，反而很快有人顶替你。 <strong>所以，千万不要硬扛，该休息就休息，休息前把工作安排好即可。</strong> 1、提前规划，休假前做好说明和交接； 2、工作交接到位给同事，并且留下痕迹； 3、休假时尽情享受，不要操心工作。 休息不是过错，是你的权利，是为了更好地工作，也是对自己负责。</p>
+<p> <strong>03</strong></p>
+<p>二、工作任务过重，及时反映⚠️领导说年轻人就要多锻炼，你就什么活都应下，爆肝做完，还要被骂质量不行； ⚠️同事说帮帮忙，你就心软应下，牺牲时间去加班，最后不被念好。 空得一句“你真好，你真厉害”的夸奖，实际工资却没涨，每天还累个半死。 <strong>所以，任务安排过重时，不要默默忍受，也不要直接拒绝，要有策略地反馈。</strong> 1、主动沟通，列出所有任务的重要性和预估时间； 2、提出解决方案，请求支援？调整优先级？还是延期； 3、明确边界，不是自己的活，委婉沟通拒绝。 职场里，只要你不喊累，没人知道你累，更别指望别人会心疼你。</p>
+<p> <strong>04</strong></p>
+<p>三、工作受委屈，别憋着⚠️ 被同事抢走功劳，甩锅，不吱声； ⚠️ 别领导误解，不澄清； ⚠️ 被客户刁难，不反抗； <strong>你的忍气吞声，换不来尊重，换来的是得寸进尺，身体亮红灯，甚至被公司淘汰。</strong> <strong>工作受委屈，别硬抗，有理有据地反击赢回来。</strong> 1、先平复情绪，再去处理事情； 2、选择时机，坦诚沟通，时机不对，先停下； 3、提供证据，只讲事实，不谈感受； 职场不需要忍辱负重，而是要让别人知道你不好惹，要尊重你的付出。</p>
+<p> <strong>05</strong></p>
+<p>四、有矛盾，及时处理，别内耗⚠️ 跟同事意见不合，憋着不说，私下吐槽，，小矛盾成了大问题； ⚠️ 领导方案不合理，不及时提出，敷衍了事，被说不配合； <strong>藏着掖着的矛盾，如同刺，会扎伤自己，也会扎伤团队。</strong> <strong>及时摊开在沟通的阳光下，问题才能自然消解。</strong> 1、私下找合适机会单独沟通，给足面子； 2、语气温和，不带情绪，只谈事实； 3、先肯定再建议，奔着把事做好的原则沟通。 职场要想过得舒坦，不是一味妥协，而是懂得合理表达，让规则为自己所用，而不是被规则吞噬。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2025-06-24</span><i class="fa fa-tag"></i><a class="tag" href="/categories/笔记本/" title="笔记本">笔记本 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2025/06/24/在单位，想要过得舒坦，一定要记住这4件事/,Hexo,在单位，想要过得舒坦，一定要记住这4件事,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2025/06/24/hello-world/" title="Hello World">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2025/06/24/%E4%B8%8D%E8%A6%81%E8%AF%B7%E4%B8%80%E5%A4%A7%E7%BE%A4%E4%BA%BA%E5%90%83%E9%A5%AD/" title="不要请一大群人吃饭">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

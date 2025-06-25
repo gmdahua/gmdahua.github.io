@@ -1,35 +1,12 @@
-extends partial/layout
-
-include mixins
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    if prev || next
-      .pagination
-        ul.clearfix
-          if prev
-            li.pre.pagbuttons
-              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-          if next
-            li.next.pagbuttons
-              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>一键脚本安装V2Ray服务端 · Hexo</title><meta name="description" content="在Debian 12系统上通过一键脚本安装V2Ray服务端的步骤如下：
+### 1. 更新系统并安装依赖```bashsudo apt update &amp;amp;&amp;amp; sudo apt upgrade -ysudo apt install curl unzip -y```
+### 2. 执行官方"><meta name="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首頁</a></li><li><a href="/about">關於</a></li><li><a href="/archives">歸檔</a></li><li><a href="/links">連結</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>一键脚本安装V2Ray服务端</a></h3></div><div class="post-content"><p>在Debian 12系统上通过一键脚本安装V2Ray服务端的步骤如下：</p>
+<p>### 1. 更新系统并安装依赖<br>```bash<br>sudo apt update &amp;&amp; sudo apt upgrade -y<br>sudo apt install curl unzip -y<br>```</p>
+<p>### 2. 执行官方一键安装脚本<br>```bash<br>sudo bash &lt;(curl -L <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh">https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)</a>)<br>```<br>该脚本会自动完成以下操作：<br>- 下载最新版V2Ray核心文件<br>- 安装到`&#x2F;usr&#x2F;local&#x2F;bin&#x2F;v2ray`<br>- 生成默认配置文件（路径为`&#x2F;usr&#x2F;local&#x2F;etc&#x2F;v2ray&#x2F;config.json`）</p>
+<p>### 3. 生成UUID（用户ID）<br>```bash<br>cat &#x2F;proc&#x2F;sys&#x2F;kernel&#x2F;random&#x2F;uuid<br>```<br>记录输出的UUID（如`08ef6234-dcc0-45d1-9954-f9490cb2beb2`）</p>
+<p>### 4. 修改配置文件<br>编辑配置文件：<br>```bash<br>sudo nano &#x2F;usr&#x2F;local&#x2F;etc&#x2F;v2ray&#x2F;config.json<br>```<br>替换为以下基础配置（需修改`${UUID}`为刚生成的ID）：<br>```json<br>{<br>   “inbounds”: [{<br>     “port”: 10086,<br>     “protocol”: “vmess”,<br>     “settings”: {<br>       “clients”: [{<br>         “id”: “${UUID}”,<br>         “alterId”: 64<br>       }]<br>     }<br>   }],<br>   “outbounds”: [{<br>     “protocol”: “freedom”,<br>     “settings”: {}<br>   }]<br>}<br>```</p>
+<p>### 5. 启动服务并设置开机自启<br>```bash<br>sudo systemctl start v2ray<br>sudo systemctl enable v2ray<br>```</p>
+<p>### 6. 开放防火墙端口<br>```bash<br>sudo ufw allow 10086&#x2F;tcp  # 替换为实际配置的端口<br>sudo ufw reload<br>```</p>
+<p>### 验证安装<br>检查服务状态：<br>```bash<br>sudo systemctl status v2ray<br>```<br>查看版本信息：<br>```bash<br>&#x2F;usr&#x2F;local&#x2F;bin&#x2F;v2ray version<br>```</p>
+<p>### 注意事项<br>1. 若需WebSocket+TLS等高级配置，需额外准备域名和Nginx<br>2. 默认安装目录：<br>    - 可执行文件：`&#x2F;usr&#x2F;local&#x2F;bin&#x2F;v2ray`<br>    - 配置文件：`&#x2F;usr&#x2F;local&#x2F;etc&#x2F;v2ray&#x2F;`<br>    - 数据文件：`&#x2F;usr&#x2F;local&#x2F;share&#x2F;v2ray&#x2F;`<br>3. 卸载命令：<br>```bash<br>sudo bash &lt;(curl -L <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh">https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)</a>) –remove<br>```</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2025-06-16</span><i class="fa fa-tag"></i><a class="tag" href="/categories/记事本/" title="记事本">记事本 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2025/06/16/一键脚本安装v2ray服务端/,Hexo,一键脚本安装V2Ray服务端,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2025/06/17/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E5%85%8D%E8%B4%B9%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/" title="推荐几个免费音乐下载网站">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2025/06/16/temporary-post-used-for-theme-detection-d0d762c8-5ffd-49c6-ab63-c7558f70e984-3bfe001a-32de-4114-a6b4-4005b770f6d7-trashed/" title="Temporary Post Used For Theme Detection (d0d762c8-5ffd-49c6-ab63-c7558f70e984 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
