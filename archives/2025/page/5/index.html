@@ -1,160 +1,35 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#Untitled Post - 10">Untitled Post - 10</a></li><li><a href="#Untitled Post - 11">Untitled Post - 11</a></li><li><a href="#Untitled Post - 8">Untitled Post - 8</a></li><li><a href="#关于">关于</a></li><li><a href="#Untitled Post - 4">Untitled Post - 4</a></li><li><a href="#Untitled Post - 6">Untitled Post - 6</a></li><li><a href="#Untitled Post - 5">Untitled Post - 5</a></li><li><a href="#文章">文章</a></li><li><a href="#春天的花">春天的花</a></li><li><a href="#v1zh.com">v1zh.com</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1110/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.06418571131054107" alt="Untitled Post - 10" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 10</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1111/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6608116289823229" alt="Untitled Post - 11" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 11</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1107/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.3370060841604192" alt="Untitled Post - 8" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 8</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/%E5%85%B6%E4%BB%96/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.011669873056695979" alt="关于" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>关于</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1102/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.4034872296908112" alt="Untitled Post - 4" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 4</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1104/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.45821131066508847" alt="Untitled Post - 6" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 6</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1103/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.49377601427788065" alt="Untitled Post - 5" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 5</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/%E5%88%86%E7%B1%BB/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8812369009209862" alt="文章" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>文章</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/05/%E6%98%A5%E5%A4%A9%E7%9A%84%E8%8A%B1-trashed/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.008629633938468384" alt="春天的花" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/05</time>
-              <span>春天的花</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/30/v1zh-com/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.11048030848393431" alt="v1zh.com" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/30</time>
-              <span>v1zh.com</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/archives/2025/page/4/'">上一页</button>
-      
-      
-        <button onclick="location.href='/archives/2025/page/6/'">下一页</button>
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="Untitled Post - 10"><div class="post-title"><h1><a>Untitled Post - 10</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 11"><div class="post-title"><h1><a>Untitled Post - 11</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 8"><div class="post-title"><h1><a>Untitled Post - 8</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="关于"><div class="post-title"><h1><a>关于</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 4"><div class="post-title"><h1><a>Untitled Post - 4</a></h1></div><div class="post-content"><p>记录一些备忘，学习的笔记。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 6"><div class="post-title"><h1><a>Untitled Post - 6</a></h1></div><div class="post-content"><p>记录我的生活</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 5"><div class="post-title"><h1><a>Untitled Post - 5</a></h1></div><div class="post-content"><p>我拍的一些算不上作品的照片。自娱自乐</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="文章"><div class="post-title"><h1><a>文章</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="春天的花"><div class="post-title"><h1><a>春天的花</a></h1></div><div class="post-content"><p>随手拍下春天绽放的花朵</p>
+<p><a target="_blank" rel="noopener" href="https://img.huanote.com/image/2025/04/20/6804ea7c51b6a.jpg"><img src="https://img.huanote.com/image/2025/04/20/6804ea7dec365.jpg" alt="微信图片_20250420202851" title="微信图片_20250420202851"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img.huanote.com/image/2025/04/20/6804ea7c51b6a.jpg"></a><a target="_blank" rel="noopener" href="https://img.huanote.com/image/2025/04/20/6804ea805fc00.jpg"><img src="https://img.huanote.com/image/2025/04/20/6804ea8292945.jpg" alt="微信图片_20250420202855" title="微信图片_20250420202855"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img.huanote.com/image/2025/04/20/6804ea839f661.jpg"><img src="https://img.huanote.com/image/2025/04/20/6804ea85610fb.jpg" alt="微信图片_20250420202832" title="微信图片_20250420202832"></a></p>
+<p><a target="_blank" rel="noopener" href="https://img.huanote.com/image/2025/04/20/6804ea86cc57a.jpg"><img src="https://img.huanote.com/image/2025/04/20/6804ea8838777.jpg" alt="微信图片_20250420202900" title="微信图片_20250420202900"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="v1zh.com"><div class="post-title"><h1><a>v1zh.com</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/archives/2025/page/4/">Previous</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/archives/2025/page/6/">Next</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

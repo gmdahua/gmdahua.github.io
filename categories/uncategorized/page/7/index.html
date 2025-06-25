@@ -1,148 +1,33 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#Header with large title">Header with large title</a></li><li><a href="#博客首页">博客首页</a></li><li><a href="#Custom Styles">Custom Styles</a></li><li><a href="#menu">menu</a></li><li><a href="#Autumn-Pro">Autumn-Pro</a></li><li><a href="#导航栏">导航栏</a></li><li><a href="#学雷锋纪念日是3月5日,今年是第62个学雷锋纪念日">学雷锋纪念日是3月5日,今年是第62个学雷锋纪念日</a></li><li><a href="#导航栏">导航栏</a></li><li><a href="#说说">说说</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/03/12/header-large-title/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.429429177320793" alt="Header with large title" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/12</time>
-              <span>Header with large title</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/12/home/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.29602579874485335" alt="博客首页" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/12</time>
-              <span>博客首页</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/12/wp-global-styles-huanote/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.32772129297304686" alt="Custom Styles" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/12</time>
-              <span>Custom Styles</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/12/menu/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.7396224315638973" alt="menu" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/12</time>
-              <span>menu</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/12/autumn-pro/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.09415399593195573" alt="Autumn-Pro" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/12</time>
-              <span>Autumn-Pro</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/07/navigation-2/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.9926773735457224" alt="导航栏" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/07</time>
-              <span>导航栏</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/05/%E5%AD%A6%E9%9B%B7%E9%94%8B%E7%BA%AA%E5%BF%B5%E6%97%A5%E6%98%AF3%E6%9C%885%E6%97%A5%E4%BB%8A%E5%B9%B4%E6%98%AF%E7%AC%AC62%E4%B8%AA%E5%AD%A6%E9%9B%B7%E9%94%8B%E7%BA%AA%E5%BF%B5%E6%97%A5/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.5831790507966772" alt="学雷锋纪念日是3月5日,今年是第62个学雷锋纪念日" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/05</time>
-              <span>学雷锋纪念日是3月5日,今年是第62个学雷锋纪念日</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/03/navigation-2-2/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.055976676404349" alt="导航栏" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/03</time>
-              <span>导航栏</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/01/09/%E8%AF%B4%E8%AF%B4/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.36299023402514874" alt="说说" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/01/09</time>
-              <span>说说</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/categories/uncategorized/page/6/'">上一页</button>
-      
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="Header with large title"><div class="post-title"><h1><a>Header with large title</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="博客首页"><div class="post-title"><h1><a>博客首页</a></h1></div><div class="post-content"><h1 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h1><p>抱歉，未找到任何内容。请尝试使用不同的关键字进行搜索。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Custom Styles"><div class="post-title"><h1><a>Custom Styles</a></h1></div><div class="post-content"><p>{“version”: 3, “isGlobalStylesUserThemeJSON”: true }</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="menu"><div class="post-title"><h1><a>menu</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Autumn-Pro"><div class="post-title"><h1><a>Autumn-Pro</a></h1></div><div class="post-content"><p>&#x2F;* 完整优化示例 *&#x2F; .horizontal-menu ul { display: flex; justify-content: space-between; padding: 0; margin: 0 auto; max-width: 1200px; &#x2F;* 限制最大宽度 *&#x2F; } .horizontal-menu li { flex: 0 1 auto; position: relative; border-right: 1px solid #ddd; &#x2F;* 分隔线 *&#x2F; } .horizontal-menu li:last-child { border-right: none; }</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="导航栏"><div class="post-title"><h1><a>导航栏</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="学雷锋纪念日是3月5日,今年是第62个学雷锋纪念日"><div class="post-title"><h1><a>学雷锋纪念日是3月5日,今年是第62个学雷锋纪念日</a></h1></div><div class="post-content"><p>学习雷锋好榜样<br>忠于革命忠于党<br>爱憎分明不忘本<br>立场坚定斗志强<br>立场坚定斗志强<br>学习雷锋好榜样<br>放到哪里哪里亮<br>愿做革命的螺丝钉<br>集体主义思想放光芒<br>集体主义思想放光芒<br>学习雷锋好榜样<br>艰苦朴素永不忘<br>克己为人是模范<br>共产主义品德多高尚<br>共产主义品德多高尚<br>学习雷锋好榜样<br>毛主席的教导记心上<br>紧紧握住手中枪<br>努力学习天天向上<br>努力学习天天向上</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/10/67cef33e83eff.jpeg"></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="导航栏"><div class="post-title"><h1><a>导航栏</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="说说"><div class="post-title"><h1><a>说说</a></h1></div><div class="post-content"><p>测试一下</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/categories/uncategorized/page/6/">Previous</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

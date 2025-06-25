@@ -1,160 +1,27 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#Untitled Post - 19">Untitled Post - 19</a></li><li><a href="#Untitled Post - 20">Untitled Post - 20</a></li><li><a href="#小黑板">小黑板</a></li><li><a href="#Untitled Post - 17">Untitled Post - 17</a></li><li><a href="#关于">关于</a></li><li><a href="#图展">图展</a></li><li><a href="#Untitled Post - 16">Untitled Post - 16</a></li><li><a href="#导航">导航</a></li><li><a href="#小黑板">小黑板</a></li><li><a href="#Untitled Post - 14">Untitled Post - 14</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/06/04/1296/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.232068660301598" alt="Untitled Post - 19" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>Untitled Post - 19</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/1297/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.4285459107158043" alt="Untitled Post - 20" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>Untitled Post - 20</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%B0%8F%E9%BB%91%E6%9D%BF-2/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.537785038092988" alt="小黑板" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>小黑板</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/1293/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6418273748565066" alt="Untitled Post - 17" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>Untitled Post - 17</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%85%B3%E4%BA%8E/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.2345076882814947" alt="关于" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>关于</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%9B%BE%E5%B1%95/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8623427471689808" alt="图展" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>图展</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/1286/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.513937877192477" alt="Untitled Post - 16" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>Untitled Post - 16</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%AF%BC%E8%88%AA/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.5819777006677378" alt="导航" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>导航</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%B0%8F%E9%BB%91%E6%9D%BF/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8269343100781674" alt="小黑板" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>小黑板</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/1284/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.9354415723149774" alt="Untitled Post - 14" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>Untitled Post - 14</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/categories/uncategorized/'">上一页</button>
-      
-      
-        <button onclick="location.href='/categories/uncategorized/page/3/'">下一页</button>
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="Untitled Post - 19"><div class="post-title"><h1><a>Untitled Post - 19</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 20"><div class="post-title"><h1><a>Untitled Post - 20</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="小黑板"><div class="post-title"><h1><a>小黑板</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 17"><div class="post-title"><h1><a>Untitled Post - 17</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="关于"><div class="post-title"><h1><a>关于</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="图展"><div class="post-title"><h1><a>图展</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 16"><div class="post-title"><h1><a>Untitled Post - 16</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="导航"><div class="post-title"><h1><a>导航</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="小黑板"><div class="post-title"><h1><a>小黑板</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 14"><div class="post-title"><h1><a>Untitled Post - 14</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/categories/uncategorized/">Previous</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/categories/uncategorized/page/3/">Next</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

@@ -1,160 +1,83 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#回首页">回首页</a></li><li><a href="#祝愿父亲节日快乐!">祝愿父亲节日快乐!</a></li><li><a href="#随手拍下春天绽放的花朵">随手拍下春天绽放的花朵</a></li><li><a href="#Temporary Post Used For Theme Detection (dff799ae-6759-409e-ba41-9e1f57c85377 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)">Temporary Post Used For Theme Detection (dff799ae-6759-409e-ba41-9e1f57c85377 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)</a></li><li><a href="#今年网上很火，可你却不懂的梗">今年网上很火，可你却不懂的梗</a></li><li><a href="#高考日，祝各位高考学子金榜题名">高考日，祝各位高考学子金榜题名</a></li><li><a href="#Untitled Post - 21">Untitled Post - 21</a></li><li><a href="#关于">关于</a></li><li><a href="#图展">图展</a></li><li><a href="#导航">导航</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/06/16/%E5%9B%9E%E9%A6%96%E9%A1%B5/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6361631981642206" alt="回首页" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/16</time>
-              <span>回首页</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/15/%E7%A5%9D%E6%84%BF%E7%88%B6%E4%BA%B2%E8%8A%82%E6%97%A5%E5%BF%AB%E4%B9%90/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8548458806777999" alt="祝愿父亲节日快乐!" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/15</time>
-              <span>祝愿父亲节日快乐!</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/12/%E9%9A%8F%E6%89%8B%E6%8B%8D%E4%B8%8B%E6%98%A5%E5%A4%A9%E7%BB%BD%E6%94%BE%E7%9A%84%E8%8A%B1%E6%9C%B5/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.47129094631600776" alt="随手拍下春天绽放的花朵" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/12</time>
-              <span>随手拍下春天绽放的花朵</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/12/temporary-post-used-for-theme-detection-dff799ae-6759-409e-ba41-9e1f57c85377-3bfe001a-32de-4114-a6b4-4005b770f6d7-trashed/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.37732789056000615" alt="Temporary Post Used For Theme Detection (dff799ae-6759-409e-ba41-9e1f57c85377 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/12</time>
-              <span>Temporary Post Used For Theme Detection (dff799ae-6759-409e-ba41-9e1f57c85377 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/10/%E4%BB%8A%E5%B9%B4%E7%BD%91%E4%B8%8A%E5%BE%88%E7%81%AB%EF%BC%8C%E5%8F%AF%E4%BD%A0%E5%8D%B4%E4%B8%8D%E6%87%82%E7%9A%84%E6%A2%97/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6779633414426265" alt="今年网上很火，可你却不懂的梗" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/10</time>
-              <span>今年网上很火，可你却不懂的梗</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/07/%E9%AB%98%E8%80%83%E6%97%A5%EF%BC%8C%E7%A5%9D%E5%90%84%E4%BD%8D%E9%AB%98%E8%80%83%E5%AD%A6%E5%AD%90%E9%87%91%E6%A6%9C%E9%A2%98%E5%90%8D/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8878656841639132" alt="高考日，祝各位高考学子金榜题名" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/07</time>
-              <span>高考日，祝各位高考学子金榜题名</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/1306/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.005027092784934961" alt="Untitled Post - 21" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>Untitled Post - 21</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%85%B3%E4%BA%8E-2/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.3988692183600391" alt="关于" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>关于</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%9B%BE%E5%B1%95-2/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.3643427165527293" alt="图展" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>图展</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/06/04/%E5%AF%BC%E8%88%AA-3/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.9037626814192341" alt="导航" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/06/04</time>
-              <span>导航</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/archives/2025/06/'">上一页</button>
-      
-      
-        <button onclick="location.href='/archives/2025/06/page/3/'">下一页</button>
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="回首页"><div class="post-title"><h1><a>回首页</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="祝愿父亲节日快乐!"><div class="post-title"><h1><a>祝愿父亲节日快乐!</a></h1></div><div class="post-content"><p>又到父亲节，思绪满天，忆起儿时事，甜蜜无限，父爱撑起一片天;又到爸爸节，浮想联翩，如今身为父，才懂父爱如山。衷心祝愿爸爸节日快乐!</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="随手拍下春天绽放的花朵"><div class="post-title"><h1><a>随手拍下春天绽放的花朵</a></h1></div><div class="post-content"><p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090838.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090838.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090854.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090854.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090940.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090940.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090941.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090941.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090942.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429090942.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429091554.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429091554.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429091602.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250429091602.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909401.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909401.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909402.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909402.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909411.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909411.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909412.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202504290909412.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Temporary Post Used For Theme Detection (dff799ae-6759-409e-ba41-9e1f57c85377 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)"><div class="post-title"><h1><a>Temporary Post Used For Theme Detection (dff799ae-6759-409e-ba41-9e1f57c85377 - 3bfe001a-32de-4114-a6b4-4005b770f6d7)</a></h1></div><div class="post-content"><p>This is a temporary post that was not deleted. Please delete this manually. (72598a80-e1d9-4e1c-87e9-d1cdaa20e3cb - 3bfe001a-32de-4114-a6b4-4005b770f6d7)</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="今年网上很火，可你却不懂的梗"><div class="post-title"><h1><a>今年网上很火，可你却不懂的梗</a></h1></div><div class="post-content"><p>“帮我取快递”——“组织派你去拿货”</p>
+<p>“我先撤了”——“喂鸡去了，勾勾哒”</p>
+<p>“不聊了”——“先这样吧，手机没油了”</p>
+<p>“好喜欢”——“入土我都要带着”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_001-768x1024.jpg"></p>
+<p><strong>02</strong></p>
+<p>“我配得我应得”——“老娘配享太庙”</p>
+<p>“我妈不让”——“家族规矩不允许”</p>
+<p>“多谢帮忙”——“也算没白疼你一场”</p>
+<p>“别发神经”——“这已经不是一把糯米能解决的事儿了”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_002-768x1024.jpg"></p>
+<p><strong>03</strong></p>
+<p>“没钱了”——“消费降级”</p>
+<p>“我来帮你”——“你的强来了”</p>
+<p>“想出去玩”——“我应在江湖悠悠”</p>
+<p>“你们别吵了”——“太子之争，一向如此”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_004-768x1024.jpg"></p>
+<p><strong>04</strong></p>
+<p>“2025年”——“明德元年”</p>
+<p>“我错了”——“向恶势力低头”</p>
+<p>“我想躺平”——“请让我莫名其妙享清福”</p>
+<p>“不理我”——“你们那边回个消息判几年”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_003-768x1024.jpg"></p>
+<p><strong>05</strong></p>
+<p>“边做边学”——“干中学”</p>
+<p>“我好累”——“活人微死”</p>
+<p>“你真狗”——“你可真是我的犬系好友”</p>
+<p>“给我整哪了”——“干哪来了，布吉岛呀”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_005-768x1024.jpg"></p>
+<p><strong>06</strong></p>
+<p>“有点蠢”——“不像读过书的”</p>
+<p>“欠揍”——“欠调教”</p>
+<p>“拉屎”——“释放一下内存”</p>
+<p>“不高兴”——“朕龙颜大不悦”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_007-768x1024.jpg"></p>
+<p><strong>07</strong></p>
+<p>“下饭剧集”——“电子榨菜”</p>
+<p>“不礼貌”——“你多冒昧啊”</p>
+<p>“我错了”——“已老实，求放过”</p>
+<p>“时髦”——“city不city”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_006-768x1024.jpg"></p>
+<p><strong>08</strong></p>
+<p>“真勇”——“贴脸开大”</p>
+<p>“非常棒”——“绝绝子”</p>
+<p>“傍大款”——“向上社交”</p>
+<p>“被吸引了”——“被硬控了”</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/06/DM_20250610113009_008-768x1024.jpg"></p>
+<p><strong>09</strong></p>
+<p>“录取”——“上岸”</p>
+<p>“胡闹”——“倒反天罡”</p>
+<p>“坑蒙拐骗”——“割韭菜”</p>
+<p>“换个工作”——“换个赛道”</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="高考日，祝各位高考学子金榜题名"><div class="post-title"><h1><a>高考日，祝各位高考学子金榜题名</a></h1></div><div class="post-content"><p>祝各位高考学子金榜题名</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 21"><div class="post-title"><h1><a>Untitled Post - 21</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="关于"><div class="post-title"><h1><a>关于</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="图展"><div class="post-title"><h1><a>图展</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="导航"><div class="post-title"><h1><a>导航</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/archives/2025/06/">Previous</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/archives/2025/06/page/3/">Next</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

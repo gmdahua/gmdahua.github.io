@@ -1,98 +1,35 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#白天的河源江边">白天的河源江边</a></li><li><a href="#河源的夜景">河源的夜景</a></li><li><a href="#光的容器">光的容器</a></li><li><a href="#褶皱时光">褶皱时光</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2024/03/14/%E7%99%BD%E5%A4%A9%E7%9A%84%E6%B2%B3%E6%BA%90%E6%B1%9F%E8%BE%B9/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.1628920960877902" alt="白天的河源江边" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/03/14</time>
-              <span>白天的河源江边</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/03/14/%E6%B2%B3%E6%BA%90%E7%9A%84%E5%A4%9C%E6%99%AF/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.7249171896475131" alt="河源的夜景" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/03/14</time>
-              <span>河源的夜景</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2023/12/06/%E5%85%89%E7%9A%84%E5%AE%B9%E5%99%A8/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.3822817737129218" alt="光的容器" class="thumbnail" />
-            <div class="article-info">
-              <time>2023/12/06</time>
-              <span>光的容器</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2023/11/30/%E8%A4%B6%E7%9A%B1%E6%97%B6%E5%85%89/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.9611472106858638" alt="褶皱时光" class="thumbnail" />
-            <div class="article-info">
-              <time>2023/11/30</time>
-              <span>褶皱时光</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/'">上一页</button>
-      
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="白天的河源江边"><div class="post-title"><h1><a>白天的河源江边</a></h1></div><div class="post-content"><p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88e97402.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88e97402.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88db7348.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88db7348.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88cd08bb.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88cd08bb.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88bdd1d6.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88bdd1d6.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88acb2cb.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88acb2cb.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88964589.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88964589.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="河源的夜景"><div class="post-title"><h1><a>河源的夜景</a></h1></div><div class="post-content"><p>当暮色浸染槎城，东江与新丰江如两条流光缎带，将河源切割成三面环水的玲珑半岛。新丰江水清冽如寒玉，东江水流厚重如琥珀，两江交汇处的水纹在夜色中泛起粼粼碎金。沿河步道上的暖黄地灯与跨江大桥的霓虹倒影交织，仿佛给水面镶上一条闪烁的银河腰带</p>
+<p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d9d07b5.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d9d07b5-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d8dba81.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d8dba81-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d77e214.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d77e214-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d68ae4a.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d68ae4a-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d59c222.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d59c222-300x225.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="光的容器"><div class="post-title"><h1><a>光的容器</a></h1></div><div class="post-content"><p>【光的容器】 暮色是液态的哲学，在透明介质里结晶出时空的褶皱。那些悬浮的光斑不是倒影，而是建筑与云絮在量子层面的纠缠态。工业棱角在折射中坍缩为柔软函数，树影以分形算法解构着理性的边界。所有坚硬存在终将溶解于光的波粒二象性——当黄昏穿过空间的晶格，金属学会呼吸，混凝土泛起潮汐，整个城市成为盛放虚无的透明器皿，每个像素都在演绎物质与虚空互为倒模的永恒辩题。 <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d869b3d53d9.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d869b3d53d9-205x300.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965bc0a9.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965bc0a9-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965c1e45.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965c1e45-204x300.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="褶皱时光"><div class="post-title"><h1><a>褶皱时光</a></h1></div><div class="post-content"><p>《褶皱时光》 <br>高架桥的轰鸣在虚焦里流淌， <br>红衣是血液的坐标， <br>长凳托起都市的顿号。   </p>
+<p>树影筛落电子独白， <br>蜷缩的剪影与光斑对弈， <br>绿荫在像素中洇成水墨。   <br>磨砂质地滤过馒头香的白噪音， <br>垂落的狗绳丈量初冬的凉意。   </p>
+<p>当世界以1&#x2F;100秒疾驰， <br>总有人在时光褶皱里—— <br>打捞未被收割的寂静， <br>或与条纹小狗平分 <br>一粒阳光的重量。 </p>
+<p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d866ca3449c.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d866ca3449c-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bb4c3f.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bb4c3f-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bba402.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bba402-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bc65a0.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bc65a0-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bece28.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bece28-300x265.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/categories/%E5%B0%8F%E7%9B%B8%E5%86%8C/">Previous</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

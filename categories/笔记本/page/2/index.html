@@ -1,148 +1,897 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#推荐几个非常好的网站">推荐几个非常好的网站</a></li><li><a href="#170+ Docker 容器应用汇总">170+ Docker 容器应用汇总</a></li><li><a href="#兰空图床LskyV2通过API获取Token的方法">兰空图床LskyV2通过API获取Token的方法</a></li><li><a href="#忘掉以前的提示词，让DeepSeek-R1输出干货！">忘掉以前的提示词，让DeepSeek-R1输出干货！</a></li><li><a href="#分享十首长篇古诗">分享十首长篇古诗</a></li><li><a href="#电子书下载网站集">电子书下载网站集</a></li><li><a href="#快过年了， 微信红包支持自制封面了！">快过年了， 微信红包支持自制封面了！</a></li><li><a href="#几张扫街黑白照">几张扫街黑白照</a></li><li><a href="#Win11 22H2版跳过联网安装方法:">Win11 22H2版跳过联网安装方法:</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/03/20/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%9A%84%E7%BD%91%E7%AB%99/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6813444884446238" alt="推荐几个非常好的网站" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/20</time>
-              <span>推荐几个非常好的网站</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/17/170-docker-%E5%AE%B9%E5%99%A8%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.7923696331259025" alt="170+ Docker 容器应用汇总" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/17</time>
-              <span>170+ Docker 容器应用汇总</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/08/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8Alskyv2%E9%80%9A%E8%BF%87api%E8%8E%B7%E5%8F%96token%E7%9A%84%E6%96%B9%E6%B3%95/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.06642704722848225" alt="兰空图床LskyV2通过API获取Token的方法" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/08</time>
-              <span>兰空图床LskyV2通过API获取Token的方法</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/05/%E5%BF%98%E6%8E%89%E4%BB%A5%E5%89%8D%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8D%EF%BC%8C%E8%AE%A9deepseek-r1%E8%BE%93%E5%87%BA%E5%B9%B2%E8%B4%A7%EF%BC%81/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.9662623612775088" alt="忘掉以前的提示词，让DeepSeek-R1输出干货！" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/05</time>
-              <span>忘掉以前的提示词，让DeepSeek-R1输出干货！</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/02/21/%E5%88%86%E4%BA%AB%E5%8D%81%E9%A6%96%E9%95%BF%E7%AF%87%E5%8F%A4%E8%AF%97/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6562395401461396" alt="分享十首长篇古诗" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/02/21</time>
-              <span>分享十首长篇古诗</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/01/08/%E7%94%B5%E5%AD%90%E4%B9%A6%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99%E9%9B%86/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.2717771628825896" alt="电子书下载网站集" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/01/08</time>
-              <span>电子书下载网站集</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/12/31/%E5%BF%AB%E8%BF%87%E5%B9%B4%E4%BA%86%EF%BC%8C-%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E6%94%AF%E6%8C%81%E8%87%AA%E5%88%B6%E5%B0%81%E9%9D%A2%E4%BA%86%EF%BC%81/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.2339918434353352" alt="快过年了， 微信红包支持自制封面了！" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/12/31</time>
-              <span>快过年了， 微信红包支持自制封面了！</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/12/08/%E5%87%A0%E5%BC%A0%E6%89%AB%E8%A1%97%E9%BB%91%E7%99%BD%E7%85%A7/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8992019408760086" alt="几张扫街黑白照" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/12/08</time>
-              <span>几张扫街黑白照</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/10/04/win11-22h2%E7%89%88%E8%B7%B3%E8%BF%87%E8%81%94%E7%BD%91%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.7390521023882042" alt="Win11 22H2版跳过联网安装方法:" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/10/04</time>
-              <span>Win11 22H2版跳过联网安装方法:</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/'">上一页</button>
-      
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="推荐几个非常好的网站"><div class="post-title"><h1><a>推荐几个非常好的网站</a></h1></div><div class="post-content"><h2 id="IFIXIT"><a href="#IFIXIT" class="headerlink" title="IFIXIT"></a>IFIXIT</h2><p>这绝对是男人最爱的网站之一</p>
+<p>IFIXIT，<strong>号称世界上最大的维修社区，在这里面万物皆可修</strong>。</p>
+<p>在这里面你可以看见大量的维基式在线维修指南。<strong>小到消费电子设备和各种小工具、服装，大到汽车卡车都有详细的维修教程</strong>。</p>
+<p>里面的每一个大类中又按照品牌分为了不同小分类，里面的图文说明看的我都感觉自己能iPhone X爆改16 PRO MAX了</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06de5983b.gif"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://zh.ifixit.com/">https://zh.ifixit.com</a></p>
+<hr>
+<hr>
+<h2 id="几何指南"><a href="#几何指南" class="headerlink" title="几何指南"></a>几何指南</h2><p>同样是一个动手能力强的朋友们不能错过的网站，一个超酷的木工网站。</p>
+<p>网站里面包含了<strong>各种木工图纸、材料信息和木工相关知识</strong>。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06dfd5b00.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e26d990.gif"></p>
+<p>里面的<strong>每一种图纸都配备了免费的在线3D模型</strong>，各种模型细节都能清楚地展示出来。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e478a51.gif"></p>
+<p>此外网站里还对木工“吃饭的家伙们”按照分类、结构和使用技巧等多个方面做了介绍。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e57d147.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://jihezn.com/">https://jihezn.com</a></p>
+<hr>
+<h2 id="MakerWorld"><a href="#MakerWorld" class="headerlink" title="MakerWorld"></a>MakerWorld</h2><p>家里有3D打印机的话，这个网站是绝对不能错过的。</p>
+<p>相信很多人刚开始买3D打印机都是兴致冲冲的准备给自己打印很多实用的小玩意的。</p>
+<p>但是真正到手后才发现这3D建模它是真难啊！然后就吃灰了…</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e6061e2.jpg"></p>
+<p>而这个网站就是一个大型的免费3D模型分享网站，里面就有很多别人制作好了的小物件。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e6cf8f6.png"></p>
+<p>这样咱们就可以直接将模型下载下来直接打印了。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e7aa417.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://makerworld.com.cn/zh">https://makerworld.com.cn/zh</a></p>
+<hr>
+<hr>
+<h2 id="时光图书馆"><a href="#时光图书馆" class="headerlink" title="时光图书馆"></a>时光图书馆</h2><p>一个收录了各类经典文献、历史资料和文化资源的在线平台。</p>
+<p>莫理看了一下大致内容有照片、课表、杂志、连环画、古籍、书画、乐谱、摄影、游记、文学、县志和老报纸等。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e87c4dd.png"></p>
+<p>里面的内容非常丰富，莫理翻了半天都没有滑到底，甚至还找到了112年前的上海公报</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e932b57.png"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://atimebook.com/">https://atimebook.com</a></p>
+<hr>
+<hr>
+<h2 id="网络威胁实时地图"><a href="#网络威胁实时地图" class="headerlink" title="网络威胁实时地图"></a>网络威胁实时地图</h2><p>这是一个实时追踪并展示全球各国所遭受网络攻击情况的网站。</p>
+<p>通过它咱们就能看到<strong>每个国家遭到网络攻击的数量，里面的每一种颜色都代表着不同的攻击类别</strong>。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ec27a4c.gif"></p>
+<p>在统计中还能查看到网络的感染次数。不过莫理看不大懂，只感觉显示的很炫酷</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ed001e3.png"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://cybermap.kaspersky.com/cn">https://cybermap.kaspersky.com/cn</a></p>
+<hr>
+<hr>
+<h2 id="cobalt"><a href="#cobalt" class="headerlink" title="cobalt"></a>cobalt</h2><p>免费且开源的媒体下载工具，这种工具莫理其实已经推荐过很多了但大多都是软件或插件形式的。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ed813af.png"></p>
+<p>并且大部分这种工具都仅适用于国内的流媒体平台，一旦在油管、facebook、推特就不行了…</p>
+<p>这款网站就是专门用于下载国外视频的小工具，咱们只需要复制视频链接就能直接下载了。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ee07558.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ee81cda.png"></p>
+<p>网站支持YouTube、Instagram、TikTok等多个国外网站的视频下载。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ef12e1c.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://cobalt.tools/">https://cobalt.tools</a></p>
+<hr>
+<h2 id="学于趣字帖"><a href="#学于趣字帖" class="headerlink" title="学于趣字帖"></a>学于趣字帖</h2><p>一款免费的田字格字帖生成器，有了它就再也不用在网上购买字帖了。</p>
+<p>网站提供了包括中文、英文、数字、拼音、控笔练习在内的五种类型字帖。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06efd01e4.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f094167.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f2518c6.png"></p>
+<p>此外对于中文字帖，网站支持自定义文本内容、颜色、字体以及田字格的样式。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f302b30.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f395056.png"></p>
+<p>之后只需要点击右上角“打印PDF”就可以了。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071288119.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://zitie.xueyuqu.com/">https://zitie.xueyuqu.com</a></p>
+<hr>
+<hr>
+<h2 id="iSurround"><a href="#iSurround" class="headerlink" title="iSurround"></a>iSurround</h2><p>一个能让各位足不出户就欣赏到全球各地美景的网站。</p>
+<p>不管是埃及的大金字塔、荷兰的郁金香还是中国的长城都只需要轻轻一点感受到风景的壮丽。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0713ccdf3.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc07155b31c.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0716f2523.png"></p>
+<p>并且里面的所有场景都是360度的全景视角，非常推荐大家去看看。</p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.airpano.com/">https://www.airpano.com</a></p>
+<hr>
+<hr>
+<h2 id="News-Now"><a href="#News-Now" class="headerlink" title="News Now"></a>News Now</h2><p>一个高颜值的实时新闻、热榜资讯平台，相比传统热榜产品更加注重实时新闻。</p>
+<p>里面接入了知乎、微博、抖音、贴吧、哔哩哔哩、今日头条、澎湃新闻等各个网站的实时新闻与热点新闻。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0717c0992.png"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://newsnow.busiyi.world/">https://newsnow.busiyi.world</a></p>
+<hr>
+<h2 id="unblurimage"><a href="#unblurimage" class="headerlink" title="unblurimage"></a>unblurimage</h2><p>一个基于人工智能的在线工具，主要用于去除图像的模糊，使照片变得清晰明亮。</p>
+<p>网站支持处理PNG、JPEG、JPG、WEBP、BMP五种图片格式，并且可处理的最大分辨率为4000×4000。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0718a098a.png"></p>
+<p>网站的效果还是很不错的，同时处理后下面还有一个增强质量可以进一步提升照片质量而且全程免费~</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071a2215b.gif"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://unblurimage.ai/zh">https://unblurimage.ai/zh</a></p>
+<hr>
+<h2 id="元素周期表PRO"><a href="#元素周期表PRO" class="headerlink" title="元素周期表PRO"></a>元素周期表PRO</h2><p>颜值非常高的一款元素周期表网站，里面的每一种元素都按照元素的类型用不同的颜色做了区别。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071b0b058.png"></p>
+<p>而且当我们点击元素后还可以看见每种元素的照片、物理性质、原子性质、电磁性质、电子层分布各种详细信息。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071bc23f0.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071ce018d.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071d75594.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071e15c78.png"></p>
+<p>可以说是孩子学化学的必备小网站了</p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://pt.ziziyi.com/">https://pt.ziziyi.com</a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="170+ Docker 容器应用汇总"><div class="post-title"><h1><a>170+ Docker 容器应用汇总</a></h1></div><div class="post-content"><h2 id="一、娱乐与媒体类（16项）"><a href="#一、娱乐与媒体类（16项）" class="headerlink" title="一、娱乐与媒体类（16项）"></a>一、娱乐与媒体类（16项）</h2><h3 id="漫画小说工具"><a href="#漫画小说工具" class="headerlink" title="漫画小说工具"></a>漫画小说工具</h3><ul>
+<li>Reading：免费小说阅读app，支持多种源与TTS</li>
+<li>Teemiii：在线漫画下载与管理工具</li>
+</ul>
+<h3 id="影音娱乐工具"><a href="#影音娱乐工具" class="headerlink" title="影音娱乐工具"></a>影音娱乐工具</h3><ul>
+<li>Audiobookshelf：播客与有声书管理工具（支持APP）</li>
+<li>Douban-Tool：豆瓣影视资源BT下载工具</li>
+<li>Embykeeper：Emby公益服申请&#x2F;保号工具</li>
+<li>Feishin：Navidrome&#x2F;Jellyfin前端音乐播放器</li>
+<li>IPtvnator：M3U在线播放工具</li>
+<li>Jellyfin：流媒体影音管理服务器</li>
+<li>Melody：音乐下载&#x2F;网易云推送工具</li>
+<li>Music-Tag-Web：音乐元数据刮削器</li>
+<li>Musicn：MP3音乐下载工具</li>
+<li>Navidrome：开源音乐服务器</li>
+<li>NextBeats：YouTube Lo-Fi音乐流项目</li>
+<li>Onelist：Alist影视信息刮削工具</li>
+<li>R3PLAY：网易云第三方播放器</li>
+<li>Xiaomusic：小米音箱音乐扩展工具</li>
+</ul>
+<h2 id="二、系统管理与运维类（39项）"><a href="#二、系统管理与运维类（39项）" class="headerlink" title="二、系统管理与运维类（39项）"></a>二、系统管理与运维类（39项）</h2><h3 id="Docker管理"><a href="#Docker管理" class="headerlink" title="Docker管理"></a>Docker管理</h3><ul>
+<li>AutoCompose：一键转换现有Docker</li>
+<li>Docker Copilot：跨平台容器管理神器</li>
+<li>Dockge：可视化docker-compose配置工具</li>
+<li>Diun：多渠道镜像升级通知工具</li>
+<li>Docu：Docker存储分析工具</li>
+<li>DweebUI：120+容器可视化管理系统</li>
+<li>Watchtower：自动更新检测工具</li>
+<li>What’s Up Docker：镜像升级提醒工具</li>
+<li>Windows-Docker：Docker内运行Windows系统</li>
+<li>Yacht：Docker资源可视化面板</li>
+</ul>
+<h3 id="NAS-OS-服务器管理"><a href="#NAS-OS-服务器管理" class="headerlink" title="NAS OS&#x2F;服务器管理"></a>NAS OS&#x2F;服务器管理</h3><ul>
+<li>1Panel：Docker可视化服务器管理面板</li>
+<li>Beszel：轻量级NAS&#x2F;服务器监控工具</li>
+<li>Cosmo-Server：容器安全访问集成系统</li>
+<li>FnOS：新手友好型影音NAS系统</li>
+<li>Hertzbeat：多维度监控预警系统</li>
+<li>IstoreNAS：OpenWrt开源NAS系统</li>
+<li>Kener：服务器状态监测工具</li>
+<li>Nging：DDNS&#x2F;内网穿透&#x2F;SSH运维面板</li>
+<li>UmbreIOS：集成商城的NAS管理系统</li>
+<li>（注：原文中部分项目存在重复编号问题）</li>
+</ul>
+<h3 id="运维管理"><a href="#运维管理" class="headerlink" title="运维管理"></a>运维管理</h3><ul>
+<li>2FAuth：双重认证安全工具</li>
+<li>Cowire&#x2F;Fakessh：SSH蜜罐防护工具</li>
+<li>Easynode：网页版SSH终端管理</li>
+<li>Next Terminal：多协议堡垒机</li>
+<li>Orion-visor&#x2F;SamWaf：智能运维&#x2F;WAF工具</li>
+<li>Safeline：开源WAF防护工具</li>
+<li>Sshwifty：浏览器WebSSH工具</li>
+</ul>
+<h3 id="网络工具"><a href="#网络工具" class="headerlink" title="网络工具"></a>网络工具</h3><ul>
+<li>Frp-panel：Frp可视化管理平台</li>
+<li>Lucky：DDNS&#x2F;反代&#x2F;SSL管理工具</li>
+<li>MyIP：网络工具箱（IP&#x2F;Magic查询）</li>
+<li>Nginxwebui：Nginx可视化配置工具</li>
+<li>Tailscale&#x2F;Zerotier：异地组网工具</li>
+<li>Umami：网站流量分析工具</li>
+<li>WatchYourLAN&#x2F;Ports：局域网扫描工具</li>
+<li>Web-check：网站优化分析工具</li>
+<li>星空组网：类似Tailscale的组网工具</li>
+</ul>
+<h2 id="三、办公与协作类（26项）"><a href="#三、办公与协作类（26项）" class="headerlink" title="三、办公与协作类（26项）"></a>三、办公与协作类（26项）</h2><h3 id="办公管理"><a href="#办公管理" class="headerlink" title="办公管理"></a>办公管理</h3><ul>
+<li>Erpnext：开源ERP系统</li>
+<li>InvenTree：供销库存管理系统</li>
+<li>Snipe-it：IT设备管理系统</li>
+<li>Spring客服：多平台在线客服系统</li>
+<li>Twenty&#x2F;Zammad：CRM&#x2F;客服支持系统</li>
+</ul>
+<h3 id="协作沟通"><a href="#协作沟通" class="headerlink" title="协作沟通"></a>协作沟通</h3><ul>
+<li>Affine：Notion替代工具</li>
+<li>Bookstack：团队知识库系统</li>
+<li>Cloper：PPT演讲辅助工具</li>
+<li>Fiora：自建聊天工具</li>
+<li>Huntly：RSS集成阅读工具</li>
+<li>Leantime：轻量级项目管理工具</li>
+<li>MicroBin：阅后即焚文件共享</li>
+<li>O2oa：多功能OA系统</li>
+<li>Panka&#x2F;Todoist：待办事项管理工具</li>
+<li>Perite&#x2F;Wik.js：Markdown知识库</li>
+<li>Rustpad：80+语言代码协作编辑</li>
+<li>Showdoc：API文档管理工具</li>
+<li>Team Nav：团队权限导航工具</li>
+<li>Univer&#x2F;Vikunja：在线协作文档</li>
+<li>WBO：在线白板绘图工具</li>
+<li>iToP：IT服务管理工具</li>
+<li>Superset：数据驾驶舱BI系统</li>
+<li>TailChat：隐私保护团队沟通平台</li>
+</ul>
+<h2 id="四、个人效率与学习类（17项）"><a href="#四、个人效率与学习类（17项）" class="headerlink" title="四、个人效率与学习类（17项）"></a>四、个人效率与学习类（17项）</h2><h3 id="时间管理"><a href="#时间管理" class="headerlink" title="时间管理"></a>时间管理</h3><ul>
+<li>Affine：Notion替代工具</li>
+<li>Kimai：个人时间追踪工具</li>
+<li>Tragg：时间轴管理工具</li>
+</ul>
+<h3 id="学习辅助"><a href="#学习辅助" class="headerlink" title="学习辅助"></a>学习辅助</h3><ul>
+<li>Blinko：AI驱动笔记工具</li>
+<li>DailyTxT：加密日记本</li>
+<li>Dailyhot：全网热榜聚合</li>
+<li>GetQzonehistory：QQ空间记录导出</li>
+<li>HomePage：个性化导航页</li>
+<li>Language-Tool：多语言校验工具</li>
+<li>Memos：碎片化知识管理</li>
+<li>Mtab：书签管理工具</li>
+<li>Reference：命令备忘录</li>
+<li>Tutudi：Todo面板工具</li>
+<li>VaultWarden：密码管理工具</li>
+<li>Wiki.js：知识库管理</li>
+<li>WizNote：自托管为知笔记</li>
+<li>小书匠：Markdown知识库</li>
+</ul>
+<h2 id="五、生活与家庭类（10项）"><a href="#五、生活与家庭类（10项）" class="headerlink" title="五、生活与家庭类（10项）"></a>五、生活与家庭类（10项）</h2><ul>
+<li>Actual：预算管理工具</li>
+<li>Babybuddy：婴幼儿护理记录</li>
+<li>Hammond：汽车费用管理</li>
+<li>Home Assistant：智能家居自动化</li>
+<li>Homebox：家庭物资管理</li>
+<li>How To Cook：程序员菜谱</li>
+<li>Kerberos-agent：设备监控系统</li>
+<li>Mealie：食谱管理与膳食计划</li>
+<li>Wallos：周期账单管理</li>
+<li>Gramps-web：族谱管理</li>
+</ul>
+<h2 id="六、数据存储与同步类（16项）"><a href="#六、数据存储与同步类（16项）" class="headerlink" title="六、数据存储与同步类（16项）"></a>六、数据存储与同步类（16项）</h2><h3 id="网盘应用"><a href="#网盘应用" class="headerlink" title="网盘应用"></a>网盘应用</h3><ul>
+<li>Alist：网盘聚合工具</li>
+<li>CloudDrive：多网盘挂载工具</li>
+<li>Eyeblue：开源私有云盘</li>
+<li>JmalCloud：办公功能云盘</li>
+<li>MinIO：兼容S3的对象存储</li>
+<li>Zfile：17种存储挂载工具</li>
+</ul>
+<h3 id="同步下载"><a href="#同步下载" class="headerlink" title="同步下载"></a>同步下载</h3><ul>
+<li>FileBrowser：服务器文件管理</li>
+<li>Metube：可视化下载工具</li>
+<li>Spacedrive：跨平台文件管理</li>
+<li>Taosync：Alist自动同步</li>
+<li>Transmission：PT种子下载</li>
+<li>微力同步：点对点同步工具</li>
+</ul>
+<h3 id="备份转换"><a href="#备份转换" class="headerlink" title="备份转换"></a>备份转换</h3><ul>
+<li>Certimate：SSL证书管理</li>
+<li>Morphos：文档格式转换</li>
+<li>S-PDF：PDF处理工具</li>
+<li>云朵备份：微信记录备份</li>
+</ul>
+<h2 id="七、网络工具类（16项）"><a href="#七、网络工具类（16项）" class="headerlink" title="七、网络工具类（16项）"></a>七、网络工具类（16项）</h2><h3 id="网址管理"><a href="#网址管理" class="headerlink" title="网址管理"></a>网址管理</h3><ul>
+<li>ArchiveB：网页存档工具</li>
+<li>Slash：短链接+书签管理</li>
+<li>Yourls：短链接生成器</li>
+</ul>
+<h3 id="消息推送"><a href="#消息推送" class="headerlink" title="消息推送"></a>消息推送</h3><ul>
+<li>Bark：苹果消息推送</li>
+<li>Gotify：安卓消息推送</li>
+<li>Heimdallr：聚合推送平台</li>
+</ul>
+<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><ul>
+<li>Coolify：Heroku替代方案</li>
+<li>Easyimage2：轻量级图床</li>
+<li>Fenrus：花哨导航系统</li>
+<li>Genact：模拟编程界面</li>
+<li>lyuuplus-dev：PT种子处理</li>
+<li>Qd：自动签到工具</li>
+<li>卷王：问卷&#x2F;考试工具</li>
+<li>Quark-Auto-Save：夸克转存工具</li>
+<li>Xiaojusurvey：在线问卷系统</li>
+<li>lt-Tools：IT工具集合</li>
+</ul>
+<h2 id="八、网赚项目（13项）"><a href="#八、网赚项目（13项）" class="headerlink" title="八、网赚项目（13项）"></a>八、网赚项目（13项）</h2><ul>
+<li>Acg-Faka：二次元卡券管理</li>
+<li>Bar-Assistant：酒吧管理系统</li>
+<li>C-Shopping：在线商城</li>
+<li>Dailycheckin：多平台打卡</li>
+<li>Douyin-vue：抖音前端项目</li>
+<li>DouyinLiveRecorder：直播录制工具</li>
+<li>Imaotai：i茅台预约工具</li>
+<li>Instock：股票分析工具</li>
+<li>MagicBox：自动售卡商城</li>
+<li>Novel-Plus：小说建站</li>
+<li>Pterodactyl：游戏服务器管理</li>
+<li>Zyplayer-doc：付费知识库</li>
+<li>魔豆文库：百度文库替代</li>
+</ul>
+<h2 id="九、游戏类（9项）"><a href="#九、游戏类（9项）" class="headerlink" title="九、游戏类（9项）"></a>九、游戏类（9项）</h2><ul>
+<li>CodeCombat：编程学习游戏</li>
+<li>Dnf：DNF私服服务器</li>
+<li>Funkin：节奏劲舞团游戏</li>
+<li>Habitica：习惯养成游戏</li>
+<li>Palworld：幻兽帕鲁服务器</li>
+<li>PokéRogue：宝可梦肉鸽游戏</li>
+<li>Ratel：命令行棋牌游戏</li>
+<li>RetroArch-web：复古游戏模拟器</li>
+<li>Vue-Idle-Game：放置类游戏</li>
+</ul>
+<h2 id="十、社交平台类（5项）"><a href="#十、社交平台类（5项）" class="headerlink" title="十、社交平台类（5项）"></a>十、社交平台类（5项）</h2><ul>
+<li>Flarum：轻量级论坛</li>
+<li>FreshRSS：自托管RSS</li>
+<li>Mastodon：长毛象节点</li>
+<li>Memonts：微信朋友圈替代</li>
+<li>Misskey：联邦制社交节点</li>
+</ul>
+<h2 id="十一、图像设计类（9项）"><a href="#十一、图像设计类（9项）" class="headerlink" title="十一、图像设计类（9项）"></a>十一、图像设计类（9项）</h2><ul>
+<li>Darktable：Lightroom替代工具</li>
+<li>DrawDB：数据库设计工具</li>
+<li>Draw.io：图表绘制工具</li>
+<li>Excalidraw：手绘风格绘图</li>
+<li>Free-Cad：3D建模工具</li>
+<li>Image-Matting：背景抠图工具</li>
+<li>Penpot：原型设计工具</li>
+<li>Photopea：在线PS工具</li>
+<li>Yft-Design：海报设计工具</li>
+</ul>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="兰空图床LskyV2通过API获取Token的方法"><div class="post-title"><h1><a>兰空图床LskyV2通过API获取Token的方法</a></h1></div><div class="post-content"><p>兰空图床(Lsky Pro)新版本V2图床带来了很多特性，速度也得到明显提升，而且自带API接口，对接博客等网站方便了很多，</p>
+<p>那既然要使用api接口就要先学会用，)V2版本接口采用 「HTTP 基本验证」的方式验证授权，获取到 token 后，通过设置请求 header 标头来验证请求，所以token的获取就稍微要麻烦一点。</p>
+<p>接下来就结合我搭建的图床，配合Postman在线工具，来具体演示下如何获取Token</p>
+<p><strong>1.首先我们打开图床的接口页面:</strong></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc375b248cd.png"></p>
+<p>这里有接口说明，可以大概看一下具体的获取方法。</p>
+<p><strong>2、发起请求，生成token</strong></p>
+<p>根据接口说明，可以看到我们需要通过api 调试工具发起一个 http post 请求来生成一个 token。</p>
+<p>这里我们使用postman调试工具，个人使用基本上是免费的。</p>
+<p><strong>postman官网</strong> ：<a target="_blank" rel="noopener" href="https://www.postman.com/">https://www.postman.com/</a></p>
+<p>打开后，可以填入邮箱，然后再按照要求填入账号密码即可完成注册：</p>
+<p>登陆后我们来到个人工作台，在左边我们可以新建一个项目：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc37817242c.png"></p>
+<p>修改请求类型为： <code>POST</code> ，并填入我们的请求 url：  <a target="_blank" rel="noopener" href="https://img.huanote.com/api/v1/tokens%60">https://img.huanote.com/api/v1/tokens`</a></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc37840ba8e.png"></p>
+<p>然后我们在头（ <code>Headers</code> ）里面，设置请求头KEY为 <code>Accept</code> ，值为 <code>application/json</code> ，如下图：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc3786a2225.png"></p>
+<p>在请求体（Body）中，我们分别填入邮箱和密码的KEY和对应的值。</p>
+<p>KEY按照我们示例的填写，分别为： <code>email</code> 和 <code>password</code></p>
+<p>值VALUE为您的注册邮箱和您的登录密码，如下图：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc378b56683.png"></p>
+<p>填好之后，就可以点击右边的 <code>Send</code> 按钮，发起请求：</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/08/67cc378df3407.png"></p>
+<p>稍微等待一会，在下方就可以看到返回的结果， <code>token</code> 的值就是我们需要的内容了。</p>
+<p>其他的操作就看接口文档就行了。</p>
+<p><em>本文转自网络</em>,如涉及原作者权益,请联系站长删除</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="忘掉以前的提示词，让DeepSeek-R1输出干货！"><div class="post-title"><h1><a>忘掉以前的提示词，让DeepSeek-R1输出干货！</a></h1></div><div class="post-content"><p>最近看了网络上不少的教程，发现很多在教大家使用<strong>DeepSeek深度思考</strong>的时候，还在教大家用定义角色、任务和要求的模板。 过年以来，R1能火起来的原因就是因为它强大的推理能力，最直接的表现就是能更好地理解你的自然语言。 所以，要更好地使用DeepSeek-R1类的推理模型，<strong>建议“自废武功”，主打真诚交流</strong>。 今天给大家分享我自用的和推理模型对话的一些技巧，<strong>看得上的收藏、转发</strong>。</p>
+<h3 id="和推理模型，真诚交流"><a href="#和推理模型，真诚交流" class="headerlink" title="和推理模型，真诚交流"></a>和推理模型，真诚交流</h3><p>不管你是用官方的DeepSeek还是第三方的DeepSeek，记得打开“深度思考”的开关。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/14/67d38a16477f8.png"></p>
+<p>如果你习惯用Kimi或Qwen-QwQ，<strong>也要打开推理(长思考)开关</strong>。</p>
+<h5 id="忘掉机械的模板，说心理话"><a href="#忘掉机械的模板，说心理话" class="headerlink" title="忘掉机械的模板，说心理话"></a>忘掉机械的模板，说心理话</h5><p><strong>核心</strong>：推理模板是个体贴的“暖男”，会猜测你的小心思。 <strong>例子：</strong> - ❌放弃模板：“写一篇小学语文五年级下册《军神》的教学设计，要XXX，按XX环节……。” - ✅学会真诚：“我马上要上公开课了，选择的课文是小学五年级下册的《军神》，我想在这堂课中更加突出学生的自主性，适当运用融合的信息技术，想要课堂环节设计有梯度，难点要给学生搭建支架。” **效果：**AI会分析你为什么会有此需求，再给出解决方案，最终成果更贴近你的需求。</p>
+<h5 id="减少AI味"><a href="#减少AI味" class="headerlink" title="减少AI味"></a>减少AI味</h5><p><strong>核心</strong>：让它用XX类人群能听懂的话，再说一遍。 <strong>例子</strong>： AI写的论文太深奥&#x3D;&gt;请用普通人能看懂的话，再讲一遍； AI写的教案太简单&#x3D;&gt;请问这几个环节具体该怎么实施呢？给我举例讲讲吧！</p>
+<h5 id="让AI反省自己"><a href="#让AI反省自己" class="headerlink" title="让AI反省自己"></a>让AI反省自己</h5><p><strong>核心</strong>：让AI帮你检查它自己的输出结果，省心。 <strong>例子</strong>： 你再好好检查一下你刚刚说的，真的没问题吗？ 我感觉你说的好像有点问题，再检查一下，重新输出吧！</p>
+<h5 id="让AI模仿"><a href="#让AI模仿" class="headerlink" title="让AI模仿"></a>让AI模仿</h5><p><strong>核心</strong>：将自己以前的或范文提交给AI，让它模仿输出 <strong>例子</strong>： 把自己以前写的报告提交给AI，然后对它说：这些是我之前写的报告，现在请模仿这个风格，根据下面这些新的数据，生成新的报告。具体数据如下……</p>
+<h5 id="万能描述语"><a href="#万能描述语" class="headerlink" title="万能描述语"></a>万能描述语</h5><p><strong>核心</strong>：我要做xx，要给xx用，希望达到xx效果，但担心xx问题。 <strong>例子</strong>： 我要设计一个课堂上的随机点名程序，可以是单独的网页；在上课的时候双击打开使用，希望能够自由导入名单，抽取名单的过程中，要有滚动动画；我担心每次使用都要导入名单，这样就比较麻烦了。 其实这些归结起来就一条：把你的想法，完完整整告诉DeepSeek-R1，你可以用最通俗的语言，但一定要把要求说清楚。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="分享十首长篇古诗"><div class="post-title"><h1><a>分享十首长篇古诗</a></h1></div><div class="post-content"><p><strong>将进酒</strong></p>
+<p>唐·李白</p>
+<p>君不见黄河之水天上来，奔流到海不复回。</p>
+<p>君不见高堂明镜悲白发，朝如青丝暮成雪。</p>
+<p>人生得意须尽欢，莫使金樽空对月。</p>
+<p>天生我材必有用，千金散尽还复来。</p>
+<p>烹羊宰牛且为乐，会须一饮三百杯。</p>
+<p>岑夫子，丹丘生，将进酒，杯莫停。</p>
+<p>与君歌一曲，请君为我倾耳听。</p>
+<p>钟鼓馔玉不足贵，但愿长醉不愿醒。</p>
+<p>古来圣贤皆寂寞，惟有饮者留其名。</p>
+<p>陈王昔时宴平乐，斗酒十千恣欢谑。</p>
+<p>主人何为言少钱，径须沽取对君酌。</p>
+<p>五花马、千金裘，</p>
+<p>呼儿将出换美酒，与尔同销万古愁。</p>
+<hr>
+<p><strong>燕歌行</strong></p>
+<p>唐·高适</p>
+<p>汉家烟尘在东北，汉将辞家破残贼。</p>
+<p>男儿本自重横行，天子非常赐颜色。</p>
+<p>摐金伐鼓下榆关，旌旆逶迤碣石间。</p>
+<p>校尉羽书飞瀚海，单于猎火照狼山。</p>
+<p>山川萧条极边土，胡骑凭陵杂风雨。</p>
+<p>战士军前半死生，美人帐下犹歌舞。</p>
+<p>大漠穷秋塞草腓，孤城落日斗兵稀。</p>
+<p>身当恩遇常轻敌，力尽关山未解围。</p>
+<p>铁衣远戍辛勤久，玉箸应啼别离后。</p>
+<p>少妇城南欲断肠，征人蓟北空回首。</p>
+<p>边庭飘飖那可度，绝域苍茫无所有。</p>
+<p>杀气三时作阵云，寒声一夜传刁斗。</p>
+<p>相看白刃血纷纷，死节从来岂顾勋！</p>
+<p>君不见沙场征战苦，至今犹忆李将军。</p>
+<hr>
+<p><strong>春江花月夜</strong></p>
+<p>唐·张若虚</p>
+<p>春江潮水连海平，海上明月共潮生。</p>
+<p>滟滟随波千万里，何处春江无月明。</p>
+<p>江流宛转绕芳甸，月照花林皆似霰。</p>
+<p>空里流霜不觉飞，汀上白沙看不见。</p>
+<p>江天一色无纤尘，皎皎空中孤月轮。</p>
+<p>江畔何人初见月？江月何年初照人？</p>
+<p>人生代代无穷已，江月年年望相似。</p>
+<p>不知江月待何人，但见长江送流水。</p>
+<p>白云一片去悠悠，青枫浦上不胜愁。</p>
+<p>谁家今夜扁舟子？何处相思明月楼？</p>
+<p>可怜楼上月裴回，应照离人妆镜台。</p>
+<p>玉户帘中卷不去，捣衣砧上拂还来。</p>
+<p>此时相望不相闻，愿逐月华流照君。</p>
+<p>鸿雁长飞光不度，鱼龙潜跃水成文。</p>
+<p>昨夜闲潭梦落花，可怜春半不还家。</p>
+<p>江水流春去欲尽，江潭落月复西斜。</p>
+<p>斜月沉沉藏海雾，碣石潇湘无限路。</p>
+<p>不知乘月几人归，落月摇情满江树。</p>
+<hr>
+<p><strong>琵琶行</strong></p>
+<p>唐·白居易</p>
+<p>浔阳江头夜送客，枫叶荻花秋瑟瑟。</p>
+<p>主人下马客在船，举酒欲饮无管弦。</p>
+<p>醉不成欢惨将别，别时茫茫江浸月。</p>
+<p>忽闻水上琵琶声，主人忘归客不发。</p>
+<p>寻声暗问弹者谁，琵琶声停欲语迟。</p>
+<p>移船相近邀相见，添酒回灯重开宴。</p>
+<p>千呼万唤始出来，犹抱琵琶半遮面。</p>
+<p>转轴拨弦三两声，未成曲调先有情。</p>
+<p>弦弦掩抑声声思，似诉平生不得志。</p>
+<p>低眉信手续续弹，说尽心中无限事。</p>
+<p>轻拢慢捻抹复挑，初为《霓裳》后《六幺》。</p>
+<p>大弦嘈嘈如急雨，小弦切切如私语。</p>
+<p>嘈嘈切切错杂弹，大珠小珠落玉盘。</p>
+<p>间关莺语花底滑，幽咽泉流冰下难。</p>
+<p>冰泉冷涩弦凝绝，凝绝不通声暂歇。</p>
+<p>别有幽愁暗恨生，此时无声胜有声。</p>
+<p>银瓶乍破水浆迸，铁骑突出刀枪鸣。</p>
+<p>曲终收拨当心画，四弦一声如裂帛。</p>
+<p>东船西舫悄无言，唯见江心秋月白。</p>
+<p>沉吟放拨插弦中，整顿衣裳起敛容。</p>
+<p>自言本是京城女，家在虾蟆陵下住。</p>
+<p>十三学得琵琶成，名属教坊第一部。</p>
+<p>曲罢曾教善才服，妆成每被秋娘妒。</p>
+<p>五陵年少争缠头，一曲红绡不知数。</p>
+<p>钿头银篦击节碎，血色罗裙翻酒污。</p>
+<p>今年欢笑复明年，秋月春风等闲度。</p>
+<p>弟走从军阿姨死，暮去朝来颜色故。</p>
+<p>门前冷落鞍马稀，老大嫁作商人妇。</p>
+<p>商人重利轻别离，前月浮梁买茶去。</p>
+<p>去来江口守空船，绕船月明江水寒。</p>
+<p>夜深忽梦少年事，梦啼妆泪红阑干。</p>
+<p>我闻琵琶已叹息，又闻此语重唧唧。</p>
+<p>同是天涯沦落人，相逢何必曾相识！</p>
+<p>我从去年辞帝京，谪居卧病浔阳城。</p>
+<p>浔阳地僻无音乐，终岁不闻丝竹声。</p>
+<p>住近湓江地低湿，黄芦苦竹绕宅生。</p>
+<p>其间旦暮闻何物？杜鹃啼血猿哀鸣。</p>
+<p>春江花朝秋月夜，往往取酒还独倾。</p>
+<p>岂无山歌与村笛，呕哑嘲哳难为听。</p>
+<p>今夜闻君琵琶语，如听仙乐耳暂明。</p>
+<p>莫辞更坐弹一曲，为君翻作《琵琶行》。</p>
+<p>感我此言良久立，却坐促弦弦转急。</p>
+<p>凄凄不似向前声，满座重闻皆掩泣。</p>
+<p>座中泣下谁最多？江州司马青衫湿。</p>
+<hr>
+<p><strong>长恨歌</strong></p>
+<p>唐·白居易</p>
+<p>汉皇重色思倾国，御宇多年求不得。</p>
+<p>杨家有女初长成，养在深闺人未识。</p>
+<p>天生丽质难自弃，一朝选在君王侧。</p>
+<p>回眸一笑百媚生，六宫粉黛无颜色。</p>
+<p>春寒赐浴华清池，温泉水滑洗凝脂。</p>
+<p>侍儿扶起娇无力，始是新承恩泽时。</p>
+<p>云鬓花颜金步摇，芙蓉帐暖度春宵。</p>
+<p>春宵苦短日高起，从此君王不早朝。</p>
+<p>承欢侍宴无闲暇，春从春游夜专夜。</p>
+<p>后宫佳丽三千人，三千宠爱在一身。</p>
+<p>金屋妆成娇侍夜，玉楼宴罢醉和春。</p>
+<p>姊妹弟兄皆列土，可怜光彩生门户。</p>
+<p>遂令天下父母心，不重生男重生女。</p>
+<p>骊宫高处入青云，仙乐风飘处处闻。</p>
+<p>缓歌慢舞凝丝竹，尽日君王看不足。</p>
+<p>渔阳鼙鼓动地来，惊破霓裳羽衣曲。</p>
+<p>九重城阙烟尘生，千乘万骑西南行。</p>
+<p>翠华摇摇行复止，西出都门百余里。</p>
+<p>六军不发无奈何，宛转蛾眉马前死。</p>
+<p>花钿委地无人收，翠翘金雀玉搔头。</p>
+<p>君王掩面救不得，回看血泪相和流。</p>
+<p>黄埃散漫风萧索，云栈萦纡登剑阁。</p>
+<p>峨嵋山下少人行，旌旗无光日色薄。</p>
+<p>蜀江水碧蜀山青，圣主朝朝暮暮情。</p>
+<p>行宫见月伤心色，夜雨闻铃肠断声。</p>
+<p>天旋地转回龙驭，到此踌躇不能去。</p>
+<p>马嵬坡下泥土中，不见玉颜空死处。</p>
+<p>君臣相顾尽沾衣，东望都门信马归。</p>
+<p>归来池苑皆依旧，太液芙蓉未央柳。</p>
+<p>芙蓉如面柳如眉，对此如何不泪垂？</p>
+<p>春风桃李花开日，秋雨梧桐叶落时。</p>
+<p>西宫南内多秋草，落叶满阶红不扫。</p>
+<p>梨园弟子白发新，椒房阿监青娥老。</p>
+<p>夕殿萤飞思悄然，孤灯挑尽未成眠。</p>
+<p>迟迟钟鼓初长夜，耿耿星河欲曙天。</p>
+<p>鸳鸯瓦冷霜华重，翡翠衾寒谁与共？</p>
+<p>悠悠生死别经年，魂魄不曾来入梦。</p>
+<p>临邛道士鸿都客，能以精诚致魂魄。</p>
+<p>为感君王辗转思，遂教方士殷勤觅。</p>
+<p>排空驭气奔如电，升天入地求之遍。</p>
+<p>上穷碧落下黄泉，两处茫茫皆不见。</p>
+<p>忽闻海上有仙山，山在虚无缥缈间。</p>
+<p>楼阁玲珑五云起，其中绰约多仙子。</p>
+<p>中有一人字太真，雪肤花貌参差是。</p>
+<p>金阙西厢叩玉扃，转教小玉报双成。</p>
+<p>闻道汉家天子使，九华帐里梦魂惊。</p>
+<p>揽衣推枕起徘徊，珠箔银屏迤逦开。</p>
+<p>云鬓半偏新睡觉，花冠不整下堂来。</p>
+<p>风吹仙袂飘飖举，犹似霓裳羽衣舞。</p>
+<p>玉容寂寞泪阑干，梨花一枝春带雨。</p>
+<p>含情凝睇谢君王，一别音容两渺茫。</p>
+<p>昭阳殿里恩爱绝，蓬莱宫中日月长。</p>
+<p>回头下望人寰处，不见长安见尘雾。</p>
+<p>惟将旧物表深情，钿合金钗寄将去。</p>
+<p>钗留一股合一扇，钗擘黄金合分钿。</p>
+<p>但令心似金钿坚，天上人间会相见。</p>
+<p>临别殷勤重寄词，词中有誓两心知。</p>
+<p>七月七日长生殿，夜半无人私语时。</p>
+<p>在天愿作比翼鸟，在地愿为连理枝。</p>
+<p>天长地久有时尽，此恨绵绵无绝期。</p>
+<hr>
+<p><strong>蜀道难</strong></p>
+<p>唐·李白</p>
+<p>噫吁嚱，危乎高哉！</p>
+<p>蜀道之难，难于上青天！</p>
+<p>蚕丛及鱼凫，开国何茫然！</p>
+<p>尔来四万八千岁，不与秦塞通人烟。</p>
+<p>西当太白有鸟道，可以横绝峨眉巅。</p>
+<p>地崩山摧壮士死，然后天梯石栈相钩连。</p>
+<p>上有六龙回日之高标，</p>
+<p>下有冲波逆折之回川。</p>
+<p>黄鹤之飞尚不得过，猿猱欲度愁攀援。</p>
+<p>青泥何盘盘，百步九折萦岩峦。</p>
+<p>扪参历井仰胁息，以手抚膺坐长叹。</p>
+<p>问君西游何时还？畏途巉岩不可攀。</p>
+<p>但见悲鸟号古木，雄飞雌从绕林间。</p>
+<p>又闻子规啼夜月，愁空山。</p>
+<p>蜀道之难，难于上青天，</p>
+<p>使人听此凋朱颜！</p>
+<p>连峰去天不盈尺，枯松倒挂倚绝壁。</p>
+<p>飞湍瀑流争喧豗，砯崖转石万壑雷。</p>
+<p>其险也如此，嗟尔远道之人胡为乎来哉！</p>
+<p>剑阁峥嵘而崔嵬，一夫当关，万夫莫开。</p>
+<p>所守或匪亲，化为狼与豺。</p>
+<p>朝避猛虎，夕避长蛇，</p>
+<p>磨牙吮血，杀人如麻。</p>
+<p>锦城虽云乐，不如早还家。</p>
+<p>蜀道之难，难于上青天，</p>
+<p>侧身西望长咨嗟！</p>
+<hr>
+<p><strong>梦游天姥吟留别</strong></p>
+<p>唐·李白</p>
+<p>海客谈瀛洲，烟涛微茫信难求；</p>
+<p>越人语天姥，云霞明灭或可睹。</p>
+<p>天姥连天向天横，势拔五岳掩赤城。</p>
+<p>天台四万八千丈，对此欲倒东南倾。</p>
+<p>我欲因之梦吴越，一夜飞度镜湖月。</p>
+<p>湖月照我影，送我至剡溪。</p>
+<p>谢公宿处今尚在，渌水荡漾清猿啼。</p>
+<p>脚著谢公屐，身登青云梯。</p>
+<p>半壁见海日，空中闻天鸡。</p>
+<p>千岩万转路不定，迷花倚石忽已暝。</p>
+<p>熊咆龙吟殷岩泉，栗深林兮惊层巅。</p>
+<p>云青青兮欲雨，水澹澹兮生烟。</p>
+<p>列缺霹雳，丘峦崩摧。</p>
+<p>洞天石扉，訇然中开。</p>
+<p>青冥浩荡不见底，日月照耀金银台。</p>
+<p>霓为衣兮风为马，云之君兮纷纷而来下。</p>
+<p>虎鼓瑟兮鸾回车，仙之人兮列如麻。</p>
+<p>忽魂悸以魄动，恍惊起而长嗟。</p>
+<p>惟觉时之枕席，失向来之烟霞。</p>
+<p>世间行乐亦如此，古来万事东流水。</p>
+<p>别君去兮何时还？</p>
+<p>且放白鹿青崖间，须行即骑访名山。</p>
+<p>安能摧眉折腰事权贵，使我不得开心颜！</p>
+<hr>
+<p><strong>木兰诗</strong></p>
+<p>南北朝·乐府诗集</p>
+<p>唧唧复唧唧，木兰当户织。不闻机杼声，唯闻女叹息。问女何所思，问女何所忆。女亦无所思，女亦无所忆。昨夜见军帖，可汗大点兵，军书十二卷，卷卷有爷名。阿爷无大儿，木兰无长兄，愿为市鞍马，从此替爷征。</p>
+<p>东市买骏马，西市买鞍鞯，南市买辔头，北市买长鞭。旦辞爷娘去，暮宿黄河边，不闻爷娘唤女声，但闻黄河流水鸣溅溅。旦辞黄河去，暮至黑山头，不闻爷娘唤女声，但闻燕山胡骑鸣啾啾。</p>
+<p>万里赴戎机，关山度若飞。朔气传金柝，寒光照铁衣。将军百战死，壮士十年归。</p>
+<p>归来见天子，天子坐明堂。策勋十二转，赏赐百千强。可汗问所欲，木兰不用尚书郎，愿驰千里足，送儿还故乡。</p>
+<p>爷娘闻女来，出郭相扶将；阿姊闻妹来，当户理红妆；小弟闻姊来，磨刀霍霍向猪羊。开我东阁门，坐我西阁床。脱我战时袍，著我旧时裳。当窗理云鬓，对镜帖花黄。出门看火伴，火伴皆惊忙：同行十二年，不知木兰是女郎。</p>
+<p>雄兔脚扑朔，雌兔眼迷离；双兔傍地走，安能辨我是雄雌？</p>
+<hr>
+<p><strong>离骚</strong></p>
+<p>先秦·屈原</p>
+<p>帝高阳之苗裔兮，朕皇考曰伯庸。</p>
+<p>摄提贞于孟陬兮，惟庚寅吾以降。</p>
+<p>皇览揆余初度兮，肇锡余以嘉名。</p>
+<p>名余曰正则兮，字余曰灵均。</p>
+<p>纷吾既有此内美兮，又重之以修能。</p>
+<p>扈江离与辟芷兮，纫秋兰以为佩。</p>
+<p>汩余若将不及兮，恐年岁之不吾与。</p>
+<p>朝搴阰之木兰兮，夕揽洲之宿莽。</p>
+<p>日月忽其不淹兮，春与秋其代序。</p>
+<p>惟草木之零落兮，恐美人之迟暮。</p>
+<p>不抚壮而弃秽兮，何不改此度？</p>
+<p>乘骐骥以驰骋兮，来吾道夫先路！</p>
+<p>昔三后之纯粹兮，固众芳之所在。</p>
+<p>杂申椒与菌桂兮，岂惟纫夫蕙茝！</p>
+<p>彼尧、舜之耿介兮，既遵道而得路。</p>
+<p>何桀纣之猖披兮，夫唯捷径以窘步。</p>
+<p>惟夫党人之偷乐兮，路幽昧以险隘。</p>
+<p>岂余身之惮殃兮，恐皇舆之败绩！</p>
+<p>忽奔走以先后兮，及前王之踵武。</p>
+<p>荃不查余之中情兮，反信谗而齌怒。</p>
+<p>余固知謇謇之为患兮，忍而不能舍也。</p>
+<p>指九天以为正兮，夫唯灵修之故也。</p>
+<p>曰黄昏以为期兮，羌中道而改路！</p>
+<p>初既与余成言兮，后悔遁而有他。</p>
+<p>余既不难夫离别兮，伤灵修之数化。</p>
+<p>余既滋兰之九畹兮，又树蕙之百亩。</p>
+<p>畦留夷与揭车兮，杂杜衡与芳芷。</p>
+<p>冀枝叶之峻茂兮，愿俟时乎吾将刈。</p>
+<p>虽萎绝其亦何伤兮，哀众芳之芜秽。</p>
+<p>众皆竞进以贪婪兮，凭不厌乎求索。</p>
+<p>羌内恕己以量人兮，各兴心而嫉妒。</p>
+<p>忽驰骛以追逐兮，非余心之所急。</p>
+<p>老冉冉其将至兮，恐修名之不立。</p>
+<p>朝饮木兰之坠露兮，夕餐秋菊之落英。</p>
+<p>苟余情其信姱以练要兮，长顑颔亦何伤。</p>
+<p>掔木根以结茝兮，贯薜荔之落蕊。</p>
+<p>矫菌桂以纫蕙兮，索胡绳之纚纚。</p>
+<p>謇吾法夫前修兮，非世俗之所服。</p>
+<p>虽不周于今之人兮，愿依彭咸之遗则。</p>
+<p>长太息以掩涕兮，哀民生之多艰。</p>
+<p>余虽好修姱以鞿羁兮，謇朝谇而夕替。</p>
+<p>既替余以蕙纕兮，又申之以揽茝。</p>
+<p>亦余心之所善兮，虽九死其犹未悔。</p>
+<p>怨灵修之浩荡兮，终不察夫民心。</p>
+<p>众女嫉余之蛾眉兮，谣诼谓余以善淫。</p>
+<p>固时俗之工巧兮，偭规矩而改错。</p>
+<p>背绳墨以追曲兮，竞周容以为度。</p>
+<p>忳郁邑余侘傺兮，吾独穷困乎此时也。</p>
+<p>宁溘死以流亡兮，余不忍为此态也。</p>
+<p>鸷鸟之不群兮，自前世而固然。</p>
+<p>何方圜之能周兮，夫孰异道而相安？</p>
+<p>屈心而抑志兮，忍尤而攘诟。</p>
+<p>伏清白以死直兮，固前圣之所厚。</p>
+<p>悔相道之不察兮，延伫乎吾将反。</p>
+<p>回朕车以复路兮，及行迷之未远。</p>
+<p>步余马于兰皋兮，驰椒丘且焉止息。</p>
+<p>进不入以离尤兮，退将复修吾初服。</p>
+<p>制芰荷以为衣兮，集芙蓉以为裳。</p>
+<p>不吾知其亦已兮，苟余情其信芳。</p>
+<p>高余冠之岌岌兮，长余佩之陆离。</p>
+<p>芳与泽其杂糅兮，唯昭质其犹未亏。</p>
+<p>忽反顾以游目兮，将往观乎四荒。</p>
+<p>佩缤纷其繁饰兮，芳菲菲其弥章。</p>
+<p>民生各有所乐兮，余独好修以为常。</p>
+<p>虽体解吾犹未变兮，岂余心之可惩。</p>
+<p>女嬃之婵媛兮，申申其詈予，曰：</p>
+<p>鲧婞直以亡身兮，终然夭乎羽之野。</p>
+<p>汝何博謇而好修兮，纷独有此姱节？</p>
+<p>薋菉葹以盈室兮，判独离而不服。</p>
+<p>众不可户说兮，孰云察余之中情？</p>
+<p>世并举而好朋兮，夫何茕独而不予听？</p>
+<p>依前圣以节中兮，喟凭心而历兹。</p>
+<p>济沅、湘以南征兮，就重华而陈词：</p>
+<p>启《九辩》与《九歌》兮，夏康娱以自纵。</p>
+<p>不顾难以图后兮，五子用失乎家衖。</p>
+<p>羿淫游以佚畋兮，又好射夫封狐。</p>
+<p>固乱流其鲜终兮，浞又贪夫厥家。</p>
+<p>浇身被服强圉兮，纵欲而不忍。</p>
+<p>日康娱而自忘兮，厥首用夫颠陨。</p>
+<p>夏桀之常违兮，乃遂焉而逢殃。</p>
+<p>后辛之菹醢兮，殷宗用而不长。</p>
+<p>汤、禹俨而祗敬兮，周论道而莫差。</p>
+<p>举贤才而授能兮，循绳墨而不颇。</p>
+<p>皇天无私阿兮，览民德焉错辅。</p>
+<p>夫维圣哲以茂行兮，苟得用此下土。</p>
+<p>瞻前而顾后兮，相观民之计极。</p>
+<p>夫孰非义而可用兮？孰非善而可服？</p>
+<p>阽余身而危死兮，览余初其犹未悔。</p>
+<p>不量凿而正枘兮，固前修以菹醢。</p>
+<p>曾歔欷余郁邑兮，哀朕时之不当。</p>
+<p>揽茹蕙以掩涕兮，沾余襟之浪浪。</p>
+<p>跪敷衽以陈辞兮，耿吾既得此中正。</p>
+<p>驷玉虬以椉鹥兮，溘埃风余上征。</p>
+<p>朝发轫于苍梧兮，夕余至乎县圃。</p>
+<p>欲少留此灵琐兮，日忽忽其将暮。</p>
+<p>吾令羲和弭节兮，望崦嵫而勿迫。</p>
+<p>路曼曼其修远兮，吾将上下而求索。</p>
+<p>饮余马于咸池兮，总余辔乎扶桑。</p>
+<p>折若木以拂日兮，聊逍遥以相羊。</p>
+<p>前望舒使先驱兮，后飞廉使奔属。</p>
+<p>鸾皇为余先戒兮，雷师告余以未具。</p>
+<p>吾令凤鸟飞腾兮，继之以日夜。</p>
+<p>飘风屯其相离兮，帅云霓而来御。</p>
+<p>纷总总其离合兮，斑陆离其上下。</p>
+<p>吾令帝阍开关兮，倚阊阖而望予。</p>
+<p>时暧暧其将罢兮，结幽兰而延伫。</p>
+<p>世溷浊而不分兮，好蔽美而嫉妒。</p>
+<p>朝吾将济于白水兮，登阆风而绁马。</p>
+<p>忽反顾以流涕兮，哀高丘之无女。</p>
+<p>溘吾游此春宫兮，折琼枝以继佩。</p>
+<p>及荣华之未落兮，相下女之可诒。</p>
+<p>吾令丰隆乘云兮，求宓妃之所在。</p>
+<p>解佩纕以结言兮，吾令謇修以为理。</p>
+<p>纷总总其离合兮，忽纬繣其难迁。</p>
+<p>夕归次于穷石兮，朝濯发乎洧盘。</p>
+<p>保厥美以骄傲兮，日康娱以淫游。</p>
+<p>虽信美而无礼兮，来违弃而改求。</p>
+<p>览相观于四极兮，周流乎天余乃下。</p>
+<p>望瑶台之偃蹇兮，见有娀之佚女。</p>
+<p>吾令鸩为媒兮，鸩告余以不好。</p>
+<p>雄鸠之鸣逝兮，余犹恶其佻巧。</p>
+<p>心犹豫而狐疑兮，欲自适而不可。</p>
+<p>凤皇既受诒兮，恐高辛之先我。</p>
+<p>欲远集而无所止兮，聊浮游以逍遥。</p>
+<p>及少康之未家兮，留有虞之二姚。</p>
+<p>理弱而媒拙兮，恐导言之不固。</p>
+<p>世溷浊而嫉贤兮，好蔽美而称恶。</p>
+<p>闺中既以邃远兮，哲王又不寤。</p>
+<p>怀朕情而不发兮，余焉能忍而与此终古？</p>
+<p>索琼茅以筳篿兮，命灵氛为余占之。</p>
+<p>曰：两美其必合兮，孰信修而慕之？</p>
+<p>思九州之博大兮，岂惟是其有女？</p>
+<p>曰：勉远逝而无狐疑兮，孰求美而释女？</p>
+<p>何所独无芳草兮，尔何怀乎故宇？</p>
+<p>世幽昧以昡曜兮，孰云察余之善恶？</p>
+<p>民好恶其不同兮，惟此党人其独异！</p>
+<p>户服艾以盈要兮，谓幽兰其不可佩。</p>
+<p>览察草木其犹未得兮，岂珵美之能当？</p>
+<p>苏粪壤以充帏兮，谓申椒其不芳。</p>
+<p>欲从灵氛之吉占兮，心犹豫而狐疑。</p>
+<p>巫咸将夕降兮，怀椒糈而要之。</p>
+<p>百神翳其备降兮，九疑缤其并迎。</p>
+<p>皇剡剡其扬灵兮，告余以吉故。</p>
+<p>曰：勉升降以上下兮，求矩矱之所同。</p>
+<p>汤、禹俨而求合兮，挚、咎繇而能调。</p>
+<p>苟中情其好修兮，又何必用夫行媒？</p>
+<p>说操筑于傅岩兮，武丁用而不疑。</p>
+<p>吕望之鼓刀兮，遭周文而得举。</p>
+<p>宁戚之讴歌兮，齐桓闻以该辅。</p>
+<p>及年岁之未晏兮，时亦犹其未央。</p>
+<p>恐鹈鴂之先鸣兮，使夫百草为之不芳。</p>
+<p>何琼佩之偃蹇兮，众薆然而蔽之。</p>
+<p>惟此党人之不谅兮，恐嫉妒而折之。</p>
+<p>时缤纷其变易兮，又何可以淹留？</p>
+<p>兰芷变而不芳兮，荃蕙化而为茅。</p>
+<p>何昔日之芳草兮，今直为此萧艾也？</p>
+<p>岂其有他故兮，莫好修之害也！</p>
+<p>余以兰为可恃兮，羌无实而容长。</p>
+<p>委厥美以从俗兮，苟得列乎众芳。</p>
+<p>椒专佞以慢慆兮，樧又欲充夫佩帏。</p>
+<p>既干进而务入兮，又何芳之能祗？</p>
+<p>固时俗之流从兮，又孰能无变化？</p>
+<p>览椒兰其若兹兮，又况揭车与江离？</p>
+<p>惟兹佩之可贵兮，委厥美而历兹。</p>
+<p>芳菲菲而难亏兮，芬至今犹未沬。</p>
+<p>和调度以自娱兮，聊浮游而求女。</p>
+<p>及余饰之方壮兮，周流观乎上下。</p>
+<p>灵氛既告余以吉占兮，历吉日乎吾将行。</p>
+<p>折琼枝以为羞兮，精琼爢以为粻。</p>
+<p>为余驾飞龙兮，杂瑶象以为车。</p>
+<p>何离心之可同兮？吾将远逝以自疏。</p>
+<p>邅吾道夫昆仑兮，路修远以周流。</p>
+<p>扬云霓之晻蔼兮，鸣玉鸾之啾啾。</p>
+<p>朝发轫于天津兮，夕余至乎西极。</p>
+<p>凤皇翼其承旗兮，高翱翔之翼翼。</p>
+<p>忽吾行此流沙兮，遵赤水而容与。</p>
+<p>麾蛟龙使梁津兮，诏西皇使涉予。</p>
+<p>路修远以多艰兮，腾众车使径待。</p>
+<p>路不周以左转兮，指西海以为期。</p>
+<p>屯余车其千乘兮，齐玉轪而并驰。</p>
+<p>驾八龙之婉婉兮，载云旗之委蛇。</p>
+<p>抑志而弭节兮，神高驰之邈邈。</p>
+<p>奏《九歌》而舞《韶》兮，聊假日以媮乐。</p>
+<p>陟升皇之赫戏兮，忽临睨夫旧乡。</p>
+<p>仆夫悲余马怀兮，蜷局顾而不行。</p>
+<p>乱曰：已矣哉！</p>
+<p>国无人莫我知兮，又何怀乎故都！</p>
+<p>既莫足与为美政兮，吾将从彭咸之所居！</p>
+<hr>
+<p><strong>孔雀东南飞</strong></p>
+<p>两汉·佚名</p>
+<p>孔雀东南飞，五里一徘徊。</p>
+<p>“十三能织素，十四学裁衣。十五弹箜篌，十六诵诗书。十七为君妇，心中常苦悲。君既为府吏，守节情不移。贱妾留空房，相见常日稀。鸡鸣入机织，夜夜不得息。三日断五匹，大人故嫌迟。非为织作迟，君家妇难为！妾不堪驱使，徒留无所施。便可白公姥，及时相遣归。”</p>
+<p>府吏得闻之，堂上启阿母：“儿已薄禄相，幸复得此妇。结发同枕席，黄泉共为友。共事二三年，始尔未为久。女行无偏斜，何意致不厚。”</p>
+<p>阿母谓府吏：“何乃太区区！此妇无礼节，举动自专由。吾意久怀忿，汝岂得自由！东家有贤女，自名秦罗敷。可怜体无比，阿母为汝求。便可速遣之，遣去慎莫留！”</p>
+<p>府吏长跪告：“伏惟启阿母。今若遣此妇，终老不复取！”</p>
+<p>阿母得闻之，槌床便大怒：“小子无所畏，何敢助妇语！吾已失恩义，会不相从许！”</p>
+<p>府吏默无声，再拜还入户。举言谓新妇，哽咽不能语：“我自不驱卿，逼迫有阿母。卿但暂还家，吾今且报府。不久当归还，还必相迎取。以此下心意，慎勿违吾语。”</p>
+<p>新妇谓府吏：“勿复重纷纭。往昔初阳岁，谢家来贵门。奉事循公姥，进止敢自专？昼夜勤作息，伶俜萦苦辛。谓言无罪过，供养卒大恩；仍更被驱遣，何言复来还！妾有绣腰襦，葳蕤自生光；红罗复斗帐，四角垂香囊；箱帘六七十，绿碧青丝绳，物物各自异，种种在其中。人贱物亦鄙，不足迎后人，留待作遗施，于今无会因。时时为安慰，久久莫相忘！”</p>
+<p>鸡鸣外欲曙，新妇起严妆。著我绣夹裙，事事四五通。足下蹑丝履，头上玳瑁光。腰若流纨素，耳著明月珰。指如削葱根，口如含朱丹。纤纤作细步，精妙世无双。</p>
+<p>上堂拜阿母，阿母怒不止。“昔作女儿时，生小出野里。本自无教训，兼愧贵家子。受母钱帛多，不堪母驱使。今日还家去，念母劳家里。”却与小姑别，泪落连珠子。“新妇初来时，小姑始扶床；今日被驱遣，小姑如我长。勤心养公姥，好自相扶将。初七及下九，嬉戏莫相忘。”出门登车去，涕落百余行。</p>
+<p>府吏马在前，新妇车在后。隐隐何甸甸，俱会大道口。下马入车中，低头共耳语：“誓不相隔卿，且暂还家去。吾今且赴府，不久当还归。誓天不相负！”</p>
+<p>新妇谓府吏：“感君区区怀！君既若见录，不久望君来。君当作磐石，妾当作蒲苇。蒲苇纫如丝，磐石无转移。我有亲父兄，性行暴如雷，恐不任我意，逆以煎我怀。”举手长劳劳，二情同依依 。</p>
+<p>入门上家堂，进退无颜仪。阿母大拊掌，不图子自归：“十三教汝织，十四能裁衣，十五弹箜篌，十六知礼仪，十七遣汝嫁，谓言无誓违。汝今何罪过，不迎而自归？”兰芝惭阿母：“儿实无罪过。”阿母大悲摧。</p>
+<p>还家十余日，县令遣媒来。云有第三郎，窈窕世无双。年始十八九，便言多令才。</p>
+<p>阿母谓阿女：“汝可去应之。”</p>
+<p>阿女含泪答：“兰芝初还时，府吏见丁宁，结誓不别离。今日违情义，恐此事非奇。自可断来信，徐徐更谓之。”</p>
+<p>阿母白媒人：“贫贱有此女，始适还家门。不堪吏人妇，岂合令郎君？幸可广问讯，不得便相许。”</p>
+<p>媒人去数日，寻遣丞请还，说有兰家女，承籍有宦官。云有第五郎，娇逸未有婚。遣丞为媒人，主簿通语言。直说太守家，有此令郎君，既欲结大义，故遣来贵门。</p>
+<p>阿母谢媒人：“女子先有誓，老姥岂敢言！”</p>
+<p>阿兄得闻之，怅然心中烦。举言谓阿妹：“作计何不量！先嫁得府吏，后嫁得郎君。否泰如天地，足以荣汝身。不嫁义郎体，其往欲何云？”</p>
+<p>兰芝仰头答：“理实如兄言。谢家事夫婿，中道还兄门。处分适兄意，那得自任专！虽与府吏要，渠会永无缘。登即相许和，便可作婚姻。”</p>
+<p>媒人下床去。诺诺复尔尔。还部白府君：“下官奉使命，言谈大有缘。”府君得闻之，心中大欢喜。视历复开书，便利此月内，六合正相应。良吉三十日，今已二十七，卿可去成婚。交语速装束，络绎如浮云。青雀白鹄舫，四角龙子幡。婀娜随风转，金车玉作轮。踯躅青骢马，流苏金镂鞍。赍钱三百万，皆用青丝穿。杂彩三百匹，交广市鲑珍。从人四五百，郁郁登郡门。</p>
+<p>阿母谓阿女：“适得府君书，明日来迎汝。何不作衣裳？莫令事不举！”</p>
+<p>阿女默无声，手巾掩口啼，泪落便如泻。移我琉璃榻，出置前窗下。左手持刀尺，右手执绫罗。朝成绣夹裙，晚成单罗衫。晻晻日欲暝，愁思出门啼。</p>
+<p>府吏闻此变，因求假暂归。未至二三里，摧藏马悲哀。新妇识马声，蹑履相逢迎。怅然遥相望，知是故人来。举手拍马鞍，嗟叹使心伤：“自君别我后，人事不可量。果不如先愿，又非君所详。我有亲父母，逼迫兼弟兄。以我应他人，君还何所望！”</p>
+<p>府吏谓新妇：“贺卿得高迁！磐石方且厚，可以卒千年；蒲苇一时纫，便作旦夕间。卿当日胜贵，吾独向黄泉！”</p>
+<p>新妇谓府吏：“何意出此言！同是被逼迫，君尔妾亦然。黄泉下相见，勿违今日言！”执手分道去，各各还家门。生人作死别，恨恨那可论？念与世间辞，千万不复全！</p>
+<p>府吏还家去，上堂拜阿母：“今日大风寒，寒风摧树木，严霜结庭兰。儿今日冥冥，令母在后单。故作不良计，勿复怨鬼神！命如南山石，四体康且直！”</p>
+<p>阿母得闻之，零泪应声落：“汝是大家子，仕宦于台阁。慎勿为妇死，贵贱情何薄！东家有贤女，窈窕艳城郭，阿母为汝求，便复在旦夕。”</p>
+<p>府吏再拜还，长叹空房中，作计乃尔立。转头向户里，渐见愁煎迫。</p>
+<p>其日牛马嘶，新妇入青庐。奄奄黄昏后，寂寂人定初。“我命绝今日，魂去尸长留！”揽裙脱丝履，举身赴清池。</p>
+<p>府吏闻此事，心知长别离。徘徊庭树下，自挂东南枝。</p>
+<p>两家求合葬，合葬华山傍。东西植松柏，左右种梧桐。枝枝相覆盖，叶叶相交通。中有双飞鸟，自名为鸳鸯。仰头相向鸣，夜夜达五更。行人驻足听，寡妇起彷徨。多谢后世人，戒之慎勿忘。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="电子书下载网站集"><div class="post-title"><h1><a>电子书下载网站集</a></h1></div><div class="post-content"><p>转自 红头发蓝胖纸 </p>
+<p>今天，给大家分享8个免费电子书下载的网站。</p>
+<p><strong># 1，知搜</strong></p>
+<p><a target="_blank" rel="noopener" href="https://zhiso.cc/">https://zhiso.cc/</a></p>
+<p>知搜是一个专注于电子书知识搜索的引擎，收录了书籍、杂志、文献、学术等知识文化领域的内容。它聚合了10几个搜书引擎和158007个书籍页面，专注于提供有效的书籍、学术和文献资源，并且完全免费。如果你需要查找电子书或其他知识资源，知搜是一个不错的选择。</p>
+<p>网站提供强大的搜索功能，用户可以根据书名、作者、关键词等快速找到所需的电子书。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/024cadbf-8cb5-43e9-93f7-fa80419801c2.png"></p>
+<p><strong># 2，鸠摩搜书</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.jiumodiary.com/">https://www.jiumodiary.com/</a></p>
+<p>鸠摩搜索聚合了多个电子书资源网站的内容，提供了海量的电子书资源，无论你喜欢小说、非小说类书籍、学术著作还是科幻小说，都能在这里找到。</p>
+<p><strong>免费获取：</strong> 鸠摩搜索为用户提供了大量免费的电子书下载链接，让你无需付费就能获得自己想要的书籍。</p>
+<p><strong>多格式支持：</strong> 支持多种电子书格式的搜索和下载，如 PDF、EPUB、MOBI 等，适配不同的阅读器和设备，满足你的阅读需求。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/167a619e-17be-4afe-8553-d50b2398c901.png"></p>
+<p><strong># 3，小力盘</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.xiaolipan.com/">https://www.xiaolipan.com/</a></p>
+<p>小力盘是一个在线免费的电子书搜索和下载网站，专注于提供各个领域的电子书资源。你可以在小力盘上找到最新的azw3、PDF、txt、mobi、epub等多种格式的电子书。无论你对小说、传记、心理学、历史、科技等哪个领域感兴趣，小力盘都能帮助你快速找到合适的电子书。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/9626b7ce-6882-4d56-9d66-4df8bba3559d.png"></p>
+<p><strong>多种分类：</strong> 小力盘将资源按类别进行详细分类，用户可以轻松浏览并找到自己需要的资源，极大地提升了查找效率。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/3f989bfa-8a4a-4684-ae33-47831faa914f.png"></p>
+<p><strong># 4，期刊杂志</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.fx361.com/">https://www.fx361.com/</a></p>
+<p>中文杂志在线阅读网站，收录3000余种刊物，过期杂志阅读首选平台。喜欢杂志的可以来这个网站上下载，可以全部免费看，而且会实时更新。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/38b9710c-5f10-4f3a-868b-9c5f58c80223.png"></p>
+<p><strong># 5，古藤堡计划</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.gutenberg.org/">https://www.gutenberg.org/</a></p>
+<p>古腾堡计划**（Project Gutenberg）是一个提供免费电子书的网站，成立于1971年，由迈克尔·哈特创立。其主要目的是将经典文学作品和公众版权书籍数字化并免费提供给公众使用。古腾堡计划是世界上最早的数字图书馆之一，旨在推动电子书的发展和阅读习惯的普及。**</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/a644dc23-156b-471b-be56-515f8ec2caeb.png"></p>
+<p>（英文网站，可以用浏览器自带的翻译功能，将它翻译成中文）</p>
+<p>古腾堡计划提供了超过70,000本免费电子书，涵盖了文学、历史、科学、哲学等多个领域。</p>
+<p><strong>多种格式</strong>：网站上的电子书可以下载多种格式，包括ePub、Kindle、HTML、纯文本等，以满足不同阅读设备和阅读软件的需求。</p>
+<p><strong># 6，PDF Drive</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.pdfdrive.com/">https://www.pdfdrive.com/</a></p>
+<p>PDF Drive 是一个提供免费 PDF 电子书下载和在线阅读的网站。它拥有一个庞大的数据库，包含了数百万本 PDF 格式的电子书，涵盖了各种主题和类别，包括文学、科学、技术、历史、教育、医学等。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/d32cb573-9267-465e-954f-1adef7640f39.png"></p>
+<p><strong># 7，偶书</strong></p>
+<p><a target="_blank" rel="noopener" href="https://obook.cc/">https://obook.cc/</a></p>
+<p>oBook<strong>是一个提供免费电子书下载和在线阅读的网站。该网站主要提供中文电子书资源，涵盖了广泛的书籍类别，包括小说、文学、历史、经济、技术、教育等。为读者提供一个方便、免费的平台，以便他们可以轻松获取各种电子书资源。</strong></p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/c2bf6115-8d35-41c3-8012-be1241dc9515.png"></p>
+<p><strong># 8，中华古籍资源库</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.nlc.cn/pcab/zy/zhgj_zyk/">https://www.nlc.cn/pcab/zy/zhgj_zyk&#x2F;</a></p>
+<p>“中华古籍资源库”是“中华古籍保护计划”的重要成果。2016年9月28日，“中华古籍资源库”正式开通运行，陆续发布国家图书馆藏善本和普通古籍、法国国家图书馆藏敦煌遗书、天津图书馆藏普通古籍、日本永青文库捐赠汉籍、云南省图书馆善本古籍、芷兰斋藏稿抄校本等古籍影像资源，总量超过3.3万部。</p>
+<p>　　2020年4月，随着国家图书馆新版“读者门户”正式上线，国家图书馆（国家古籍保护中心）将自建、征集的古籍资源统一整合在“中华古籍资源库”下，按照资源类别细化分类，实现了单库检索和多库检索，基本检索和高级检索，支持模糊检索，检索和浏览方式全面升级。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/5d153b8b-c791-4943-8418-2b89e044f6bf.png"></p>
+<p><strong>👍</strong></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="快过年了， 微信红包支持自制封面了！"><div class="post-title"><h1><a>快过年了， 微信红包支持自制封面了！</a></h1></div><div class="post-content"><p>快过年了，微信开放了个人自制红包封面功能，嗯，你的红包长啥样，你说了算。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/46e80c22-68d7-4d86-958b-44bc2f1f9484.jpg"></p>
+<p>只要升级到微信最新版本，就可以在发红包时，看到**「红包封面」-「制作红包封面」**选项，从相册里上传一张照片做封面。</p>
+<p>风景、宠物、自拍照或者 TA 的靓照……红包的里里外外，都可以是心意。做好的红包封面将和其他领取的品牌封面，一起展示在「我的红包封面」列表中，换哪个封面都方便。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/b02a9c99-c3ea-4374-af66-cf6c2165884a.gif"></p>
+<p>除了在发红包时可以做封面，「制作红包封面」还有俩入口。</p>
+<p>接收到别人发送的“自制封面”红包，可以在打开红包后，画面右上角进入**「制作红包封面」**。或直接在搜一搜“制作我的红包封面”，都可以马上开工，给红包“美颜”。</p>
+<p><img src="http://blog.huanote.com/wp-content/uploads/2025/03/b0d28e12-8d1d-47f1-8bb2-0fe89f09e014.png"></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="几张扫街黑白照"><div class="post-title"><h1><a>几张扫街黑白照</a></h1></div><div class="post-content"><p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b34e0386.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b34e0386.jpg"></a><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b4d05bd3.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b4d05bd3.jpg"></a><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b5670dbf.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b5670dbf.jpg"></a><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b670e178.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67cc4b670e178.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Win11 22H2版跳过联网安装方法:"><div class="post-title"><h1><a>Win11 22H2版跳过联网安装方法:</a></h1></div><div class="post-content"><p>1.Shift+F10&#x2F;Shift+Fn+F10</p>
+<p>2.输入oobeBypassNRO.cmd回车</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">Previous</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

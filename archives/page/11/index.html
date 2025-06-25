@@ -1,138 +1,56 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#白鹭公园，风景真不错">白鹭公园，风景真不错</a></li><li><a href="#Win11 22H2版跳过联网安装方法:">Win11 22H2版跳过联网安装方法:</a></li><li><a href="#门口的风采，各有各的精彩">门口的风采，各有各的精彩</a></li><li><a href="#逆流而上的老古董">逆流而上的老古董</a></li><li><a href="#白天的河源江边">白天的河源江边</a></li><li><a href="#河源的夜景">河源的夜景</a></li><li><a href="#光的容器">光的容器</a></li><li><a href="#褶皱时光">褶皱时光</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2024/11/04/%E7%99%BD%E9%B9%AD%E5%85%AC%E5%9B%AD%EF%BC%8C%E9%A3%8E%E6%99%AF%E7%9C%9F%E4%B8%8D%E9%94%99/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.7269593021806371" alt="白鹭公园，风景真不错" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/11/04</time>
-              <span>白鹭公园，风景真不错</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/10/04/win11-22h2%E7%89%88%E8%B7%B3%E8%BF%87%E8%81%94%E7%BD%91%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.20059679285842624" alt="Win11 22H2版跳过联网安装方法:" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/10/04</time>
-              <span>Win11 22H2版跳过联网安装方法:</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/09/11/%E9%97%A8%E5%8F%A3%E7%9A%84%E9%A3%8E%E9%87%87%EF%BC%8C%E5%90%84%E6%9C%89%E5%90%84%E7%9A%84%E7%B2%BE%E5%BD%A9/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.25457725321021285" alt="门口的风采，各有各的精彩" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/09/11</time>
-              <span>门口的风采，各有各的精彩</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/08/04/%E3%80%8A%E9%80%86%E6%B5%81%E8%80%8C%E4%B8%8A%E7%9A%84%E8%80%81%E5%8F%A4%E8%91%A3%E3%80%8B/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.9079775335280273" alt="逆流而上的老古董" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/08/04</time>
-              <span>逆流而上的老古董</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/03/14/%E7%99%BD%E5%A4%A9%E7%9A%84%E6%B2%B3%E6%BA%90%E6%B1%9F%E8%BE%B9/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.45799611341068336" alt="白天的河源江边" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/03/14</time>
-              <span>白天的河源江边</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2024/03/14/%E6%B2%B3%E6%BA%90%E7%9A%84%E5%A4%9C%E6%99%AF/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.211043437609443" alt="河源的夜景" class="thumbnail" />
-            <div class="article-info">
-              <time>2024/03/14</time>
-              <span>河源的夜景</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2023/12/06/%E5%85%89%E7%9A%84%E5%AE%B9%E5%99%A8/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.4755816732182654" alt="光的容器" class="thumbnail" />
-            <div class="article-info">
-              <time>2023/12/06</time>
-              <span>光的容器</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2023/11/30/%E8%A4%B6%E7%9A%B1%E6%97%B6%E5%85%89/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6481209892411868" alt="褶皱时光" class="thumbnail" />
-            <div class="article-info">
-              <time>2023/11/30</time>
-              <span>褶皱时光</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/archives/page/10/'">上一页</button>
-      
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="白鹭公园，风景真不错"><div class="post-title"><h1><a>白鹭公园，风景真不错</a></h1></div><div class="post-content"><p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/4b341983a0b14a47a8f5741f5061b1fc7256920801179400305.tmp_.jpg"></p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/b81ea4a298944a539216b9b19798aa1c7347963376359219116.tmp_.jpg"></p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/d1f744209c214d5cae193f3202bae83c2859886393441065215.tmp_.jpg"></p>
+<p>阳光明媚的下午，白鹭公园迎来了一个又一个的人们。公园位于城市边缘高新区的东江边，两岸有着郁郁葱葱的树木和鲜花盛开的花园。江面面上有一群群的白鹭在悠闲地游荡，它们优雅的姿态吸引了无数游客的目光。</p>
+<p>湖边的小径上，人们或散步或慢跑，享受着大自然的恩赐。</p>
+<p>夕阳西下，白鹭公园渐渐安静下来。人们依依不舍地离开了公园。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Win11 22H2版跳过联网安装方法:"><div class="post-title"><h1><a>Win11 22H2版跳过联网安装方法:</a></h1></div><div class="post-content"><p>1.Shift+F10&#x2F;Shift+Fn+F10</p>
+<p>2.输入oobeBypassNRO.cmd回车</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="门口的风采，各有各的精彩"><div class="post-title"><h1><a>门口的风采，各有各的精彩</a></h1></div><div class="post-content"><p>门口的风采，各有各的精彩</p>
+<p>门口，这个看似平凡的空间，实则是每个场所的面孔，它以独特的方式展现着各自的特色与魅力。在这里，每一处设计、每一抹色彩、甚至每一道光影都讲述着一个关于这个地方的故事。</p>
+<p>有的门口，简洁而不失大气，以干净利落的线条勾勒出一种现代感，仿佛在告诉每一个经过的人，这里代表着效率与专业。光滑的地砖铺就的地面，反射着都市的繁华。另一些门口，则充满了历史的沉淀与文化的底蕴。让人不禁驻足欣赏，仿佛能通过这些细节窥见过往的辉煌。还有的门口，洋溢着温馨与生活的气息，让人忍不住放慢脚步，享受那份宁静与舒适，仿佛回到了一个永远等待你归来的港湾。</p>
+<p>每个门口都是一个故事的开始，它们以不同的方式吸引着人们的目光，引领着我们走进一个个不同的世界。无论是现代的简约，历史的厚重，还是生活的温馨，门口的风采总是各有各的精彩，值得我们去细细品味。</p>
+<p><img src="https://blog.huanote.com/wp-content/uploads/2025/03/DSCF0751.jpg"><img src="https://blog.huanote.com/wp-content/uploads/2025/03/DSCF0687.jpg"><img src="https://blog.huanote.com/wp-content/uploads/2025/03/DSCF0626.jpg"><img src="https://blog.huanote.com/wp-content/uploads/2025/03/DSCF0615.jpg"></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="逆流而上的老古董"><div class="post-title"><h1><a>逆流而上的老古董</a></h1></div><div class="post-content"><p>我叫大华，是一位在全民短视频时代坚持用26全键盘发短信的那个老古董，是那个在AI绘画席卷全球时坚持摄影采风的老顽固，是那个在别人都在元宇宙买房时还在用存钱罐的古典经济学者——现在，我又在个人博客将死的哀乐中，新申请了一个域名，建立起一个全新的个人博客，光荣地成为了赛博坟场守墓人。</p>
+<p>你可能要问：这年头谁还看博客？是短视频不够香，还是社交平台不够闹？但请注意，我选择在互联网的诺亚方舟上给自己钉了个木筏，主打的就是一个叛逆。</p>
+<p><strong>我开博的三大科学理由：</strong></p>
+<p><strong>逃离AI饲养员计划</strong> 算法推荐给我的内容已经从”五分钟看完《百年孤独》”进化到”三秒体验分娩镇痛”，我怀疑再这样下去，某天打开APP就会直接弹出”脑机接口安装教程”。这个博客是我的野生保护区，这里没有信息茧房，只有我撒丫子乱跑的思维。</p>
+<p><strong>对抗金鱼记忆综合症</strong> 上次看到某网红塌房时，我对着手机屏幕足足困惑了十分钟——这不是三年前塌过的那位吗？怎么又盖好房子再塌一次？在这里，每篇博文都会标注事件的时间锚点，保证二十年后的我翻开时不会发出”原来2024年人类还在用手机”的考古惊叹。</p>
+<p><strong>给自己建个树洞</strong> 毕竟朋友圈发”今天的云像棉花糖”会收获50个点赞和3个微商广告，而在这里写”今天的云像被熊孩子扯烂的棉被”，说不定会召唤出某个深夜失眠的陌生人回复：”巧了，我这朵云像被甲方打回的PPT”。</p>
+<p>至于更新频率？请参考小区总在维修的电梯——可能突然灵光乍现日更三篇，也可能卡在”正在加载灵感”的进度条里半个月。总之一句话，不定期。</p>
+<p>至于内容，不用期待，很个人，毕竟这是我个人的记录本。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="白天的河源江边"><div class="post-title"><h1><a>白天的河源江边</a></h1></div><div class="post-content"><p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88e97402.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88e97402.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88db7348.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88db7348.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88cd08bb.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88cd08bb.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88bdd1d6.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88bdd1d6.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88acb2cb.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88acb2cb.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88964589.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b88964589.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="河源的夜景"><div class="post-title"><h1><a>河源的夜景</a></h1></div><div class="post-content"><p>当暮色浸染槎城，东江与新丰江如两条流光缎带，将河源切割成三面环水的玲珑半岛。新丰江水清冽如寒玉，东江水流厚重如琥珀，两江交汇处的水纹在夜色中泛起粼粼碎金。沿河步道上的暖黄地灯与跨江大桥的霓虹倒影交织，仿佛给水面镶上一条闪烁的银河腰带</p>
+<p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d9d07b5.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d9d07b5-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d8dba81.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d8dba81-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d77e214.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d77e214-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d68ae4a.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d68ae4a-300x225.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d59c222.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d3b7d59c222-300x225.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="光的容器"><div class="post-title"><h1><a>光的容器</a></h1></div><div class="post-content"><p>【光的容器】 暮色是液态的哲学，在透明介质里结晶出时空的褶皱。那些悬浮的光斑不是倒影，而是建筑与云絮在量子层面的纠缠态。工业棱角在折射中坍缩为柔软函数，树影以分形算法解构着理性的边界。所有坚硬存在终将溶解于光的波粒二象性——当黄昏穿过空间的晶格，金属学会呼吸，混凝土泛起潮汐，整个城市成为盛放虚无的透明器皿，每个像素都在演绎物质与虚空互为倒模的永恒辩题。 <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d869b3d53d9.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d869b3d53d9-205x300.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965bc0a9.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965bc0a9-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965c1e45.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d86965c1e45-204x300.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="褶皱时光"><div class="post-title"><h1><a>褶皱时光</a></h1></div><div class="post-content"><p>《褶皱时光》 <br>高架桥的轰鸣在虚焦里流淌， <br>红衣是血液的坐标， <br>长凳托起都市的顿号。   </p>
+<p>树影筛落电子独白， <br>蜷缩的剪影与光斑对弈， <br>绿荫在像素中洇成水墨。   <br>磨砂质地滤过馒头香的白噪音， <br>垂落的狗绳丈量初冬的凉意。   </p>
+<p>当世界以1&#x2F;100秒疾驰， <br>总有人在时光褶皱里—— <br>打捞未被收割的寂静， <br>或与条纹小狗平分 <br>一粒阳光的重量。 </p>
+<p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d866ca3449c.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d866ca3449c-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bb4c3f.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bb4c3f-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bba402.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bba402-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bc65a0.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bc65a0-300x265.jpg"></a> <a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bece28.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d8667bece28-300x265.jpg"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/archives/page/10/">Previous</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

@@ -1,160 +1,470 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#​​分享两篇经典表书《出师表》​​、​《陈情表》">​​分享两篇经典表书《出师表》​​、​《陈情表》</a></li><li><a href="#转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;">转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;</a></li><li><a href="#坚持">坚持</a></li><li><a href="#4个常见的在线Ping测试工具，检测不同节点网络的延迟速度">4个常见的在线Ping测试工具，检测不同节点网络的延迟速度</a></li><li><a href="#推荐几个非常好的网站">推荐几个非常好的网站</a></li><li><a href="#老哥两">老哥两</a></li><li><a href="#170+ Docker 容器应用汇总">170+ Docker 容器应用汇总</a></li><li><a href="#关于语言的思考">关于语言的思考</a></li><li><a href="#对朋友圈的一些想法。">对朋友圈的一些想法。</a></li><li><a href="#Custom Styles">Custom Styles</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/03/25/%E5%88%86%E4%BA%AB%E4%B8%A4%E7%AF%87%E7%BB%8F%E5%85%B8%E8%A1%A8%E4%B9%A6%E3%80%8A%E5%87%BA%E5%B8%88%E8%A1%A8%E3%80%8B%E3%80%81%E3%80%8A%E9%99%88%E6%83%85/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.5134026901518993" alt="​​分享两篇经典表书《出师表》​​、​《陈情表》" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/25</time>
-              <span>​​分享两篇经典表书《出师表》​​、​《陈情表》</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/21/%E8%BD%AC%E4%B8%80%E7%AF%87%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E6%96%87%E7%AB%A0%EF%BC%9A%E6%80%8E%E6%A0%B7%E6%89%8D%E8%83%BD%E7%9D%A1%E4%B8%AA%E5%A5%BD%E8%A7%89%EF%BC%9F%E8%B6%85/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.1331417431501627" alt="转一篇人民日报文章：怎样才能&ldquo;睡个好觉&rdquo;？超详细睡眠健康指南来了&rarr;" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/21</time>
-              <span>转一篇人民日报文章：怎样才能&ldquo;睡个好觉&rdquo;？超详细睡眠健康指南来了&rarr;</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/20/%E5%9D%9A%E6%8C%81/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.5141297741312976" alt="坚持" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/20</time>
-              <span>坚持</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/20/4%E4%B8%AA%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9C%A8%E7%BA%BFping%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%A3%80%E6%B5%8B%E4%B8%8D%E5%90%8C%E8%8A%82%E7%82%B9%E7%BD%91%E7%BB%9C%E7%9A%84%E5%BB%B6/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.25569139467413504" alt="4个常见的在线Ping测试工具，检测不同节点网络的延迟速度" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/20</time>
-              <span>4个常见的在线Ping测试工具，检测不同节点网络的延迟速度</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/20/%E6%8E%A8%E8%8D%90%E5%87%A0%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%9A%84%E7%BD%91%E7%AB%99/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.4206256462575886" alt="推荐几个非常好的网站" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/20</time>
-              <span>推荐几个非常好的网站</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/18/%E8%80%81%E5%93%A5%E4%B8%A4/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.2359914885365113" alt="老哥两" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/18</time>
-              <span>老哥两</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/17/170-docker-%E5%AE%B9%E5%99%A8%E5%BA%94%E7%94%A8%E6%B1%87%E6%80%BB/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.2633452511752006" alt="170+ Docker 容器应用汇总" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/17</time>
-              <span>170+ Docker 容器应用汇总</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/17/%E5%85%B3%E4%BA%8E%E8%AF%AD%E8%A8%80%E7%9A%84%E6%80%9D%E8%80%83/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.15401045625626697" alt="关于语言的思考" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/17</time>
-              <span>关于语言的思考</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/13/%E5%AF%B9%E6%9C%8B%E5%8F%8B%E5%9C%88%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%E3%80%82/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.23245446361706112" alt="对朋友圈的一些想法。" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/13</time>
-              <span>对朋友圈的一些想法。</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/03/12/wp-global-styles-twentytwentythree/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.3721857385981404" alt="Custom Styles" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/03/12</time>
-              <span>Custom Styles</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-        <button onclick="location.href='/archives/page/7/'">上一页</button>
-      
-      
-        <button onclick="location.href='/archives/page/9/'">下一页</button>
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="​​分享两篇经典表书《出师表》​​、​《陈情表》"><div class="post-title"><h1><a>​​分享两篇经典表书《出师表》​​、​《陈情表》</a></h1></div><div class="post-content"><h5 id="中国经典表书"><a href="#中国经典表书" class="headerlink" title="中国经典表书"></a><strong>中国经典表书</strong></h5><ol>
+<li>​<strong>​《出师表》​</strong><ul>
+<li>​<strong>作者</strong>：诸葛亮（三国时期）</li>
+<li>​<strong>背景</strong>：诸葛亮北伐前写给蜀汉后主刘禅的奏表，表达对国家的忠诚和治国建议。</li>
+<li>​<strong>名句</strong>：“鞠躬尽瘁，死而后已。”</li>
+<li>​<strong>地位</strong>：被誉为“千古第一忠臣表”，文辞恳切，感人至深。</li>
+</ul>
+</li>
+</ol>
+<p>出师表</p>
+<p>作者：诸葛亮</p>
+<p>先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。</p>
+<p>宫中府中，俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之理；不宜偏私，使内外异法也。</p>
+<p>侍中、侍郎郭攸之、费祎、董允等，此皆良实，志虑忠纯，是以先帝简拔以遗陛下。愚以为宫中之事，事无大小，悉以咨之，然后施行，必能裨补阙漏，有所广益。</p>
+<p>将军向宠，性行淑均，晓畅军事，试用于昔日，先帝称之曰能，是以众议举宠为督。愚以为营中之事，悉以咨之，必能使行阵和睦，优劣得所。</p>
+<p>亲贤臣，远小人，此先汉所以兴隆也；亲小人，远贤臣，此后汉所以倾颓也。先帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也。侍中、尚书、长史、参军，此悉贞亮死节之臣，愿陛下亲之信之，则汉室之隆，可计日而待也。</p>
+<p>臣本布衣，躬耕于南阳，苟全性命于乱世，不求闻达于诸侯。先帝不以臣卑鄙，猥自枉屈，三顾臣于草庐之中，咨臣以当世之事。由是感激，遂许先帝以驱驰。后值倾覆，受任于败军之际，奉命于危难之间，尔来二十有一年矣！</p>
+<p>先帝知臣谨慎，故临崩寄臣以大事也。受命以来，夙夜忧叹，恐托付不效，以伤先帝之明；故五月渡泸，深入不毛。今南方已定，兵甲已足，当奖率三军，北定中原；庶竭驽钝，攘除奸凶，兴复汉室，还于旧都。此臣所以报先帝而忠陛下之职分也。至于斟酌损益，进尽忠言，则攸之、祎、允之任也。</p>
+<p>愿陛下托臣以讨贼兴复之效，不效，则治臣之罪，以告先帝之灵。若无兴德之言，则责攸之、祎、允等之慢，以彰其咎。陛下亦宜自谋，以咨诹善道，察纳雅言，深追先帝遗诏，臣不胜受恩感激。</p>
+<p>今当远离，临表涕零，不知所言。</p>
+<p><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67e22d3c0b45f.webp"></p>
+<ol>
+<li><ol start="2">
+<li>​<strong>​《陈情表》​</strong><ul>
+<li>​<strong>作者</strong>：李密（西晋）</li>
+<li>​<strong>背景</strong>：李密为辞官奉养祖母，向晋武帝上表陈情，以孝心打动君主。</li>
+<li>​<strong>名句</strong>：“臣无祖母，无以至今日；祖母无臣，无以终余年。”</li>
+<li>​<strong>地位</strong>：与《出师表》并称“忠孝双璧”，情感真挚，逻辑严密。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.gushiwen.cn/shiwenv_f84986dafb2d.aspx"><strong>陈情表</strong></a></p>
+<p>作者：<a target="_blank" rel="noopener" href="https://www.gushiwen.cn/authorv.aspx?name=%E8%A5%BF%E6%99%8B%C2%B7%E6%9D%8E%E5%AF%86">西晋·李密</a><a target="_blank" rel="noopener" href="https://www.gushiwen.cn/shiwens/default.aspx?cstr=%E9%AD%8F%E6%99%8B">〔魏晋〕</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.gushiwen.cn/authorv.aspx?name=%E8%A5%BF%E6%99%8B%C2%B7%E6%9D%8E%E5%AF%86"><img src="https://ziyuan.guwendao.net/authorImg300/xijinlimi.jpg" alt="西晋·李密"></a></p>
+<p>臣密言：臣以险衅，夙遭闵凶。生孩六月，慈父见背；行年四岁，舅夺母志。祖母刘愍臣孤弱，躬亲抚养。臣少多疾病，九岁不行，零丁孤苦，至于成立。既无伯叔，终鲜兄弟，门衰祚薄，晚有儿息。外无期功强近之亲，内无应门五尺之僮，茕茕孑立，形影相吊。而刘夙婴疾病，常在床蓐，臣侍汤药，未曾废离。(愍 一作：悯；孑立 一作：独立)</p>
+<p>逮奉圣朝，沐浴清化。前太守臣逵察臣孝廉；后刺史臣荣举臣秀才。臣以供养无主，辞不赴命。诏书特下，拜臣郎中，寻蒙国恩，除臣洗马。猥以微贱，当侍东宫，非臣陨首所能上报。臣具以表闻，辞不就职。诏书切峻，责臣逋慢；郡县逼迫，催臣上道；州司临门，急于星火。臣欲奉诏奔驰，则刘病日笃，欲苟顺私情，则告诉不许：臣之进退，实为狼狈。</p>
+<p>伏惟圣朝以孝治天下，凡在故老，犹蒙矜育，况臣孤苦，特为尤甚。且臣少仕伪朝，历职郎署，本图宦达，不矜名节。今臣亡国贱俘，至微至陋，过蒙拔擢，宠命优渥，岂敢盘桓，有所希冀。但以刘日薄西山，气息奄奄，人命危浅，朝不虑夕。臣无祖母，无以至今日，祖母无臣，无以终余年。母、孙二人，更相为命，是以区区不能废远。</p>
+<p>臣密今年四十有四，祖母今年九十有六，是臣尽节于陛下之日长，报养刘之日短也。乌鸟私情，愿乞终养。臣之辛苦，非独蜀之人士及二州牧伯所见明知，皇天后土实所共鉴。愿陛下矜愍愚诚，听臣微志，庶刘侥幸，保卒余年。臣生当陨首，死当结草。臣不胜犬马怖惧之情，谨拜表以闻。(矜愍 一作：矜悯)</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;"><div class="post-title"><h1><a>转一篇人民日报文章：怎样才能&amp;ldquo;睡个好觉&amp;rdquo;？超详细睡眠健康指南来了&amp;rarr;</a></h1></div><div class="post-content"><p>今天是世界睡眠日。睡眠是人的基本生理功能。睡眠可消除疲劳、恢复精力，良好的睡眠对于维持生理功能、促进生长发育、提高认知和记忆力有重要作用。 近日，全国爱卫办发布《睡眠健康核心信息及释义》。什么样的睡眠才是好睡眠？怎样才能拥有高质量睡眠？这些关于睡眠的要点，一起来了解，****不同年龄有“最佳睡眠时长”****<strong><strong>你每天需要睡多久？</strong></strong> 《睡眠健康核心信息及释义》提出，不同年龄段人群所需睡眠时长不同，且因人而异。一般来说：</p>
+<ul>
+<li><strong>0-3月龄婴儿每天需要13-18小时；</strong></li>
+<li><strong>4-11月龄婴儿12-16小时；</strong></li>
+<li><strong>1-2岁幼儿11-14小时；</strong></li>
+<li><strong>学龄前儿童10-13小时；</strong></li>
+<li><strong>中小学生8-10小时；</strong></li>
+<li><strong>成年人7-8小时；</strong></li>
+<li><strong>老年人6-7小时。</strong></li>
+</ul>
+<p>规律的睡眠时间是健康睡眠的保障。提倡顺应四时，起居有常。保持规律的入睡和起床时间，维持稳定的生物节律。</p>
+<ul>
+<li>成年人推荐<strong>晚上10-11点入睡，早晨6-7点起床；</strong></li>
+<li>老年人推荐<strong>晚上10-11点入睡，早晨5-6点起床。</strong></li>
+</ul>
+<p><img src="https://img.huanote.com/uploads/2025/03/21/67dcca21d3035.jpeg"> <strong>02</strong><strong><strong><strong>什么样的睡眠才是好睡眠？</strong></strong></strong> 良好的睡眠质量是健康睡眠的关键。良好睡眠质量通常表现为：</p>
+<ul>
+<li><strong>入睡时****间在30分钟以内</strong>（6岁以下儿童在20分钟以内）；</li>
+<li><strong>夜间醒来的次数不超过3次</strong>，且醒来后能在20分钟内再次入睡；</li>
+<li>醒来后感到精神饱满、心情愉悦、精力充沛、注意力集中。</li>
+</ul>
+<p><img src="https://img.huanote.com/uploads/2025/03/21/67dcca2089be7.jpeg"> 如经常出现入睡困难（入睡时间超过30分钟，6岁以下超过20分钟）、睡眠中觉醒且醒后无法再次入睡、白天频繁打瞌睡犯困、夜间鼾声响亮伴有呼吸间歇、睡眠不规律、睡眠过程中出现梦游、遗尿等异常动作时，<strong>提示可能患有睡眠障碍，应及时到医疗机构寻求专业帮助。<strong><strong>03</strong></strong>长期睡眠不良有哪些危害？** 睡眠不良是指睡眠时长不足或过长、睡眠质量下降或睡眠规律紊乱。 常见表现有**睡眠时间减少或延长、不能按时入睡、入睡困难、早醒、夜间频繁醒来、眠浅梦多、白天嗜睡等。</strong></p>
+<ul>
+<li>长期睡眠不良会导致**反应迟钝，注意力、记忆力等认知功能下降，**学习工作效率降低，甚至增加交通和生产安全风险；</li>
+<li>会导致情绪不稳，烦躁不安，<strong>严重者会诱发焦虑、抑郁等；</strong></li>
+<li>**会降低机体免疫力，**增加感染性疾病、心脑血管疾病、代谢性疾病和癌症等患病风险。</li>
+</ul>
+<p><img src="https://img.huanote.com/uploads/2025/03/21/67dcca212abc1.jpeg"> <strong>04****怎样才能拥有高质量睡眠？</strong> 睡眠是一个复杂的生理过程，需要良好的生活习惯和适宜的睡眠环境来支持。</p>
+<ul>
+<li>养成规律的睡眠时间，**保持适度的体育锻炼，**避免久坐，适度晒太阳。</li>
+<li>卧室环境应安静舒适，根据个人的习惯保持适宜的光线强度，**室内温度在20℃-24℃、空气湿度在40%-60%为宜，**经常开窗通风。</li>
+<li>**床垫宜相对坚实，**不要过度松软塌陷，<strong>枕头高矮适中，被褥清洁干燥。</strong></li>
+<li>运用正念、放松训练、认知调整等心理疏导技巧，睡前洗澡泡脚等，都有助于睡眠。</li>
+<li>避免熬夜、睡前饮酒喝茶，晚餐不宜过饱过晚，<strong>睡前尽量不要刷手机。</strong></li>
+</ul>
+<hr>
+<p>来源：人民日报微信，综合全国爱卫办《睡眠健康核心信息及释义》</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="坚持"><div class="post-title"><h1><a>坚持</a></h1></div><div class="post-content"><p>今天跟一个教书法的老师在线上聊了会天，让我感触很深，老师说的最多的一个词就是坚持，坚持看帖，坚持临帖，这是学好书法的路，没有捷径可走。是啊，想做好一件事，哪里会有捷径呢。</p>
+<p>坚持是通往成功的必经之路，不仅在书法上，在生活的方方面面也是如此。回想自己曾经半途而废的那些爱好和目标，往往都是因为缺乏持之以恒的毅力。锻炼、学习、阅读……这些都需要日复一日的积累和付出。对于普通人来说，“坚持”这件事总是比想象中还要困难。它意味着，你需要投入大量时间和心力，去面对一个可能永远没有收益或者“性价比极低”的结果，面对无数“值得吗”的拷问。这是条难走的窄路。选择这条路的人，常常被认为“没那么聪明”。这让我想起一部纪录片，《一百年很长吗》，讲述了很多你我一般的普通人的故事。我印象最深的是一个叫“黄忠坚”的人。他 16 岁来佛山打工，当包工头，每天奔忙在工地。他喜欢舞狮和练拳，业余时间全部拿来练习。他只有周末才有空骑车去武馆训练，练了很久还是比别人慢半拍。他就一直加练，每次都练到最后一个走。他在十几平米的出租屋里拿着脸盆练习，模拟舞狮的动作。就这样坚持了好多年。黄忠坚说，“功夫没有绝招，一个招式练一万遍就是绝招。”弹幕和评论区一直有人说他应该更务实一点，“去学能安身立命的本事”。但纪录片中有一句话特别打动我：“人投入感情的东西，是没有办法去计算性价比的。”这是一种带着“拙诚”的生活态度：一头扎进自己热爱的事情里，不必计算性价比，不必反复询问值得与否。</p>
+<p>但我们仍然忍不住抱有好奇：没有“性价比”的事，如何坚持下来？是什么动力支撑着他们，坚定自己所选择的路？直到我看到《圆桌派》里，一段对于“匠人精神”的重新定义：“他们在做一件事的时候不是只想要「做到最好」，他是很专注在这一刹那。”“我一做我就进去了，这是解脱。”对于投入自己的热爱认真做事的人来说，“坚持”的过程并不难熬，反而是专注和乐在其中的。这种专注和乐在其中的状态，正是坚持的真正意义所在。它不是一种痛苦的忍耐，而是一种享受过程、沉浸其中的生活方式。就像书法老师所说的，每天坚持看帖、临帖，看似枯燥，但当你真正热爱它时，这个过程就变成了与古人对话、与自我对话的契机。</p>
+<p>坚持的意义不仅在于最终的结果，更在于这个过程中我们如何与自己相处，如何在日复一日的重复中找到新的意义和乐趣。正如黄忠坚在舞狮和练拳中找到的快乐，他不是在追求一个明确的结果，而是在享受这个过程本身。</p>
+<p>在现代社会，我们常常被各种”成功学”和”效率至上”的思想所裹挟，忘记了生活的本质在于体验和感受。坚持的意义，或许就在于它让我们重新审视自己的内心，找到真正热爱的事物，并为之付出时间和精力。</p>
+<p>这种生活方式也让我们更加从容面对生活中的各种挑战和变化。当我们习惯了在平凡的日子里坚持做一件事时，我们也就具备了应对生活中各种不确定性的能力。因为我们知道，只要坚持下去，总会看到改变和进步。</p>
+<p>所以，当我们坚持做着那些看似没有”性价比”的事情时，不妨换个角度思考：这件事是否能让我感到快乐和满足？是否能让我在过程中获得成长和进步？如果答案是肯定的，那么坚持就有了意义。正如苏轼所言：”古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。”坚持从不是通往成功的工具，其本身就是对生命深度的勘探。那些在重复中照见的晨昏、在专注里触摸到的永恒，早已胜过所有世俗意义上的成败标尺。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="4个常见的在线Ping测试工具，检测不同节点网络的延迟速度"><div class="post-title"><h1><a>4个常见的在线Ping测试工具，检测不同节点网络的延迟速度</a></h1></div><div class="post-content"><h1 id="4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度"><a href="#4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度" class="headerlink" title="4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度"></a>4个常见的在线Ping测试工具，轻松检测不同节点网络的延迟速度</h1><p>当我们拿到一台服务器和主机后呀，首要之事可不是急着去配置网站或者安装软件呢，而是应当检测一下所购买的主机，看看它的速度与稳定性是否真如商家宣称的那般高效，又或者像一些主机评测网站所描述的那样可靠。而在检测的过程中，我们常用的得力工具就是Ping测试工具啦。借助在线Ping测试工具，我们能够对服务器的各个节点速度进行检测哦。</p>
+<p>不过呢，在使用<a target="_blank" rel="noopener" href="https://www.tcptest.cn/">在线Ping</a>测试工具的时候呀，大家可得注意啦，不同的服务器网络以及与之对应的各个节点，其速度可是存在差异的哟。就好比咱们国内的服务器吧，在国内使用时速度往往很不错，可要是连接国外的节点呀，那速度可就不尽人意了，延迟也会比较高呢。同样的道理呀，要是选择欧美服务器，其海外节点的速度虽然挺快，但在咱们国内使用时，延迟就会偏高啦。所以说呀，Ping速度延迟的测试结果仅仅只能作为一种参考哦，毕竟这还需要综合考量不同的服务商情况、带宽网络条件，以及实际使用过程中的用户体验呢。</p>
+<p>在这篇文章里呀，咱们今天就特意为大家整理了几个常用的在线Ping测试工具呢，希望能够帮助网友们在对服务器进行评测的时候，更好地体验主机的速度哦。</p>
+<p><strong>## 1、</strong><a target="_blank" rel="noopener" href="https://www.tcptest.cn/">https://www.tcptest.cn</a></p>
+<p>易上云端自主研发的网站质量监测平台，专注公共云、混合云及多云场景一体化资源监控多年。平台设有全球 200 + 网络拨测节点，可模拟用户访问域名 &#x2F; IP，助力排查网络、站点可用性问题，覆盖全国及港澳台、海外诸多网络。</p>
+<p>其中，TCPTest 能从全国各拨测点发送模拟真实用户访问的探测请求，记录终端用户访问<a target="_blank" rel="noopener" href="https://www.tcptest.cn/">网站测速</a>情况，实现网站或服务器的分布式监控。用户借助 TCPTest 可实时掌握监控目标的可用率、响应时间、故障告警等详细信息，以便快速解决问题。</p>
+<p><img src="https://www.huanote.com/wp-content/uploads/2025/03/67dc2ce1ee1db.jpg"></p>
+<p><strong>## 2、</strong><a target="_blank" rel="noopener" href="https://ping.pe/">https://ping.pe</a></p>
+<p>这款 PING 测试工具相当厉害，能够对全球数十个节点的 PING 速度展开测试，而且还涵盖了 MTR 路由去程哦。</p>
+<p><img src="https://https//www.huanote.com/wp-content/uploads/2025/03/67dc2ce2de4a7.jpg"></p>
+<p><strong>## 3、</strong><a target="_blank" rel="noopener" href="https://www.itdog.cn/">https://www.itdog.cn/</a></p>
+<p>ITDOG 提供 Ping、Tcping、路由追踪、DNS 查询和<a target="_blank" rel="noopener" href="https://shuyeidc.com/wp/tag/%e7%bd%91%e7%ab%99%e6%b5%8b%e9%80%9f" title="网站测速">网站测速</a>等高频使用的工具，未来还计划上线定制化、场景化工具，虽使用率或不高，但旨在满足不同用户需求。</p>
+<p>起初，ITDOG 的用户群主要是网络发烧友、个人站长和中小企业，而如今，越来越多的大型网络服务商和专业运维企业高频使用其工具，他们积极反馈需求，携手优化现有工具，还实名给予好评。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc2ce802511.jpg"></p>
+<p><strong>## 4、</strong><a target="_blank" rel="noopener" href="https://www.boce.com/">https://www.boce.com/</a></p>
+<p>boce.com提供数十款站长常用的检测工具，如网站测速、ping 检测、域名污染检测、域名被墙检测、dns 查询、ipv6 网站测试、路由跟踪查询、劫持检测等，帮助站长全面了解网站的运行状况和潜在问题。</p>
+<p><img src="https://www.huanote.com/wp-content/uploads/2025/03/67dc2ce9352e4.jpg"></p>
+<p>文章来源网络</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="推荐几个非常好的网站"><div class="post-title"><h1><a>推荐几个非常好的网站</a></h1></div><div class="post-content"><h2 id="IFIXIT"><a href="#IFIXIT" class="headerlink" title="IFIXIT"></a>IFIXIT</h2><p>这绝对是男人最爱的网站之一</p>
+<p>IFIXIT，<strong>号称世界上最大的维修社区，在这里面万物皆可修</strong>。</p>
+<p>在这里面你可以看见大量的维基式在线维修指南。<strong>小到消费电子设备和各种小工具、服装，大到汽车卡车都有详细的维修教程</strong>。</p>
+<p>里面的每一个大类中又按照品牌分为了不同小分类，里面的图文说明看的我都感觉自己能iPhone X爆改16 PRO MAX了</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06de5983b.gif"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://zh.ifixit.com/">https://zh.ifixit.com</a></p>
+<hr>
+<hr>
+<h2 id="几何指南"><a href="#几何指南" class="headerlink" title="几何指南"></a>几何指南</h2><p>同样是一个动手能力强的朋友们不能错过的网站，一个超酷的木工网站。</p>
+<p>网站里面包含了<strong>各种木工图纸、材料信息和木工相关知识</strong>。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06dfd5b00.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e26d990.gif"></p>
+<p>里面的<strong>每一种图纸都配备了免费的在线3D模型</strong>，各种模型细节都能清楚地展示出来。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e478a51.gif"></p>
+<p>此外网站里还对木工“吃饭的家伙们”按照分类、结构和使用技巧等多个方面做了介绍。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e57d147.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://jihezn.com/">https://jihezn.com</a></p>
+<hr>
+<h2 id="MakerWorld"><a href="#MakerWorld" class="headerlink" title="MakerWorld"></a>MakerWorld</h2><p>家里有3D打印机的话，这个网站是绝对不能错过的。</p>
+<p>相信很多人刚开始买3D打印机都是兴致冲冲的准备给自己打印很多实用的小玩意的。</p>
+<p>但是真正到手后才发现这3D建模它是真难啊！然后就吃灰了…</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e6061e2.jpg"></p>
+<p>而这个网站就是一个大型的免费3D模型分享网站，里面就有很多别人制作好了的小物件。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e6cf8f6.png"></p>
+<p>这样咱们就可以直接将模型下载下来直接打印了。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e7aa417.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://makerworld.com.cn/zh">https://makerworld.com.cn/zh</a></p>
+<hr>
+<hr>
+<h2 id="时光图书馆"><a href="#时光图书馆" class="headerlink" title="时光图书馆"></a>时光图书馆</h2><p>一个收录了各类经典文献、历史资料和文化资源的在线平台。</p>
+<p>莫理看了一下大致内容有照片、课表、杂志、连环画、古籍、书画、乐谱、摄影、游记、文学、县志和老报纸等。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e87c4dd.png"></p>
+<p>里面的内容非常丰富，莫理翻了半天都没有滑到底，甚至还找到了112年前的上海公报</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06e932b57.png"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://atimebook.com/">https://atimebook.com</a></p>
+<hr>
+<hr>
+<h2 id="网络威胁实时地图"><a href="#网络威胁实时地图" class="headerlink" title="网络威胁实时地图"></a>网络威胁实时地图</h2><p>这是一个实时追踪并展示全球各国所遭受网络攻击情况的网站。</p>
+<p>通过它咱们就能看到<strong>每个国家遭到网络攻击的数量，里面的每一种颜色都代表着不同的攻击类别</strong>。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ec27a4c.gif"></p>
+<p>在统计中还能查看到网络的感染次数。不过莫理看不大懂，只感觉显示的很炫酷</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ed001e3.png"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://cybermap.kaspersky.com/cn">https://cybermap.kaspersky.com/cn</a></p>
+<hr>
+<hr>
+<h2 id="cobalt"><a href="#cobalt" class="headerlink" title="cobalt"></a>cobalt</h2><p>免费且开源的媒体下载工具，这种工具莫理其实已经推荐过很多了但大多都是软件或插件形式的。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ed813af.png"></p>
+<p>并且大部分这种工具都仅适用于国内的流媒体平台，一旦在油管、facebook、推特就不行了…</p>
+<p>这款网站就是专门用于下载国外视频的小工具，咱们只需要复制视频链接就能直接下载了。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ee07558.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ee81cda.png"></p>
+<p>网站支持YouTube、Instagram、TikTok等多个国外网站的视频下载。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06ef12e1c.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://cobalt.tools/">https://cobalt.tools</a></p>
+<hr>
+<h2 id="学于趣字帖"><a href="#学于趣字帖" class="headerlink" title="学于趣字帖"></a>学于趣字帖</h2><p>一款免费的田字格字帖生成器，有了它就再也不用在网上购买字帖了。</p>
+<p>网站提供了包括中文、英文、数字、拼音、控笔练习在内的五种类型字帖。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06efd01e4.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f094167.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f2518c6.png"></p>
+<p>此外对于中文字帖，网站支持自定义文本内容、颜色、字体以及田字格的样式。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f302b30.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc06f395056.png"></p>
+<p>之后只需要点击右上角“打印PDF”就可以了。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071288119.png"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://zitie.xueyuqu.com/">https://zitie.xueyuqu.com</a></p>
+<hr>
+<hr>
+<h2 id="iSurround"><a href="#iSurround" class="headerlink" title="iSurround"></a>iSurround</h2><p>一个能让各位足不出户就欣赏到全球各地美景的网站。</p>
+<p>不管是埃及的大金字塔、荷兰的郁金香还是中国的长城都只需要轻轻一点感受到风景的壮丽。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0713ccdf3.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc07155b31c.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0716f2523.png"></p>
+<p>并且里面的所有场景都是360度的全景视角，非常推荐大家去看看。</p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.airpano.com/">https://www.airpano.com</a></p>
+<hr>
+<hr>
+<h2 id="News-Now"><a href="#News-Now" class="headerlink" title="News Now"></a>News Now</h2><p>一个高颜值的实时新闻、热榜资讯平台，相比传统热榜产品更加注重实时新闻。</p>
+<p>里面接入了知乎、微博、抖音、贴吧、哔哩哔哩、今日头条、澎湃新闻等各个网站的实时新闻与热点新闻。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0717c0992.png"></p>
+<hr>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://newsnow.busiyi.world/">https://newsnow.busiyi.world</a></p>
+<hr>
+<h2 id="unblurimage"><a href="#unblurimage" class="headerlink" title="unblurimage"></a>unblurimage</h2><p>一个基于人工智能的在线工具，主要用于去除图像的模糊，使照片变得清晰明亮。</p>
+<p>网站支持处理PNG、JPEG、JPG、WEBP、BMP五种图片格式，并且可处理的最大分辨率为4000×4000。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc0718a098a.png"></p>
+<p>网站的效果还是很不错的，同时处理后下面还有一个增强质量可以进一步提升照片质量而且全程免费~</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071a2215b.gif"></p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://unblurimage.ai/zh">https://unblurimage.ai/zh</a></p>
+<hr>
+<h2 id="元素周期表PRO"><a href="#元素周期表PRO" class="headerlink" title="元素周期表PRO"></a>元素周期表PRO</h2><p>颜值非常高的一款元素周期表网站，里面的每一种元素都按照元素的类型用不同的颜色做了区别。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071b0b058.png"></p>
+<p>而且当我们点击元素后还可以看见每种元素的照片、物理性质、原子性质、电磁性质、电子层分布各种详细信息。</p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071bc23f0.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071ce018d.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071d75594.png"></p>
+<p><img src="https://img.huanote.com/uploads/2025/03/20/67dc071e15c78.png"></p>
+<p>可以说是孩子学化学的必备小网站了</p>
+<p><strong>网站地址：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://pt.ziziyi.com/">https://pt.ziziyi.com</a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="老哥两"><div class="post-title"><h1><a>老哥两</a></h1></div><div class="post-content"><p>我们总在寻找诗与远方，却常忽略脚下这片托举着人间烟火的土地。当阳光斜斜地穿过廊架，在石板路上写下光的韵脚，突然懂得：真正的安宁，不过是允许时光以最本真的模样流淌。</p>
+<p><a target="_blank" rel="noopener" href="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d985daf022f.jpg"><img src="https://www.huanote.com/myblog/wp-content/uploads/2025/03/67d985daf022f.jpg" title="P8490058"></a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="170+ Docker 容器应用汇总"><div class="post-title"><h1><a>170+ Docker 容器应用汇总</a></h1></div><div class="post-content"><h2 id="一、娱乐与媒体类（16项）"><a href="#一、娱乐与媒体类（16项）" class="headerlink" title="一、娱乐与媒体类（16项）"></a>一、娱乐与媒体类（16项）</h2><h3 id="漫画小说工具"><a href="#漫画小说工具" class="headerlink" title="漫画小说工具"></a>漫画小说工具</h3><ul>
+<li>Reading：免费小说阅读app，支持多种源与TTS</li>
+<li>Teemiii：在线漫画下载与管理工具</li>
+</ul>
+<h3 id="影音娱乐工具"><a href="#影音娱乐工具" class="headerlink" title="影音娱乐工具"></a>影音娱乐工具</h3><ul>
+<li>Audiobookshelf：播客与有声书管理工具（支持APP）</li>
+<li>Douban-Tool：豆瓣影视资源BT下载工具</li>
+<li>Embykeeper：Emby公益服申请&#x2F;保号工具</li>
+<li>Feishin：Navidrome&#x2F;Jellyfin前端音乐播放器</li>
+<li>IPtvnator：M3U在线播放工具</li>
+<li>Jellyfin：流媒体影音管理服务器</li>
+<li>Melody：音乐下载&#x2F;网易云推送工具</li>
+<li>Music-Tag-Web：音乐元数据刮削器</li>
+<li>Musicn：MP3音乐下载工具</li>
+<li>Navidrome：开源音乐服务器</li>
+<li>NextBeats：YouTube Lo-Fi音乐流项目</li>
+<li>Onelist：Alist影视信息刮削工具</li>
+<li>R3PLAY：网易云第三方播放器</li>
+<li>Xiaomusic：小米音箱音乐扩展工具</li>
+</ul>
+<h2 id="二、系统管理与运维类（39项）"><a href="#二、系统管理与运维类（39项）" class="headerlink" title="二、系统管理与运维类（39项）"></a>二、系统管理与运维类（39项）</h2><h3 id="Docker管理"><a href="#Docker管理" class="headerlink" title="Docker管理"></a>Docker管理</h3><ul>
+<li>AutoCompose：一键转换现有Docker</li>
+<li>Docker Copilot：跨平台容器管理神器</li>
+<li>Dockge：可视化docker-compose配置工具</li>
+<li>Diun：多渠道镜像升级通知工具</li>
+<li>Docu：Docker存储分析工具</li>
+<li>DweebUI：120+容器可视化管理系统</li>
+<li>Watchtower：自动更新检测工具</li>
+<li>What’s Up Docker：镜像升级提醒工具</li>
+<li>Windows-Docker：Docker内运行Windows系统</li>
+<li>Yacht：Docker资源可视化面板</li>
+</ul>
+<h3 id="NAS-OS-服务器管理"><a href="#NAS-OS-服务器管理" class="headerlink" title="NAS OS&#x2F;服务器管理"></a>NAS OS&#x2F;服务器管理</h3><ul>
+<li>1Panel：Docker可视化服务器管理面板</li>
+<li>Beszel：轻量级NAS&#x2F;服务器监控工具</li>
+<li>Cosmo-Server：容器安全访问集成系统</li>
+<li>FnOS：新手友好型影音NAS系统</li>
+<li>Hertzbeat：多维度监控预警系统</li>
+<li>IstoreNAS：OpenWrt开源NAS系统</li>
+<li>Kener：服务器状态监测工具</li>
+<li>Nging：DDNS&#x2F;内网穿透&#x2F;SSH运维面板</li>
+<li>UmbreIOS：集成商城的NAS管理系统</li>
+<li>（注：原文中部分项目存在重复编号问题）</li>
+</ul>
+<h3 id="运维管理"><a href="#运维管理" class="headerlink" title="运维管理"></a>运维管理</h3><ul>
+<li>2FAuth：双重认证安全工具</li>
+<li>Cowire&#x2F;Fakessh：SSH蜜罐防护工具</li>
+<li>Easynode：网页版SSH终端管理</li>
+<li>Next Terminal：多协议堡垒机</li>
+<li>Orion-visor&#x2F;SamWaf：智能运维&#x2F;WAF工具</li>
+<li>Safeline：开源WAF防护工具</li>
+<li>Sshwifty：浏览器WebSSH工具</li>
+</ul>
+<h3 id="网络工具"><a href="#网络工具" class="headerlink" title="网络工具"></a>网络工具</h3><ul>
+<li>Frp-panel：Frp可视化管理平台</li>
+<li>Lucky：DDNS&#x2F;反代&#x2F;SSL管理工具</li>
+<li>MyIP：网络工具箱（IP&#x2F;Magic查询）</li>
+<li>Nginxwebui：Nginx可视化配置工具</li>
+<li>Tailscale&#x2F;Zerotier：异地组网工具</li>
+<li>Umami：网站流量分析工具</li>
+<li>WatchYourLAN&#x2F;Ports：局域网扫描工具</li>
+<li>Web-check：网站优化分析工具</li>
+<li>星空组网：类似Tailscale的组网工具</li>
+</ul>
+<h2 id="三、办公与协作类（26项）"><a href="#三、办公与协作类（26项）" class="headerlink" title="三、办公与协作类（26项）"></a>三、办公与协作类（26项）</h2><h3 id="办公管理"><a href="#办公管理" class="headerlink" title="办公管理"></a>办公管理</h3><ul>
+<li>Erpnext：开源ERP系统</li>
+<li>InvenTree：供销库存管理系统</li>
+<li>Snipe-it：IT设备管理系统</li>
+<li>Spring客服：多平台在线客服系统</li>
+<li>Twenty&#x2F;Zammad：CRM&#x2F;客服支持系统</li>
+</ul>
+<h3 id="协作沟通"><a href="#协作沟通" class="headerlink" title="协作沟通"></a>协作沟通</h3><ul>
+<li>Affine：Notion替代工具</li>
+<li>Bookstack：团队知识库系统</li>
+<li>Cloper：PPT演讲辅助工具</li>
+<li>Fiora：自建聊天工具</li>
+<li>Huntly：RSS集成阅读工具</li>
+<li>Leantime：轻量级项目管理工具</li>
+<li>MicroBin：阅后即焚文件共享</li>
+<li>O2oa：多功能OA系统</li>
+<li>Panka&#x2F;Todoist：待办事项管理工具</li>
+<li>Perite&#x2F;Wik.js：Markdown知识库</li>
+<li>Rustpad：80+语言代码协作编辑</li>
+<li>Showdoc：API文档管理工具</li>
+<li>Team Nav：团队权限导航工具</li>
+<li>Univer&#x2F;Vikunja：在线协作文档</li>
+<li>WBO：在线白板绘图工具</li>
+<li>iToP：IT服务管理工具</li>
+<li>Superset：数据驾驶舱BI系统</li>
+<li>TailChat：隐私保护团队沟通平台</li>
+</ul>
+<h2 id="四、个人效率与学习类（17项）"><a href="#四、个人效率与学习类（17项）" class="headerlink" title="四、个人效率与学习类（17项）"></a>四、个人效率与学习类（17项）</h2><h3 id="时间管理"><a href="#时间管理" class="headerlink" title="时间管理"></a>时间管理</h3><ul>
+<li>Affine：Notion替代工具</li>
+<li>Kimai：个人时间追踪工具</li>
+<li>Tragg：时间轴管理工具</li>
+</ul>
+<h3 id="学习辅助"><a href="#学习辅助" class="headerlink" title="学习辅助"></a>学习辅助</h3><ul>
+<li>Blinko：AI驱动笔记工具</li>
+<li>DailyTxT：加密日记本</li>
+<li>Dailyhot：全网热榜聚合</li>
+<li>GetQzonehistory：QQ空间记录导出</li>
+<li>HomePage：个性化导航页</li>
+<li>Language-Tool：多语言校验工具</li>
+<li>Memos：碎片化知识管理</li>
+<li>Mtab：书签管理工具</li>
+<li>Reference：命令备忘录</li>
+<li>Tutudi：Todo面板工具</li>
+<li>VaultWarden：密码管理工具</li>
+<li>Wiki.js：知识库管理</li>
+<li>WizNote：自托管为知笔记</li>
+<li>小书匠：Markdown知识库</li>
+</ul>
+<h2 id="五、生活与家庭类（10项）"><a href="#五、生活与家庭类（10项）" class="headerlink" title="五、生活与家庭类（10项）"></a>五、生活与家庭类（10项）</h2><ul>
+<li>Actual：预算管理工具</li>
+<li>Babybuddy：婴幼儿护理记录</li>
+<li>Hammond：汽车费用管理</li>
+<li>Home Assistant：智能家居自动化</li>
+<li>Homebox：家庭物资管理</li>
+<li>How To Cook：程序员菜谱</li>
+<li>Kerberos-agent：设备监控系统</li>
+<li>Mealie：食谱管理与膳食计划</li>
+<li>Wallos：周期账单管理</li>
+<li>Gramps-web：族谱管理</li>
+</ul>
+<h2 id="六、数据存储与同步类（16项）"><a href="#六、数据存储与同步类（16项）" class="headerlink" title="六、数据存储与同步类（16项）"></a>六、数据存储与同步类（16项）</h2><h3 id="网盘应用"><a href="#网盘应用" class="headerlink" title="网盘应用"></a>网盘应用</h3><ul>
+<li>Alist：网盘聚合工具</li>
+<li>CloudDrive：多网盘挂载工具</li>
+<li>Eyeblue：开源私有云盘</li>
+<li>JmalCloud：办公功能云盘</li>
+<li>MinIO：兼容S3的对象存储</li>
+<li>Zfile：17种存储挂载工具</li>
+</ul>
+<h3 id="同步下载"><a href="#同步下载" class="headerlink" title="同步下载"></a>同步下载</h3><ul>
+<li>FileBrowser：服务器文件管理</li>
+<li>Metube：可视化下载工具</li>
+<li>Spacedrive：跨平台文件管理</li>
+<li>Taosync：Alist自动同步</li>
+<li>Transmission：PT种子下载</li>
+<li>微力同步：点对点同步工具</li>
+</ul>
+<h3 id="备份转换"><a href="#备份转换" class="headerlink" title="备份转换"></a>备份转换</h3><ul>
+<li>Certimate：SSL证书管理</li>
+<li>Morphos：文档格式转换</li>
+<li>S-PDF：PDF处理工具</li>
+<li>云朵备份：微信记录备份</li>
+</ul>
+<h2 id="七、网络工具类（16项）"><a href="#七、网络工具类（16项）" class="headerlink" title="七、网络工具类（16项）"></a>七、网络工具类（16项）</h2><h3 id="网址管理"><a href="#网址管理" class="headerlink" title="网址管理"></a>网址管理</h3><ul>
+<li>ArchiveB：网页存档工具</li>
+<li>Slash：短链接+书签管理</li>
+<li>Yourls：短链接生成器</li>
+</ul>
+<h3 id="消息推送"><a href="#消息推送" class="headerlink" title="消息推送"></a>消息推送</h3><ul>
+<li>Bark：苹果消息推送</li>
+<li>Gotify：安卓消息推送</li>
+<li>Heimdallr：聚合推送平台</li>
+</ul>
+<h3 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h3><ul>
+<li>Coolify：Heroku替代方案</li>
+<li>Easyimage2：轻量级图床</li>
+<li>Fenrus：花哨导航系统</li>
+<li>Genact：模拟编程界面</li>
+<li>lyuuplus-dev：PT种子处理</li>
+<li>Qd：自动签到工具</li>
+<li>卷王：问卷&#x2F;考试工具</li>
+<li>Quark-Auto-Save：夸克转存工具</li>
+<li>Xiaojusurvey：在线问卷系统</li>
+<li>lt-Tools：IT工具集合</li>
+</ul>
+<h2 id="八、网赚项目（13项）"><a href="#八、网赚项目（13项）" class="headerlink" title="八、网赚项目（13项）"></a>八、网赚项目（13项）</h2><ul>
+<li>Acg-Faka：二次元卡券管理</li>
+<li>Bar-Assistant：酒吧管理系统</li>
+<li>C-Shopping：在线商城</li>
+<li>Dailycheckin：多平台打卡</li>
+<li>Douyin-vue：抖音前端项目</li>
+<li>DouyinLiveRecorder：直播录制工具</li>
+<li>Imaotai：i茅台预约工具</li>
+<li>Instock：股票分析工具</li>
+<li>MagicBox：自动售卡商城</li>
+<li>Novel-Plus：小说建站</li>
+<li>Pterodactyl：游戏服务器管理</li>
+<li>Zyplayer-doc：付费知识库</li>
+<li>魔豆文库：百度文库替代</li>
+</ul>
+<h2 id="九、游戏类（9项）"><a href="#九、游戏类（9项）" class="headerlink" title="九、游戏类（9项）"></a>九、游戏类（9项）</h2><ul>
+<li>CodeCombat：编程学习游戏</li>
+<li>Dnf：DNF私服服务器</li>
+<li>Funkin：节奏劲舞团游戏</li>
+<li>Habitica：习惯养成游戏</li>
+<li>Palworld：幻兽帕鲁服务器</li>
+<li>PokéRogue：宝可梦肉鸽游戏</li>
+<li>Ratel：命令行棋牌游戏</li>
+<li>RetroArch-web：复古游戏模拟器</li>
+<li>Vue-Idle-Game：放置类游戏</li>
+</ul>
+<h2 id="十、社交平台类（5项）"><a href="#十、社交平台类（5项）" class="headerlink" title="十、社交平台类（5项）"></a>十、社交平台类（5项）</h2><ul>
+<li>Flarum：轻量级论坛</li>
+<li>FreshRSS：自托管RSS</li>
+<li>Mastodon：长毛象节点</li>
+<li>Memonts：微信朋友圈替代</li>
+<li>Misskey：联邦制社交节点</li>
+</ul>
+<h2 id="十一、图像设计类（9项）"><a href="#十一、图像设计类（9项）" class="headerlink" title="十一、图像设计类（9项）"></a>十一、图像设计类（9项）</h2><ul>
+<li>Darktable：Lightroom替代工具</li>
+<li>DrawDB：数据库设计工具</li>
+<li>Draw.io：图表绘制工具</li>
+<li>Excalidraw：手绘风格绘图</li>
+<li>Free-Cad：3D建模工具</li>
+<li>Image-Matting：背景抠图工具</li>
+<li>Penpot：原型设计工具</li>
+<li>Photopea：在线PS工具</li>
+<li>Yft-Design：海报设计工具</li>
+</ul>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="关于语言的思考"><div class="post-title"><h1><a>关于语言的思考</a></h1></div><div class="post-content"><p>昨天，朋友告知我曾经随口说的一句话，竟严重地得罪了另一位朋友，这让我陷入了沉思。 回想起来，确实在与人交流时有些事情是需要格外注意的。就像我们哪怕与朋友关系再好，也尽量少谈论这四件事。 夫妻之间的问题，那是只属于两个人的独特领域，外人很难真正理解其中的微妙与复杂。在与朋友聊天时谈论这些，不仅可能无法获得有效的建议，还可能引发不必要的误解或让朋友感到尴尬。 自己的金钱问题也不宜多谈。毕竟每个人的经济状况和观念都不同，过多地涉及金钱，容易产生攀比、嫉妒或让人觉得你在炫耀或哭穷，这都会给彼此的关系蒙上一层阴影。 工作中的问题同样如此。每个人的工作环境和经历都大相径庭，我们的抱怨或困扰在他人眼中或许只是无足轻重的小事，甚至可能让朋友觉得厌烦。 而自己做过对不起他人的事情，更是要谨慎提及。这不仅会勾起自己内心的愧疚，也可能给朋友带来心理负担，毕竟谁也不想总是面对他人的负面过往。 经历了这次的事情，我深刻地意识到，言语真的有着巨大的力量，不经意间就可能伤害到他人。以后在与人相处中，我会更加谨慎地选择话题，珍惜每一段友谊，避免因为言语的不慎而造成无法挽回的后果。让我们都能在交流中多一份理解与尊重，少一些无心之失。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="对朋友圈的一些想法。"><div class="post-title"><h1><a>对朋友圈的一些想法。</a></h1></div><div class="post-content"><p>不知道大家是不是也有这样的感受：随着年纪的增长，越来越不喜欢发朋友圈了，朋友圈，这个曾经风靡一时的社交平台，曾经是我们分享生活点滴、表达情感的重要窗口。还记得刚开通朋友圈的时候，我们总是迫不及待地想要记录下每一个特别的瞬间，无论是旅行中的美景、美食，还是生活中的小确幸，都会第一时间分享到朋友圈，期待着朋友们的点赞和评论。然而，随着时间的推移，渐渐发现，自己发朋友圈的频率越来越低，甚至有时候一连几个月都不发一条动态。这种变化，或许不仅仅是个人的习惯转变，更反映了我们内心深处对社交方式的一种重新审视。</p>
+<p>年龄增长带来的心态变化，随着年龄的增长，我们的心态和生活方式都在悄然发生变化。年轻时，我们渴望被关注、被认可，朋友圈成为了我们展示自我、寻求认同的重要平台。我们乐于分享自己的喜怒哀乐，希望通过朋友圈与朋友们保持联系，分享彼此的生活。然而，随着年龄的增长，我们逐渐变得更加成熟和内敛，开始更加注重内心的平静和生活的本质。</p>
+<p>随着年龄的增长，我们对个人隐私的重视程度也在增加。朋友圈虽然是一个相对私密的社交平台，但毕竟是一个公开的场合，分享的内容可能会被不熟悉的人看到。因此，我们开始更加谨慎地选择要分享的内容，甚至有时候会担心过度分享会给自己带来不必要的麻烦。</p>
+<p>年轻时，我们通过他人的认可来确认自己的价值，而随着年龄的增长，我们逐渐学会了自我认同，不再那么依赖外界的评价。我们开始明白，生活是自己的，不需要通过朋友圈来证明自己的价值。</p>
+<p>随着时间的推移，我们的社交圈也在不断变化。年轻时，我们的社交圈相对简单，朋友圈里的朋友大多是同龄人，大家有着相似的兴趣和生活经历，分享的内容也更容易引起共鸣。然而，随着年龄的增长，我们的社交圈逐渐扩大，朋友圈里的朋友也变得更加多元化。朋友圈里的朋友不再仅仅是同龄人，还包括同事、合作伙伴、甚至是一些不太熟悉的人。这种多样性使得我们在分享内容时需要更加谨慎，以免引起不必要的误解或尴尬。随着社交圈的变化，我们面临的社交压力也在增加。朋友圈里的动态不再仅仅是个人生活的记录，还可能影响到我们在他人眼中的形象。因此，我们开始更加注重自己在朋友圈里的表现。</p>
+<p>另一个让我们逐渐失去对朋友圈兴趣的原因是，朋友圈内容的同质化越来越严重。随着时间的推移，我们发现朋友圈里的内容变得越来越相似，大家分享的似乎都是一些经过精心修饰的生活片段，真实的生活反而被隐藏了起来。朋友圈里的照片和文字往往经过精心的修饰和挑选，呈现出的都是生活中最美好的一面。这种过度修饰的生活让我们感到距离感，甚至有时候会让我们产生一种错觉，认为别人的生活总是那么完美，而自己的生活却充满了琐碎和烦恼。朋友圈里的内容往往缺乏真实感，我们看到的只是他人生活的一个侧面，而不是全部。这种片面的信息让我们感到不真实，甚至有时候会让我们对自身的生活产生怀疑。</p>
+<p>随着科技的发展，新的社交平台和工具不断涌现，提供了更多样化的社交方式。例如，短视频平台、即时通讯工具等，都为我们提供了新的表达和交流方式。这些新的平台和工具，往往比朋友圈更加灵活和自由，能够更好地满足我们多样化的需求。</p>
+<p>短视频平台如抖音、快手等，提供了更加直观和生动的表达方式。我们可以通过短视频分享自己的生活点滴，而不需要经过复杂的文字编辑和修饰。这种方式更加真实和自然，也更容易引起他人的共鸣。</p>
+<p>总的来说，随着年龄的增长，我们逐渐失去了对朋友圈的兴趣，这并不是因为我们不再需要社交，而是因为我们开始更加注重生活的本质。我们不再那么在意他人的评价，也不再那么渴望通过朋友圈来证明自己的价值。我们开始明白，生活是自己的，不需要通过他人的认可来确认自己的价值。</p>
+<p>而我，更倾向于独立博客，纯粹的个人世界，不需要别人的认同，不需要区分熟悉与陌生，把自己隐藏在幕后，向世界展现自己，可以直面内心，无所畏惧。</p>
+<p>这也是我建立这个博客的原因之一吧。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Custom Styles"><div class="post-title"><h1><a>Custom Styles</a></h1></div><div class="post-content"><p>{“version”: 3, “isGlobalStylesUserThemeJSON”: true }</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/archives/page/7/">Previous</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/archives/page/9/">Next</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>

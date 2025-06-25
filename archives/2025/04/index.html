@@ -1,158 +1,39 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <script src="/js/ink.js" defer></script>
-    <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon" />
-    <title>
-        Hexo
-    </title>
-    
-<link rel="stylesheet" href="/css/style.min.css">
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Cytrogen"><title>你的名字 | Your name's Resume</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/favicon.ico"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#今天，祝你生日快乐！">今天，祝你生日快乐！</a></li><li><a href="#今天试了一下DeepSeek+anythingllm，使用体验十分差">今天试了一下DeepSeek+anythingllm，使用体验十分差</a></li><li><a href="#今日谷雨">今日谷雨</a></li><li><a href="#paywallbuster.com">paywallbuster.com</a></li><li><a href="#博客主题算是基本完成了，终于做成了自己想要的样子">博客主题算是基本完成了，终于做成了自己想要的样子</a></li><li><a href="#Untitled Post - 12">Untitled Post - 12</a></li><li><a href="#Untitled Post - 7">Untitled Post - 7</a></li><li><a href="#Untitled Post - 9">Untitled Post - 9</a></li><li><a href="#Untitled Post - 10">Untitled Post - 10</a></li><li><a href="#Untitled Post - 11">Untitled Post - 11</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3></div></div><ul class="social-links"><li> <i class="fa fa-phone"></i>(xxx)yyy-zzzz</li><li><i class="fa fa-address-card"> </i>xxx yyy zzz</li><li><a target="_blank" rel="noopener" href="https://github.com/xxx"><i class="fa fa-github"></i>xxx</a></li><li><a target="_blank" rel="noopener" href="https://linkedin.com/in/xxx"><i class="fa fa-linkedin"></i>linkedin.com/in/xxx</a></li><li><a href="mailto:xxx@yyy.zzz"><i class="fa fa-envelope"></i>xxx@yyy.zzz</a></li></ul></div><div class="footer"><div class="p"> <span>© 2023 </span><i class="fa fa-star"></i><span> Cytrogen</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
-    <body>
-        
-            <header>
-    <a class="title"  href="/" style="display: flex; align-items: start; text-decoration: none;padding: 0px;" >
-        <img style="width:var(--size-step-2);margin-right: 5px;height: var(--size-step-2);margin-top: calc(var(--size-step-1) / 2);" src="/img/icon.svg"/>
-        Hexo
-    </a>
-    <p class="subtitle"></p>
-
-</header>
-
-        
-        <main>
-  <div>
-    <ul class="blog-posts">
-      
-        <li class="article-item">
-          <a href="/2025/04/23/%E4%BB%8A%E5%A4%A9%EF%BC%8C%E7%A5%9D%E4%BD%A0%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%EF%BC%81/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.817143012711744" alt="今天，祝你生日快乐！" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/23</time>
-              <span>今天，祝你生日快乐！</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/20/%E4%BB%8A%E5%A4%A9%E8%AF%95%E4%BA%86%E4%B8%80%E4%B8%8Bdeepseekanythingllm%EF%BC%8C%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%E5%8D%81%E5%88%86%E5%B7%AE/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.5058061325450127" alt="今天试了一下DeepSeek+anythingllm，使用体验十分差" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/20</time>
-              <span>今天试了一下DeepSeek+anythingllm，使用体验十分差</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/20/%E4%BB%8A%E6%97%A5%E8%B0%B7%E9%9B%A8/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6228031885055283" alt="今日谷雨" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/20</time>
-              <span>今日谷雨</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/18/paywallbuster-com/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.312602794747751" alt="paywallbuster.com" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/18</time>
-              <span>paywallbuster.com</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/16/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E7%AE%97%E6%98%AF%E5%9F%BA%E6%9C%AC%E5%AE%8C%E6%88%90%E4%BA%86%EF%BC%8C%E7%BB%88%E4%BA%8E%E5%81%9A%E6%88%90%E4%BA%86%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E7%9A%84/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.26679915712554503" alt="博客主题算是基本完成了，终于做成了自己想要的样子" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/16</time>
-              <span>博客主题算是基本完成了，终于做成了自己想要的样子</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1114/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6359318152647746" alt="Untitled Post - 12" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 12</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1106/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.47718258046426" alt="Untitled Post - 7" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 7</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1109/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.6057910043486794" alt="Untitled Post - 9" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 9</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1110/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.07341181671438957" alt="Untitled Post - 10" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 10</span>
-            </div>
-          </a>
-        </li>
-      
-        <li class="article-item">
-          <a href="/2025/04/10/1111/" class="link">
-          <img src="https://picsum.photos/300/300?random=0.8070170019180765" alt="Untitled Post - 11" class="thumbnail" />
-            <div class="article-info">
-              <time>2025/04/10</time>
-              <span>Untitled Post - 11</span>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-    
-    <nav class="post-navigation">
-      
-      
-        <button onclick="location.href='/archives/2025/04/page/2/'">下一页</button>
-      
-    </nav>
-  </div>
-</main>
-        
-            <footer style="padding:0 0;" >
-    <div id="footer-nav">
-        <p style="font-size:0.7em;margin: 0px;">
-            
-              <a class="footer-nav-link" href="/">文章</a>
-            
-              <a class="footer-nav-link" href="/gallery">相册</a>
-            
-        </p>
-    </div>
-</footer>
-        
-    </body>
-</html>
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="今天，祝你生日快乐！"><div class="post-title"><h1><a>今天，祝你生日快乐！</a></h1></div><div class="post-content"><p>今天（4月23日），是人民海军成立76周年纪念日。</p>
+<p>76年来，人民海军从小到大、由弱到强。从小艇到巨舰，从近岸到深蓝，从单兵到体系，守卫祖国海空，守护万家灯火。</p>
+<p><img src="https://img.huanote.com/image/2025/04/23/68089468b263d.jpg"></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="今天试了一下DeepSeek+anythingllm，使用体验十分差"><div class="post-title"><h1><a>今天试了一下DeepSeek+anythingllm，使用体验十分差</a></h1></div><div class="post-content"><p>今天试了一下DeepSeek+anythingllm，喂了几个文件，但发现使用体验十分差，Excel识别率太低，文本文件相对好一点，但输出也不是预期自己想要的结果，东拼西凑，信息不完整。而且我办公所用的电脑48g内存，用7b模型都慢得不行。试用下来，没有实际使用价值，删了。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="今日谷雨"><div class="post-title"><h1><a>今日谷雨</a></h1></div><div class="post-content"><p>🌿谷雨，春的尾声，夏的序章</p>
+<p>“清明断雪，谷雨断霜。”今天是谷雨，春天的最后一个节气。</p>
+<p>窗外，细雨如丝，无声地滋润着大地。想起小时候，奶奶总会在谷雨这天，带着我去田间地头。她指着那些嫩绿的秧苗说：“谷雨谷雨，播谷降雨，这是播种的好时节。”那些秧苗在雨中摇曳，仿佛在向世界宣告生命的开始。</p>
+<p><img src="https://img.huanote.com/image/2025/04/20/680466ffc7df7.jpg"></p>
+<p>谷雨，是大自然的馈赠。它不像春分那般明媚，也不似立夏那般热烈，却有着独特的温柔。雨丝细细密密，落在屋檐上，滴答作响，像是在演奏一首轻柔的乐曲。院子里的花儿也在这雨中绽放，桃花、杏花、梨花，争奇斗艳，像是在为春天的落幕举行一场盛大的告别仪式。</p>
+<p>谷雨，是春的尾声，也是夏的序章。它带着春天的温柔，又藏着夏天的热情。在这个节气里，不妨停下脚步，去感受大自然的美好。去听雨声，去看花开，去感受生命的蓬勃。</p>
+<p>愿我们在这个谷雨时节，都能收获满满的幸福和希望。就像那些在雨中生长的秧苗，无论风雨，都能茁壮成长。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="paywallbuster.com"><div class="post-title"><h1><a>paywallbuster.com</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="博客主题算是基本完成了，终于做成了自己想要的样子"><div class="post-title"><h1><a>博客主题算是基本完成了，终于做成了自己想要的样子</a></h1></div><div class="post-content"><p>经过多天的努力，本人这个代码小白终于在cursor的帮助下，把博客主题完成了，做成了自己想象的样子，虽然本人审美不在线，但起码自己看起来是我想要的样子，功能也符合预期。所有的代码都是从零开始的，经过多轮的拉扯，终于还是完成了。包含一个主题–就是现在网站所用的，包含说说和图片展功能；还做了两个插件–友情链接用的导航，下载东西用的文件列表下载，都是些小众的东西。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 12"><div class="post-title"><h1><a>Untitled Post - 12</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 7"><div class="post-title"><h1><a>Untitled Post - 7</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 9"><div class="post-title"><h1><a>Untitled Post - 9</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 10"><div class="post-title"><h1><a>Untitled Post - 10</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Untitled Post - 11"><div class="post-title"><h1><a>Untitled Post - 11</a></h1></div><div class="post-content"></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/archives/2025/04/page/2/">Next</a></li></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>
